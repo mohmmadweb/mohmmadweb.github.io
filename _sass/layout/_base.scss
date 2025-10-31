@@ -1,7 +1,13 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
-html {
+
+/**
+ * HTML element styles
+ * Basic reset and global styles for all HTML elements
+ */
+
+ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
@@ -24,6 +30,15 @@ body {
   }
 }
 
+/* ==========================================================================
+   HEADING STYLES
+   ========================================================================== */
+
+/**
+ * Heading elements h1 through h6
+ * Custom color applied to h1 as requested
+ */
+
 h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
@@ -34,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin-top: 0;
   font-size: $type-size-3;
+  color: #043361; /* Custom dark blue color for all h1 elements */
 }
 
 h2 {
@@ -55,6 +71,14 @@ h5 {
 h6 {
   font-size: $type-size-6;
 }
+
+/* ==========================================================================
+   TEXT ELEMENTS
+   ========================================================================== */
+
+/**
+ * Text formatting and typography elements
+ */
 
 small, .small {
   font-size: $type-size-6;
@@ -84,7 +108,13 @@ p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
   widows: 3;
 }
 
-/* abbreviations */
+/* ==========================================================================
+   SPECIAL TEXT ELEMENTS
+   ========================================================================== */
+
+/**
+ * Abbreviations, blockquotes, and code elements
+ */
 
 abbr[title],
 abbr[data-original-title] {
@@ -112,7 +142,13 @@ blockquote {
   }
 }
 
-/* links */
+/* ==========================================================================
+   LINK STYLES
+   ========================================================================== */
+
+/**
+ * Anchor tag and link styles
+ */
 
 a {
   &:focus {
@@ -125,7 +161,13 @@ a {
   }
 }
 
-/* code */
+/* ==========================================================================
+   CODE AND PREFORMATTED TEXT
+   ========================================================================== */
+
+/**
+ * Code, preformatted text, and monospace elements
+ */
 
 tt, code, kbd, samp, pre {
   font-family: $monospace;
@@ -163,7 +205,13 @@ pre > code {
   color: var(--global-code-text-color);
 }
 
-/* horizontal rule */
+/* ==========================================================================
+   HORIZONTAL RULES AND LISTS
+   ========================================================================== */
+
+/**
+ * Horizontal rules and list styles
+ */
 
 hr {
   display: block;
@@ -184,9 +232,13 @@ li ol {
   margin-top: 0.5em;
 }
 
-/*
-   Media and embeds
+/* ==========================================================================
+   MEDIA AND EMBEDS
    ========================================================================== */
+
+/**
+ * Figures, images, and embedded content
+ */
 
 /* Figures and images */
 
@@ -266,16 +318,14 @@ figcaption {
   }
 }
 
-
 /* Fix IE9 SVG bug */
 
 svg:not(:root) {
   overflow: hidden;
 }
 
-
-/*
-   Navigation lists
+/* ==========================================================================
+   NAVIGATION LISTS
    ========================================================================== */
 
 /**
@@ -321,23 +371,27 @@ nav {
    ANIMATIONS
    ========================================================================== */
 
-   @-webkit-keyframes intro {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+/**
+ * CSS animations and transitions
+ */
+
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
   }
-  
-  @keyframes intro {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* Global animation transition */
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
@@ -349,17 +403,17 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
    PRINT STYLES
    ========================================================================== */
 
-/*
-   Hide the following elements on print
-   ========================================================================== */
+/**
+ * Print-specific styles for better printing experience
+ */
 
-   @media print {
-    .masthead,
-    .toc,
-    .page__share,
-    .page__related,
-    .ads,
-    .page__footer {
-      display: none;
-    }
+@media print {
+  .masthead,
+  .toc,
+  .page__share,
+  .page__related,
+  .ads,
+  .page__footer {
+    display: none;
   }
+}
