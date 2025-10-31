@@ -8,6 +8,9 @@ $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : #9ba1a6;
 $lighter-gray               : mix(#fff, $gray, 90%);
+$link                       : #07c;
+$link-dark                  : #005999;
+$link-light                 : #551a8b;
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
@@ -36,9 +39,9 @@ $sidebar-screen-min-width   : 1024px;
     --global-code-background-color      : #fafafa;
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #07c; /* Changed to your blue color */
-    --global-link-color-hover           : #005999; /* Darker shade for hover */
-    --global-link-color-visited         : #551a8b; /* Purple for visited links */
+    --global-link-color                 : #{$link}; 
+    --global-link-color-hover           : #{$link-dark};
+    --global-link-color-visited         : #{$link-light};
     --global-masthead-link-color        : #{$dark-gray};
     --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
     --global-text-color                 : #{$dark-gray};
