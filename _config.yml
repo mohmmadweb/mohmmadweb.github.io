@@ -29,7 +29,7 @@ author:
   location         : "Tehran, IRAN"
   employer         : "Sharif University of Technology"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "mohammadaghaei800@gmail.com" 
 
   # Academic websites
   academia         : # URL
@@ -46,8 +46,8 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/mohmmadweb"
-  kaggle           : "https://www.kaggle.com/mohmmadweb"  
+  github           : "mohmmadweb"
+  kaggle           : "mohmmadweb"  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
@@ -68,7 +68,7 @@ author:
   steam            : # Username
   telegram         : "https://t.me/mohmmadweb"
   tumblr           : # Username
-  twitter          : "https://x.com/MohmmadWeb"
+  twitter          : "MohmmadWeb"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
@@ -78,12 +78,14 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
+  journals:
+    title: 'Journal Papers'    
   conferences:
     title: 'Conference Papers'
+  books:
+    title: 'Book Chapter'
+  preprint:
+    title: 'Preprint Publications'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
