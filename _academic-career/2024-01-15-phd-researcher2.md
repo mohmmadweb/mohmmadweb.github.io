@@ -5,7 +5,7 @@ layout: academic-career
 employment_type: "Part-time"
 company: "Sharif University of Technology"
 start_date: 2025-01-15
-end_date: "2025-02-16"
+end_date: 2025-02-16
 location: "Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
