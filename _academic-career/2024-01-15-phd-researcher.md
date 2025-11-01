@@ -1,7 +1,7 @@
 ---
 title: "PhD Researcher in Machine Learning"
 collection: academic-career
-layout: academic-career
+permalink: /academic-career/present/phd-researcher-machine-learning/
 employment_type: "Full-time"
 company: "Sharif University of Technology"
 start_date: 2024-01-15
