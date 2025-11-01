@@ -1,8 +1,11 @@
 {% include base_path %}
 
-{% assign current_year = "now" | date: "%Y" %}
-{% assign post_year = post.end_date == "Present" ? "Present" : post.end_date | date: "%Y" %}
 {% assign is_current = post.end_date == "Present" %}
+{% if is_current %}
+  {% assign post_year = "Present" %}
+{% else %}
+  {% assign post_year = post.end_date | date: "%Y" %}
+{% endif %}
 
 {% if post_year != previous_year %}
   {% if post_year == "Present" %}
