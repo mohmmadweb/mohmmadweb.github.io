@@ -16,9 +16,11 @@ Mohammad Aghaei received his BS degree from University of Isfahan, and got the f
 </div>
 
 <!-- Modal -->
-<div id="imageModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); justify-content: center; align-items: center;">
-  <span style="position: absolute; top: 20px; right: 35px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; z-index: 1001;" onclick="closeModal()">&times;</span>
-  <img id="modalImage" style="max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 10px;">
+<div id="imageModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+  <div style="position: relative; background: white; border-radius: 10px; padding: 15px; max-width: 70%; max-height: 80%; box-shadow: 0 5px 25px rgba(0,0,0,0.3);">
+    <span style="position: absolute; top: 8px; right: 12px; color: #333; font-size: 24px; font-weight: bold; cursor: pointer; z-index: 1001; background: white; width: 35px; height: 35px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onclick="closeModal()">&times;</span>
+    <img id="modalImage" style="max-width: 1000px; max-height: 500px; object-fit: contain; border-radius: 8px; display: block;">
+  </div>
 </div>
 
 <script>
@@ -51,10 +53,6 @@ document.addEventListener('keydown', function(e) {
 <style>
 #imageModal {
   transition: opacity 0.3s ease;
-}
-
-#modalImage {
-  transition: transform 0.3s ease;
 }
 
 img[onclick]:hover {
