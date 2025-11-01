@@ -292,15 +292,15 @@
   }
 
   &[data-category="conferences"] {
-    background: #1976d2;
+    background: #f57c00;
   }
 
   &[data-category="books"] {
-    background: #1565c0;
+    background: #7b1fa2;
   }
 
   &[data-category="preprint"] {
-    background: #f57c00;
+    background: #f9a825;
   }
 }
 
@@ -399,107 +399,107 @@
 }
 
 .publication-links .btn--primary {
-  background: #dc3545;
-  border-color: #dc3545;
+  background: #d32f2f;
+  border-color: #d32f2f;
 
   &:hover {
-    background: #c82333;
-    border-color: #bd2130;
+    background: #c62828;
+    border-color: #b71c1c;
   }
 }
 
 .publication-links .btn--info {
-  background: #17a2b8;
-  border-color: #17a2b8;
+  background: #1976d2;
+  border-color: #1976d2;
 
   &:hover {
-    background: #138496;
-    border-color: #117a8b;
+    background: #1565c0;
+    border-color: #0d47a1;
   }
 }
 
 .publication-links .btn--success {
-  background: #28a745;
-  border-color: #28a745;
+  background: #00897b;
+  border-color: #00897b;
 
   &:hover {
-    background: #218838;
-    border-color: #1e7e34;
+    background: #00695c;
+    border-color: #004d40;
   }
 }
 
 .publication-links-full .btn--primary {
-  background: #dc3545;
-  border-color: #dc3545;
+  background: #d32f2f;
+  border-color: #d32f2f;
 
   &:hover {
-    background: #c82333;
-    border-color: #bd2130;
+    background: #c62828;
+    border-color: #b71c1c;
   }
 }
 
 .publication-links-full .btn--info {
-  background: #17a2b8;
-  border-color: #17a2b8;
+  background: #1976d2;
+  border-color: #1976d2;
 
   &:hover {
-    background: #138496;
-    border-color: #117a8b;
+    background: #1565c0;
+    border-color: #0d47a1;
   }
 }
 
 .publication-links-full .btn--success {
-  background: #28a745;
-  border-color: #28a745;
+  background: #00897b;
+  border-color: #00897b;
 
   &:hover {
-    background: #218838;
-    border-color: #1e7e34;
+    background: #00695c;
+    border-color: #004d40;
   }
 }
 
 .publication-links-full .btn--warning {
-  background: #6A89CC;
-  border-color: #6A89CC;
+  background: #ff8f00;
+  border-color: #ff8f00;
 
   &:hover {
-    background: #4A69BD;
-    border-color: #4A69BD;
+    background: #ff6f00;
+    border-color: #e65100;
   }
 }
 
 .publication-links-full .btn--danger {
-  background: #A55EEA;
-  border-color: #A55EEA;
+  background: #7b1fa2;
+  border-color: #7b1fa2;
 
   &:hover {
-    background: #8854D0;
-    border-color: #8854D0;
+    background: #6a1b9a;
+    border-color: #4a148c;
   }
 }
 
 .publication-links-full .btn--dark {
-  background: #778CA3;
-  border-color: #778CA3;
+  background: #455a64;
+  border-color: #455a64;
 
   &:hover {
-    background: #546DE5;
-    border-color: #546DE5;
+    background: #37474f;
+    border-color: #263238;
   }
 }
 
 .publication-abstract {
   margin: 2em 0;
   padding: 1.5em;
-  background: #E8F4FD;
+  background: #e3f2fd;
   border-radius: 8px;
-  border-left: 4px solid #3498DB;
+  border-left: 4px solid #2196f3;
 }
 
 .publication-abstract h2 {
   margin-top: 0;
-  color: #2980B9;
-  border-bottom: 2px solid #3498DB;
+  color: #1565c0;
+  border-bottom: 2px solid #2196f3;
   padding-bottom: 0.5em;
 }
 
@@ -553,18 +553,18 @@
   }
 
   &[data-category="conferences"] {
-    background: rgba(25, 118, 210, 0.05);
-    border-left-color: #1976d2;
+    background: rgba(245, 124, 0, 0.05);
+    border-left-color: #f57c00;
   }
 
   &[data-category="books"] {
-    background: rgba(21, 101, 192, 0.05);
-    border-left-color: #1565c0;
+    background: rgba(123, 31, 162, 0.05);
+    border-left-color: #7b1fa2;
   }
 
   &[data-category="preprint"] {
-    background: rgba(245, 124, 0, 0.05);
-    border-left-color: #f57c00;
+    background: rgba(249, 168, 37, 0.05);
+    border-left-color: #f9a825;
   }
 }
 
@@ -588,15 +588,15 @@
   }
 
   &[data-category="conferences"] {
-    background: #1976d2;
+    background: #f57c00;
   }
 
   &[data-category="books"] {
-    background: #1565c0;
+    background: #7b1fa2;
   }
 
   &[data-category="preprint"] {
-    background: #f57c00;
+    background: #f9a825;
   }
 }
 
