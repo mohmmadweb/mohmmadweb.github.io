@@ -15,11 +15,7 @@
         <div class="experience-content">
           <div class="experience-title-line">
             <h3 class="experience-title" itemprop="headline">
-              {% if post.permalink %}
-                <a href="{{ post.permalink | prepend: base_path }}" rel="permalink">{{ post.title }}</a>
-              {% else %}
-                <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
-              {% endif %}
+              <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
             </h3>
             <span class="title-separator">-</span>
             <span class="employment-type">{{ post.employment_type }}</span>
