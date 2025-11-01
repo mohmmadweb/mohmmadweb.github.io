@@ -5,7 +5,7 @@ permalink: /industrial-experiences/present/senior-software-engineer/
 employment_type: "Full-time"
 company: "Tech Company Inc."
 start_date: 2025-06-01
-end_date: 2025-07-01
+end_date: "Present"
 location: "San Francisco, CA"
 location_type: "Remote"
 logo: "academic-career/Sharif_University_Logo.png"
