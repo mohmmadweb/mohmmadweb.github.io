@@ -25,7 +25,7 @@ _See the relevant coursework at the end of this CV._
 
 ## Research Interests
 
-- Machine learning
+- Machine learningg
 - Deep learning
 - Data science
 - Data Analysis
