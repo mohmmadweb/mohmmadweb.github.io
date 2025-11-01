@@ -232,6 +232,23 @@
   border-radius: 8px;
   background: #fff;
   transition: all 0.3s ease;
+  border-left: 4px solid #bdc3c7;
+
+  &[data-category="journals"] {
+    border-left-color: #2e7d32;
+  }
+
+  &[data-category="conferences"] {
+    border-left-color: #1565c0;
+  }
+
+  &[data-category="books"] {
+    border-left-color: #7b1fa2;
+  }
+
+  &[data-category="preprint"] {
+    border-left-color: #ef6c00;
+  }
 
   *::selection {
     background: #b3d4fc;
@@ -253,20 +270,10 @@
 
 .publication-teaser {
   position: relative;
-  flex: 0 0 250px;
-  height: 160px;
+  flex: 0 0 174px;
+  height: 123px;
   border-radius: 6px;
   overflow: hidden;
-
-  @include breakpoint($medium) {
-    flex: 0 0 200px;
-    height: 140px;
-  }
-
-  @include breakpoint($small) {
-    flex: 0 0 150px;
-    height: 120px;
-  }
 }
 
 .publication-teaser img {
@@ -308,7 +315,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   *::selection {
     background: #b3d4fc;
@@ -335,7 +341,7 @@
 
 .publication-title {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-size: 1.2em;
 
   a {
@@ -350,15 +356,15 @@
 
 .publication-authors {
   color: #666;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-style: italic;
   font-size: 0.9em;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .publication-venue {
   color: #888;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: bold;
   font-size: 0.9em;
 }
@@ -375,6 +381,7 @@
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .publications-grid {
