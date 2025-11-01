@@ -1,11 +1,15 @@
 {% include base_path %}
 
 {% assign current_year = "now" | date: "%Y" %}
-{% assign post_year = post.start_date | date: "%Y" %}
+{% assign post_year = post.end_date == "Present" ? "Present" : post.end_date | date: "%Y" %}
 {% assign is_current = post.end_date == "Present" %}
 
 {% if post_year != previous_year %}
-  <h3 class="experience-year">{{ post_year }}</h3>
+  {% if post_year == "Present" %}
+    <h3 class="experience-year">Present Working Positions</h3>
+  {% else %}
+    <h3 class="experience-year">{{ post_year }}</h3>
+  {% endif %}
   {% assign previous_year = post_year %}
 {% endif %}
 

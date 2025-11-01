@@ -666,6 +666,7 @@
 
 .past-experience {
   border-left-color: #95a5a6;
+  background: #fff;
 }
 
 .experience-header {
@@ -675,9 +676,9 @@
 }
 
 .experience-logo {
-  flex: 0 0 32px;
-  height: 32px;
-  border-radius: 4px;
+  flex: 0 0 40px;
+  height: 40px;
+  border-radius: 6px;
   overflow: hidden;
   background: #fff;
   border: 1px solid #e8ecef;
@@ -687,8 +688,8 @@
   margin-top: 0.1em;
   
   img {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     object-fit: contain;
   }
 }
@@ -730,33 +731,33 @@
 
 .employment-type {
   font-weight: 500;
-  color: #27ae60;
+  color: #555;
   font-size: 0.95em;
 }
 
 .company {
-  color: #2c3e50;
+  color: #555;
   font-weight: 500;
   font-size: 0.95em;
 }
 
 .experience-details {
-  color: #7f8c8d;
+  color: #666;
   font-size: 0.9em;
   line-height: 1.3;
 }
 
 .dates {
   font-weight: 500;
-  color: #2c3e50;
+  color: #555;
 }
 
 .location {
-  color: #3498db;
+  color: #666;
 }
 
 .location-type {
-  color: #e74c3c;
+  color: #666;
   font-style: italic;
 }
 
@@ -825,7 +826,7 @@
 
 .media-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1em;
   margin-top: 1em;
 }
@@ -834,13 +835,17 @@
   text-align: center;
   
   img {
-    max-width: 100%;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
     
     &:hover {
       transform: scale(1.02);
+      opacity: 0.9;
     }
   }
 }
