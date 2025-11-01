@@ -96,6 +96,24 @@ layout: default
             <i class="fas fa-external-link-alt" aria-hidden="true"></i> Project Page
           </a>
           {% endif %}
+
+          {% if page.slidesurl %}
+          <a href="{{ page.slidesurl }}" class="btn btn--warning btn--large" target="_blank">
+            <i class="fas fa-desktop" aria-hidden="true"></i> Slides
+          </a>
+          {% endif %}
+
+          {% if page.paperurl %}
+          <a href="{{ page.paperurl }}" class="btn btn--danger btn--large" target="_blank">
+            <i class="fas fa-file-alt" aria-hidden="true"></i> Paper
+          </a>
+          {% endif %}
+
+          {% if page.bibtexurl %}
+          <a href="{{ page.bibtexurl }}" class="btn btn--dark btn--large" target="_blank">
+            <i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX
+          </a>
+          {% endif %}
         </div>
 
         {% if page.citation %}
