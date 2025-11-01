@@ -1,0 +1,125 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <header>
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          
+          <div class="publication-meta">
+            {% if page.authors %}
+            <p class="publication-meta__item"><strong>Authors:</strong> {{ page.authors }}</p>
+            {% endif %}
+            
+            {% if page.venue %}
+            <p class="publication-meta__item"><strong>Published in:</strong> {{ page.venue }}</p>
+            {% endif %}
+            
+            {% if page.date %}
+            <p class="publication-meta__item"><strong>Date:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
+            {% endif %}
+            
+            {% if page.category %}
+            <p class="publication-meta__item"><strong>Category:</strong> <span class="publication-category">{{ page.category | capitalize }}</span></p>
+            {% endif %}
+          </div>
+        </header>
+      {% endunless %}
+
+      <section class="page__content" itemprop="text">
+        {% if page.teaser %}
+        <div class="publication-featured-image">
+          <img src="{{ page.teaser | prepend: '/images/' | prepend: base_path }}" alt="{{ page.title }}" class="publication-image">
+        </div>
+        {% endif %}
+
+        {% if page.abstract %}
+        <div class="publication-abstract">
+          <h2>Abstract</h2>
+          <p>{{ page.abstract }}</p>
+        </div>
+        {% endif %}
+
+        {{ content }}
+
+        <div class="publication-links-full">
+          {% if page.pdf %}
+          <a href="{{ page.pdf }}" class="btn btn--primary btn--large" target="_blank">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i> Download PDF
+          </a>
+          {% endif %}
+          
+          {% if page.source %}
+          <a href="{{ page.source }}" class="btn btn--info btn--large" target="_blank">
+            <i class="fab fa-github" aria-hidden="true"></i> Source Code
+          </a>
+          {% endif %}
+          
+          {% if page.project %}
+          <a href="{{ page.project }}" class="btn btn--success btn--large" target="_blank">
+            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Project Page
+          </a>
+          {% endif %}
+
+          {% if page.slidesurl %}
+          <a href="{{ page.slidesurl }}" class="btn btn--warning btn--large" target="_blank">
+            <i class="fas fa-desktop" aria-hidden="true"></i> Slides
+          </a>
+          {% endif %}
+
+          {% if page.paperurl %}
+          <a href="{{ page.paperurl }}" class="btn btn--danger btn--large" target="_blank">
+            <i class="fas fa-file-alt" aria-hidden="true"></i> Paper
+          </a>
+          {% endif %}
+
+          {% if page.bibtexurl %}
+          <a href="{{ page.bibtexurl }}" class="btn btn--dark btn--large" target="_blank">
+            <i class="fas fa-quote-right" aria-hidden="true"></i> BibTeX
+          </a>
+          {% endif %}
+        </div>
+
+        {% if page.citation %}
+        <div class="publication-citation">
+          <h2>Citation</h2>
+          <blockquote>
+            {{ page.citation }}
+          </blockquote>
+        </div>
+        {% endif %}
+      </section>
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+      </footer>
+
+      {% if page.share %}{% include social-share.html %}{% endif %}
+    </div>
+  </article>
+</div>

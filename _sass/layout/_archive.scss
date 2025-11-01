@@ -368,3 +368,94 @@
     gap: 15px;
     flex-wrap: wrap;
   }
+
+/*
+   Publication Single Page
+   ========================================================================== */
+
+   .publication-meta {
+    margin: 1em 0;
+    padding: 1em;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #07c;
+  }
+  
+  .publication-meta__item {
+    margin: 0.5em 0;
+    font-size: 0.95em;
+  }
+  
+  .publication-category {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #07c;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.8em;
+    text-transform: capitalize;
+  }
+  
+  .publication-featured-image {
+    text-align: center;
+    margin: 2em 0;
+  }
+  
+  .publication-image {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .publication-abstract {
+    margin: 2em 0;
+    padding: 1.5em;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+  }
+  
+  .publication-abstract h2 {
+    margin-top: 0;
+    color: #28a745;
+  }
+  
+  .publication-links-full {
+    margin: 2em 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .publication-links-full .btn {
+    min-width: 180px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .publication-citation {
+    margin: 2em 0;
+    padding: 1.5em;
+    background: #fff3cd;
+    border-radius: 8px;
+    border-left: 4px solid #ffc107;
+  }
+  
+  .publication-citation h2 {
+    margin-top: 0;
+    color: #856404;
+  }
+  
+  .publication-citation blockquote {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: italic;
+    color: #856404;
+  }
