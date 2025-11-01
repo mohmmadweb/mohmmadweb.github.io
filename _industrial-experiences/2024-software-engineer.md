@@ -8,7 +8,7 @@ start_date: 2023-06-01
 end_date: "Present"
 location: "San Francisco, CA"
 location_type: "Remote"
-logo: "industrial-experiences/tech-company-logo.png"
+logo: "academic-career/Sharif_University_Logo.png"
 description: "Leading development of scalable web applications and mentoring junior developers."
 skills:
   - "JavaScript"
@@ -17,9 +17,12 @@ skills:
   - "AWS"
   - "Docker"
 media:
-  - url: "portfolio/team-photo.jpg"
-    alt: "Development Team"
-    caption: "Our agile development team"
+  - url: "portfolio/IMG_3590.JPG"
+    alt: "Research Lab"
+    caption: "Our research laboratory setup"
+  - url: "portfolio/IMG_3165.JPG"
+    alt: "Another image"
+    caption: "Additional research work"
 ---
 
 ## Role Description
