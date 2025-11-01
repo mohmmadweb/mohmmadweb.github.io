@@ -5,7 +5,7 @@ permalink: /academic-career/2023/phd-researcher-machine-learning-5/
 employment_type: "Full-time"
 company: "Sharif University of Technology"
 start_date: 2020-02-15
-end_date: 2020-07-15
+end_date: 2024-05-16
 location: "Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
