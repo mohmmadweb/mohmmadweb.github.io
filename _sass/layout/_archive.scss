@@ -661,7 +661,7 @@
 
 .current-experience {
   border-left-color: #f39c12;
-  background: linear-gradient(135deg, #fff 0%, #fef9e7 100%);
+  background: #fff; // حذف gradient و رنگ‌های آبی/سبز/قرمز
 }
 
 .past-experience {
@@ -713,13 +713,13 @@
   font-weight: 600;
   
   a {
-    color: #2c3e50;
+    color: #2c3e50; // رنگ مشکی/خاکستری
     text-decoration: none;
     transition: color 0.2s ease;
     
     &:hover {
-      color: #3498db;
-      text-decoration: none;
+      color: #2c3e50; // حذف رنگ آبی
+      text-decoration: underline;
     }
   }
 }
@@ -731,33 +731,33 @@
 
 .employment-type {
   font-weight: 500;
-  color: #555;
+  color: #555; // رنگ خاکستری
   font-size: 0.95em;
 }
 
 .company {
-  color: #555;
+  color: #555; // رنگ خاکستری
   font-weight: 500;
   font-size: 0.95em;
 }
 
 .experience-details {
-  color: #666;
+  color: #666; // رنگ خاکستری
   font-size: 0.9em;
   line-height: 1.3;
 }
 
 .dates {
   font-weight: 500;
-  color: #555;
+  color: #555; // رنگ خاکستری
 }
 
 .location {
-  color: #666;
+  color: #666; // رنگ خاکستری
 }
 
 .location-type {
-  color: #666;
+  color: #666; // رنگ خاکستری
   font-style: italic;
 }
 
@@ -776,14 +776,14 @@
   padding: 1.5em;
   background: #f8f9fa;
   border-radius: 8px;
-  border-left: 4px solid #3498db;
+  border-left: 4px solid #bdc3c7; // حذف رنگ آبی
   font-size: 0.9em;
 }
 
 .experience-meta__item {
   margin: 0.5em 0;
   line-height: 1.4;
-  color: #2c3e50;
+  color: #2c3e50; // رنگ مشکی/خاکستری
 }
 
 .experience-description,
@@ -796,9 +796,9 @@
 .experience-skills h2,
 .experience-media h2 {
   font-size: 1.2em;
-  color: #2c3e50;
+  color: #2c3e50; // رنگ مشکی/خاکستری
   margin-bottom: 0.8em;
-  border-bottom: 1px solid #3498db;
+  border-bottom: 1px solid #bdc3c7; // حذف رنگ آبی
   padding-bottom: 0.3em;
 }
 
@@ -810,7 +810,7 @@
 }
 
 .skill-tag {
-  background: #3498db;
+  background: #95a5a6; // رنگ خاکستری به جای آبی
   color: white;
   padding: 0.3em 0.8em;
   border-radius: 16px;
@@ -819,7 +819,7 @@
   transition: all 0.2s ease;
   
   &:hover {
-    background: #2980b9;
+    background: #7f8c8d; // رنگ خاکستری تیره
     transform: translateY(-1px);
   }
 }
@@ -853,7 +853,7 @@
 .media-caption {
   margin-top: 0.5em;
   font-size: 0.8em;
-  color: #7f8c8d;
+  color: #7f8c8d; // رنگ خاکستری
   font-style: italic;
   line-height: 1.3;
 }
