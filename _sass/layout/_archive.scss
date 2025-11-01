@@ -246,7 +246,7 @@
   
   
   /*
-     Publications List
+     Publications Grid
      ========================================================================== */
   
   .publication-card {
@@ -267,7 +267,6 @@
     position: relative;
     flex: 0 0 250px;
     height: 160px;
-    overflow: hidden;
   
     @include breakpoint($medium) {
       flex: 0 0 200px;
@@ -402,9 +401,28 @@
   .publication-meta {
     margin: 1em 0;
     padding: 1em;
-    background: #f8f9fa;
     border-radius: 8px;
-    border-left: 4px solid #07c;
+    border-left: 4px solid;
+  }
+  
+  .publication-meta[data-category="journals"] {
+    background: #f0f9f0;
+    border-left-color: #138636;
+  }
+  
+  .publication-meta[data-category="conferences"] {
+    background: #f0fdff;
+    border-left-color: #27F5EE;
+  }
+  
+  .publication-meta[data-category="books"] {
+    background: #f0f4ff;
+    border-left-color: #4976BA;
+  }
+  
+  .publication-meta[data-category="preprint"] {
+    background: #fffbf0;
+    border-left-color: #FFBC11;
   }
   
   .publication-meta__item {
@@ -414,7 +432,7 @@
   
   .publication-category {
     display: inline-block;
-    padding: 4px 12px;
+    padding: 4px 10px;
     color: white;
     border-radius: 4px;
     font-size: 0.8em;
@@ -422,20 +440,20 @@
     font-weight: bold;
   }
   
-  .publication-category.journals {
+  .publication-category[data-category="journals"] {
     background: #138636;
   }
   
-  .publication-category.conferences {
+  .publication-category[data-category="conferences"] {
     background: #27F5EE;
     color: #000;
   }
   
-  .publication-category.books {
+  .publication-category[data-category="books"] {
     background: #4976BA;
   }
   
-  .publication-category.preprint {
+  .publication-category[data-category="preprint"] {
     background: #FFBC11;
     color: #000;
   }

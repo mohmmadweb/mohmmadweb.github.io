@@ -48,7 +48,7 @@ layout: default
           </div>
           {% endif %}
 
-          <div class="publication-meta">
+          <div class="publication-meta" data-category="{{ page.category }}">
             {% if page.authors %}
             <p class="publication-meta__item"><strong>Authors:</strong> {{ page.authors }}</p>
             {% endif %}
@@ -62,7 +62,7 @@ layout: default
             {% endif %}
             
             {% if page.category %}
-            <p class="publication-meta__item"><strong>Category:</strong> <span class="publication-category {{ page.category }}">{{ page.category | capitalize }}</span></p>
+            <p class="publication-meta__item"><strong>Category:</strong> <span class="publication-category" data-category="{{ page.category }}">{{ page.category | capitalize }}</span></p>
             {% endif %}
           </div>
         </header>
