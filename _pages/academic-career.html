@@ -19,15 +19,22 @@ author_profile: false
   {% assign present_experiences = academic_career | where: "end_date", "Present" | sort: "start_date" | reverse %}
   {% assign past_experiences = academic_career | where_exp: "item", "item.end_date != 'Present'" | sort: "end_date" | reverse %}
   
-  {% assign previous_year = "" %}
-  
   <div class="experiences-timeline">
-    {% for post in present_experiences %}
-      {% include archive-single-academic-career.html %}
-    {% endfor %}
+    {% comment %} Present Positions {% endcomment %}
+    {% if present_experiences.size > 0 %}
+      <h3 class="experience-year">Present Working Positions</h3>
+      {% for post in present_experiences %}
+        {% include archive-single-academic-career.html type="present" %}
+      {% endfor %}
+    {% endif %}
     
-    {% for post in past_experiences %}
-      {% include archive-single-academic-career.html %}
+    {% comment %} Past Positions grouped by year {% endcomment %}
+    {% assign grouped_past = past_experiences | group_by_exp: "post", "post.end_date | date: '%Y'" %}
+    {% for group in grouped_past %}
+      <h3 class="experience-year">{{ group.name }}</h3>
+      {% for post in group.items %}
+        {% include archive-single-academic-career.html type="past" %}
+      {% endfor %}
     {% endfor %}
   </div>
 {% else %}
