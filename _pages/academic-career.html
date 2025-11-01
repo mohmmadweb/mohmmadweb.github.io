@@ -17,15 +17,20 @@ author_profile: false
 {% assign academic_career = site.academic-career %}
 {% if academic_career.size > 0 %}
   <div class="experiences-timeline">
-    <!-- Present Positions -->
+    <!-- Present Positions - sorted by start_date descending -->
     <h3 class="experience-year">Present Working Positions</h3>
+    {% assign present_posts = "" | split: "," %}
     {% for post in academic_career %}
       {% if post.end_date == "Present" %}
-        {% include archive-single-academic-career.html type="list" %}
+        {% assign present_posts = present_posts | push: post %}
       {% endif %}
     {% endfor %}
+    {% assign present_sorted = present_posts | sort: "start_date" | reverse %}
+    {% for post in present_sorted %}
+      {% include archive-single-academic-career.html %}
+    {% endfor %}
     
-    <!-- Past Positions - manually group by year -->
+    <!-- Past Positions grouped by year and sorted by start_date -->
     {% assign years = "" | split: "," %}
     {% for post in academic_career %}
       {% if post.end_date != "Present" %}
@@ -40,13 +45,18 @@ author_profile: false
     
     {% for year in years_sorted %}
       <h3 class="experience-year">{{ year }}</h3>
+      {% assign year_posts = "" | split: "," %}
       {% for post in academic_career %}
         {% if post.end_date != "Present" %}
           {% assign post_year = post.end_date | date: "%Y" %}
           {% if post_year == year %}
-            {% include archive-single-academic-career.html type="list" %}
+            {% assign year_posts = year_posts | push: post %}
           {% endif %}
         {% endif %}
+      {% endfor %}
+      {% assign year_sorted = year_posts | sort: "start_date" | reverse %}
+      {% for post in year_sorted %}
+        {% include archive-single-academic-career.html %}
       {% endfor %}
     {% endfor %}
   </div>

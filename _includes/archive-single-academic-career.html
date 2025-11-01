@@ -1,5 +1,9 @@
 {% include base_path %}
 
+{% if include.post %}
+  {% assign post = include.post %}
+{% endif %}
+
 {% assign is_current = false %}
 {% if post.end_date == "Present" %}
   {% assign is_current = true %}
