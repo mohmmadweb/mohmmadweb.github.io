@@ -670,10 +670,10 @@
 
 .past-experience {
   border-left-color: #95a5a6;
-  background: #fff;
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
   
   &:hover {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #fff 0%, #e9ecef 100%);
   }
 }
 
@@ -778,4 +778,90 @@
   margin-top: 1.5em;
 }
 
-// بقیه استایل‌ها بدون تغییر...
+// Single experience page styles
+.experience-meta {
+  margin: 1.5em 0;
+  padding: 1.5em;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+  font-size: 0.9em;
+}
+
+.experience-meta__item {
+  margin: 0.5em 0;
+  line-height: 1.4;
+  color: #2c3e50;
+}
+
+.experience-description,
+.experience-skills,
+.experience-media {
+  margin: 2em 0;
+}
+
+.experience-description h2,
+.experience-skills h2,
+.experience-media h2 {
+  font-size: 1.2em;
+  color: #2c3e50;
+  margin-bottom: 0.8em;
+  border-bottom: 1px solid #3498db;
+  padding-bottom: 0.3em;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin-top: 0.8em;
+}
+
+.skill-tag {
+  background: #3498db;
+  color: white;
+  padding: 0.3em 0.8em;
+  border-radius: 16px;
+  font-size: 0.8em;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background: #2980b9;
+    transform: translateY(-1px);
+  }
+}
+
+.media-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.media-item {
+  text-align: center;
+  
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+    &:hover {
+      transform: scale(1.02);
+      opacity: 0.9;
+    }
+  }
+}
+
+.media-caption {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  color: #7f8c8d;
+  font-style: italic;
+  line-height: 1.3;
+}
