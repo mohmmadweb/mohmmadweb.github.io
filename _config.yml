@@ -290,15 +290,7 @@ defaults:
       layout: talk
       author_profile: false
       share: true  # _talks
-  # _t
-  - scope:
-      path: ""
-      type: t
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      comments: true
+
 
 
 # Sass/SCSS
