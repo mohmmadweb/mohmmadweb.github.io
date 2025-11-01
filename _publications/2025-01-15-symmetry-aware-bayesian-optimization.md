@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/preprint/2025-01-15-symmetry-aware-bayesian-optimization
 category: journals
 excerpt: "A novel approach for Bayesian optimization that leverages symmetry properties through max kernels for improved sample efficiency."
-date: 2025-01-15
+date: 2025-01-18
 authors: "Anthony Bardou, Antoine Gonon, Aryan Ahadinia, Patrick Thiran"
 venue: "arXiv preprint arXiv:2509.25051"
 teaser: "publications/images.jpeg"
