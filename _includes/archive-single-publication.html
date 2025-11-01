@@ -29,7 +29,9 @@
           {% endif %}
           alt="{{ title }}"
           onerror="this.style.display='none'">
-        <div class="publication-category-badge">{{ post.category | capitalize }}</div>
+        <div class="publication-category-badge" data-category="{{ post.category }}">
+          {{ post.category | capitalize }}
+        </div>
       </div>
       {% endif %}
       

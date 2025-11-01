@@ -62,7 +62,7 @@ layout: default
             {% endif %}
             
             {% if page.category %}
-            <p class="publication-meta__item"><strong>Category:</strong> <span class="publication-category">{{ page.category | capitalize }}</span></p>
+            <p class="publication-meta__item"><strong>Category:</strong> <span class="publication-category {{ page.category }}">{{ page.category | capitalize }}</span></p>
             {% endif %}
           </div>
         </header>
