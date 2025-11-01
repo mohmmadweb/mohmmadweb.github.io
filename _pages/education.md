@@ -1,5 +1,5 @@
 ---
-permalink: /education
+permalink: /education/
 title: "Educational Background"
 author_profile: false
 redirect_from:
