@@ -1,0 +1,55 @@
+{% include base_path %}
+
+{% if include.post %}
+  {% assign post = include.post %}
+{% endif %}
+
+{% assign is_current = false %}
+{% if post.end_date == "Present" %}
+  {% assign is_current = true %}
+{% endif %}
+
+<div class="{{ include.type | default: 'list' }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="experience-card {% if is_current %}current-industrial-experience{% else %}past-industrial-experience{% endif %}">
+      <div class="experience-header">
+        {% if post.logo %}
+        <div class="experience-logo">
+          <img src="{{ post.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ post.company }} logo">
+        </div>
+        {% endif %}
+        
+        <div class="experience-content">
+          <div class="experience-title-line">
+            <h3 class="experience-title" itemprop="headline">
+              {% if post.permalink %}
+                <a href="{{ post.permalink | relative_url }}" rel="permalink">{{ post.title }}</a>
+              {% else %}
+                {{ post.title }}
+              {% endif %}
+            </h3>
+            <span class="title-separator">-</span>
+            <span class="employment-type">{{ post.employment_type }}</span>
+            <span class="title-separator">-</span>
+            <span class="company">{{ post.company }}</span>
+          </div>
+          
+          <div class="experience-details">
+            <span class="dates">
+              {{ post.start_date | date: "%b %Y" }} - 
+              {% if post.end_date == "Present" %}
+                Present
+              {% else %}
+                {{ post.end_date | date: "%b %Y" }}
+              {% endif %}
+            </span>
+            <span class="separator">•</span>
+            <span class="location">{{ post.location }}</span>
+            <span class="separator">•</span>
+            <span class="location-type">{{ post.location_type }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
