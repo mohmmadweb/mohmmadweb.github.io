@@ -3,11 +3,12 @@ title: "PhD Researcher in Machine Learning"
 collection: academic-career
 layout: academic-career
 employment_type: "Full-time"
-company: "University of Technology"
+company: "Sharif University of Technology"
 start_date: 2024-01-15
 end_date: "Present"
 location: "Tehran, Iran"
 location_type: "On-site"
+logo: "academic-career/Sharif_University_Logo.png"
 description: "Conducting research on deep learning architectures for computer vision applications."
 skills:
   - "Python"
@@ -15,7 +16,7 @@ skills:
   - "TensorFlow"
   - "Computer Vision"
 media:
-  - url: "research-lab.jpg"
+  - url: "portfolio/IMG_3590.JPG"
     alt: "Research Lab"
     caption: "Our research laboratory setup"
 ---
