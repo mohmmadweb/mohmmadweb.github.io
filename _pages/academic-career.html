@@ -16,27 +16,38 @@ author_profile: false
 
 {% assign academic_career = site.academic-career %}
 {% if academic_career.size > 0 %}
-  {% assign present_experiences = academic_career | where: "end_date", "Present" %}
-  {% assign past_experiences = academic_career | where_exp: "item", "item.end_date != 'Present'" | sort: "end_date" | reverse %}
-  
   <div class="experiences-timeline">
     <!-- Present Positions -->
-    {% if present_experiences.size > 0 %}
-      <h3 class="experience-year">Present Working Positions</h3>
-      {% for post in present_experiences %}
+    <h3 class="experience-year">Present Working Positions</h3>
+    {% for post in academic_career %}
+      {% if post.end_date == "Present" %}
         {% include archive-single-academic-career.html type="list" %}
-      {% endfor %}
-    {% endif %}
-    
-    <!-- Past Positions - simple loop -->
-    {% assign last_year = "" %}
-    {% for post in past_experiences %}
-      {% assign post_year = post.end_date | date: "%Y" %}
-      {% if post_year != last_year %}
-        <h3 class="experience-year">{{ post_year }}</h3>
-        {% assign last_year = post_year %}
       {% endif %}
-      {% include archive-single-academic-career.html type="list" %}
+    {% endfor %}
+    
+    <!-- Past Positions - manually group by year -->
+    {% assign years = "" | split: "," %}
+    {% for post in academic_career %}
+      {% if post.end_date != "Present" %}
+        {% assign year = post.end_date | date: "%Y" %}
+        {% unless years contains year %}
+          {% assign years = years | push: year %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+    
+    {% assign years_sorted = years | sort | reverse %}
+    
+    {% for year in years_sorted %}
+      <h3 class="experience-year">{{ year }}</h3>
+      {% for post in academic_career %}
+        {% if post.end_date != "Present" %}
+          {% assign post_year = post.end_date | date: "%Y" %}
+          {% if post_year == year %}
+            {% include archive-single-academic-career.html type="list" %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
 {% else %}
