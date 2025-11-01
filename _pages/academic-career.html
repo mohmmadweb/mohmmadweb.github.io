@@ -9,9 +9,9 @@ author_profile: false
 
 {% assign academic_career = site.academic-career %}
 {% if academic_career.size > 0 %}
-{% assign present_experiences = academic_career | where: "end_date", "Present" | sort: "start_date" | reverse %}
-{% assign past_experiences = academic_career | where_exp: "item", "item.end_date != 'Present'" | sort: "end_date" | reverse %}
-{% assign sorted_experiences = present_experiences | concat: past_experiences %}
+  {% assign present_experiences = academic_career | where: "end_date", "Present" | sort: "start_date" | reverse %}
+  {% assign past_experiences = academic_career | where_exp: "item", "item.end_date != 'Present'" | sort: "end_date" | reverse %}
+  {% assign sorted_experiences = present_experiences | concat: past_experiences %}
 
   <div class="experiences-grid">
     {% for post in sorted_experiences %}
