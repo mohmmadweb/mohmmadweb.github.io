@@ -1,0 +1,48 @@
+{% include base_path %}
+
+<div class="{{ include.type | default: 'list' }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="experience-card" onclick="location.href='{{ base_path }}{{ post.url }}'" style="cursor: pointer;">
+      <div class="experience-content">
+        <h3 class="experience-title" itemprop="headline">
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+        </h3>
+        
+        <div class="experience-basic-info">
+          {% if post.employment_type %}
+          <span class="employment-type">{{ post.employment_type }}</span>
+          {% endif %}
+          
+          {% if post.company %}
+          <span class="company">at {{ post.company }}</span>
+          {% endif %}
+        </div>
+        
+        <div class="experience-dates-location">
+          {% if post.start_date %}
+          <span class="dates">
+            {{ post.start_date | date: "%b %Y" }} - 
+            {% if post.end_date == "Present" %}
+              Present
+            {% else %}
+              {{ post.end_date | date: "%b %Y" }}
+            {% endif %}
+          </span>
+          {% endif %}
+          
+          {% if post.location %}
+          <span class="location">• {{ post.location }}</span>
+          {% endif %}
+          
+          {% if post.location_type %}
+          <span class="location-type">({{ post.location_type }})</span>
+          {% endif %}
+        </div>
+        
+        {% if post.excerpt %}
+        <p class="experience-excerpt">{{ post.excerpt | markdownify | strip_html | truncate: 150 }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+</div>

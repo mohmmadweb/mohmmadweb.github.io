@@ -632,3 +632,137 @@
   gap: 8px;
   justify-content: center;
 }
+// Experience Cards
+.experience-card {
+  margin-bottom: 25px;
+  padding: 25px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+  }
+}
+
+.experience-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+
+  a {
+    color: #2c3e50;
+    text-decoration: none;
+
+    &:hover {
+      color: #3498db;
+    }
+  }
+}
+
+.experience-basic-info {
+  margin-bottom: 8px;
+  
+  .employment-type {
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  .company {
+    color: #7f8c8d;
+    font-style: italic;
+  }
+}
+
+.experience-dates-location {
+  margin-bottom: 12px;
+  color: #95a5a6;
+  font-size: 0.9em;
+
+  .dates {
+    font-weight: 500;
+  }
+  
+  .location {
+    color: #3498db;
+  }
+  
+  .location-type {
+    color: #e74c3c;
+  }
+}
+
+.experience-excerpt {
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.experiences-grid {
+  display: grid;
+  gap: 20px;
+}
+
+// Single experience page styles
+.experience-meta {
+  margin: 1.5em 0;
+  padding: 1.5em;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.experience-meta__item {
+  margin: 0.5em 0;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.experience-description,
+.experience-skills,
+.experience-media {
+  margin: 2em 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-tag {
+  background: #3498db;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.media-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.media-item {
+  text-align: center;
+  
+  img {
+    max-width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.media-caption {
+  margin-top: 8px;
+  font-size: 0.85em;
+  color: #666;
+}
