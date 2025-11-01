@@ -11,10 +11,21 @@ layout: default
 
 .page__inner-wrap {
   max-width: none;
+  width: 100%;
 }
 
 .page__content {
   max-width: none;
+  width: 100%;
+}
+
+#main {
+  max-width: none;
+}
+
+article.page {
+  max-width: none;
+  width: 100%;
 }
 </style>
 
@@ -62,7 +73,7 @@ layout: default
             {% endif %}
             
             {% if page.category %}
-            <p class="publication-meta__item"><strong>Category:</strong> <span class="publication-category">{{ page.category | capitalize }}</span></p>
+            <p class="publication-meta__item"><strong>Category:</strong> <span class="publication-category publication-category-{{ page.category }}">{{ page.category | capitalize }}</span></p>
             {% endif %}
           </div>
         </header>
@@ -70,7 +81,7 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {% if page.abstract %}
-        <div class="publication-abstract">
+        <div class="publication-abstract publication-abstract-{{ page.category }}">
           <h2>Abstract</h2>
           <p>{{ page.abstract }}</p>
         </div>
@@ -80,26 +91,26 @@ layout: default
 
         <div class="publication-links-full">
           {% if page.pdf %}
-          <a href="{{ page.pdf }}" class="btn btn--primary btn--large" target="_blank">
+          <a href="{{ page.pdf }}" class="btn btn--primary btn--large publication-btn-pdf" target="_blank">
             <i class="fas fa-file-pdf" aria-hidden="true"></i> Download PDF
           </a>
           {% endif %}
           
           {% if page.source %}
-          <a href="{{ page.source }}" class="btn btn--info btn--large" target="_blank">
+          <a href="{{ page.source }}" class="btn btn--info btn--large publication-btn-source" target="_blank">
             <i class="fab fa-github" aria-hidden="true"></i> Source Code
           </a>
           {% endif %}
           
           {% if page.project %}
-          <a href="{{ page.project }}" class="btn btn--success btn--large" target="_blank">
+          <a href="{{ page.project }}" class="btn btn--success btn--large publication-btn-project" target="_blank">
             <i class="fas fa-external-link-alt" aria-hidden="true"></i> Project Page
           </a>
           {% endif %}
         </div>
 
         {% if page.citation %}
-        <div class="publication-citation">
+        <div class="publication-citation publication-citation-{{ page.category }}">
           <h2>Citation</h2>
           <blockquote>
             {{ page.citation }}
