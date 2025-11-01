@@ -19,6 +19,9 @@ media:
   - url: "portfolio/IMG_3590.JPG"
     alt: "Research Lab"
     caption: "Our research laboratory setup"
+  - url: "portfolio/IMG_3165.JPG"
+    alt: "Another image"
+    caption: "Additional research work"
 ---
 
 ## Research Focus

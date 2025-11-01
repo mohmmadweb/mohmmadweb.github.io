@@ -20,13 +20,13 @@
         {% endif %}
         
         <div class="experience-content">
-          <h3 class="experience-title" itemprop="headline">
-            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
-          </h3>
-          
-          <div class="experience-meta-line">
+          <div class="experience-title-line">
+            <h3 class="experience-title" itemprop="headline">
+              <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+            </h3>
+            <span class="title-separator">-</span>
             <span class="employment-type">{{ post.employment_type }}</span>
-            <span class="separator">•</span>
+            <span class="title-separator">-</span>
             <span class="company">{{ post.company }}</span>
           </div>
           

@@ -99,13 +99,19 @@ layout: default
 
         {% if page.media %}
         <div class="experience-media">
-          <h2>Media</h2>
+          <h2>Gallery</h2>
           <div class="media-gallery">
-            {% for media in page.media %}
-            <div class="media-item">
-              <img src="{{ media.url | prepend: '/images/' | prepend: base_path }}" alt="{{ media.alt }}">
-              <p class="media-caption">{{ media.caption }}</p>
-            </div>
+            {% for media_item in page.media %}
+              {% if media_item.url %}
+              <div class="media-item">
+                <img src="{{ media_item.url | prepend: '/images/' | prepend: base_path }}" 
+                     alt="{{ media_item.alt | default: 'Gallery image' }}"
+                     loading="lazy">
+                {% if media_item.caption %}
+                <p class="media-caption">{{ media_item.caption }}</p>
+                {% endif %}
+              </div>
+              {% endif %}
             {% endfor %}
           </div>
         </div>
