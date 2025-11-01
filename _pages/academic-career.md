@@ -7,9 +7,17 @@ author_profile: false
 
 {% include base_path %}
 
-<div class="experiences-grid">
-  {% assign sorted_experiences = site.academic-career | sort: "end_date" | reverse %}
-  {% for post in sorted_experiences %}
-    {% include archive-single-academic-career.html %}
-  {% endfor %}
-</div>
+{% assign academic_career = site.academic-career | default: empty_array %}
+{% if academic_career.size > 0 %}
+  {% assign present_experiences = academic_career | where: "end_date", "Present" | sort: "start_date" | reverse %}
+  {% assign past_experiences = academic_career | where_exp: "item", "item.end_date != 'Present'" | sort: "end_date" | reverse %}
+  {% assign sorted_experiences = present_experiences | concat: past_experiences %}
+
+  <div class="experiences-grid">
+    {% for post in sorted_experiences %}
+      {% include archive-single-academic-career.html %}
+    {% endfor %}
+  </div>
+{% else %}
+  <p>No academic career experiences found.</p>
+{% endif %}
