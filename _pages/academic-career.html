@@ -29,7 +29,7 @@ author_profile: false
     {% endif %}
     
     <!-- Past Positions grouped by year -->
-    {% assign grouped_past = past_experiences | group_by_exp: "post", "post.end_date | date: '%Y'" %}
+    {% assign grouped_past = past_experiences | group_by_exp: "post", "post.end_date | date: '%Y'" | sort: "name" | reverse %}
     {% for group in grouped_past %}
       <h3 class="experience-year">{{ group.name }}</h3>
       {% for post in group.items %}
