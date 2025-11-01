@@ -1,7 +1,7 @@
 ---
 permalink: /education/
 title: "Educational Background"
-author_profile: false
+author_profile: true
 redirect_from:
   # - /education/
   # - /education.html
