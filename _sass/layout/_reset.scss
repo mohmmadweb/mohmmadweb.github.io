@@ -25,13 +25,13 @@ body { margin: 0; }
 /* Selected elements */
 
 ::-moz-selection {
-  color: #b3d4fc;
-  background: #000;
+  color: #000;
+  background: #b3d4fc;
 }
 
 ::selection {
-  color: #b3d4fc;
-  background: #000;
+  color: #000;
+  background: #b3d4fc;
 }
 
 /* Display HTML5 elements in IE6-9 and FF3 */
