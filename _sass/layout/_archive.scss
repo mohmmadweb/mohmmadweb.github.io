@@ -370,10 +370,22 @@
   }
 
 /*
-   Publication Single Page
+   Publication Single Page - Full Width
    ========================================================================== */
 
-   .publication-meta {
+   .page {
+    max-width: none !important;
+  }
+  
+  .page__inner-wrap {
+    max-width: none !important;
+  }
+  
+  .page__content {
+    max-width: none !important;
+  }
+  
+  .publication-meta {
     margin: 1em 0;
     padding: 1em;
     background: #f8f9fa;
@@ -399,12 +411,15 @@
   .publication-featured-image {
     text-align: center;
     margin: 2em 0;
+    width: 100%;
   }
   
   .publication-image {
-    max-width: 800px;
+    max-width: 100%;
     width: 100%;
     height: auto;
+    max-height: 500px;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }

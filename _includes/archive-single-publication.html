@@ -6,6 +6,10 @@
   {% assign teaser = site.teaser %}
 {% endif %}
 
+{% if post.teaser %}
+  {% capture teaser %}{{ post.teaser }}{% endcapture %}
+{% endif %}
+
 {% if post.id %}
   {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
@@ -23,7 +27,8 @@
           {% else %}
             "{{ teaser | prepend: '/images/' | prepend: base_path }}"
           {% endif %}
-          alt="{{ title }}">
+          alt="{{ title }}"
+          onerror="this.style.display='none'">
         <div class="publication-category-badge">{{ post.category | capitalize }}</div>
       </div>
       {% endif %}
