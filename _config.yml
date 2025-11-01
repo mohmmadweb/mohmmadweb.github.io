@@ -222,7 +222,7 @@ collections:
     permalink: /:collection/:path/
   publications:
     output: true
-    permalink: /publication/:category/:path/
+    permalink: /publication/:category/:year-:month-:day-:title
   portfolio:
     output: true
     permalink: /:collection/:path/
