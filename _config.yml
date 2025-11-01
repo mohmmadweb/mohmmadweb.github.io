@@ -39,7 +39,7 @@ author:
   orcid            : "https://orcid.org/0009-0008-1061-6884"
   semantic         : # URL
   pubmed           : # URL
-  researchgate     : # URL
+  researchgate     : https://www.researchgate.net/profile/Mohammad-Aghaei-16/research
   scopus           : # URL
 
   # Repositories and software development
@@ -60,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/mohammad--aghaei/"
+  linkedin         : "mohammad--aghaei/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

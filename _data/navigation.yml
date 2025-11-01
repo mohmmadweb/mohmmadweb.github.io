@@ -8,8 +8,6 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-
-
   - title: "Education"
     url: /education/
 
@@ -19,11 +17,11 @@ main:
   - title: "Academic Career"  
     url: /academic-career/
 
-  - title: "Industrial Experiences"  
-    url: /industrial-experiences/
-
   - title: "Honors & Awards"
     url: /honors-and-awards/
+
+  - title: "Industrial Experiences"  
+    url: /industrial-experiences/
 
   - title: "Talks"
     url: /talks/    

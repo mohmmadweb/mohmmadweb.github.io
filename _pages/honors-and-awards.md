@@ -1,0 +1,8 @@
+---
+permalink: /
+title: "Honors and Awards"
+author_profile: true
+redirect_from: 
+  - /honors-and-awards/
+  - /honors-and-awards.html
+---
