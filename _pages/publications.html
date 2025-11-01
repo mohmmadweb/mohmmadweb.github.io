@@ -17,7 +17,7 @@ author_profile: true
     {% if posts_in_category.size > 0 %}
       <h2 id="{{ category[0] }}">{{ category[1].title }}</h2>
       <hr />
-      <div class="grid__wrapper">
+      <div class="publications-grid">
         {% for post in posts_in_category %}
           {% include archive-single-publication.html %}
         {% endfor %}
@@ -25,7 +25,9 @@ author_profile: true
     {% endif %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single-publication.html %}
-  {% endfor %}
+  <div class="publications-grid">
+    {% for post in site.publications reversed %}
+      {% include archive-single-publication.html %}
+    {% endfor %}
+  </div>
 {% endif %}
