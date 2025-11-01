@@ -4,7 +4,7 @@ title: "Educational Background"
 author_profile: false
 redirect_from: 
   # - /education/
-  - /education.html
+  # - /education.html
 ---
 
 ## Education
