@@ -2,7 +2,7 @@
 permalink: /
 title: "About Mohammad Aghaei"
 author_profile: true
-redirect_from:
+redirect_from: 
   - /about/
   - /about.html
 ---
@@ -10,23 +10,71 @@ redirect_from:
 Mohammad Aghaei received his BS degree from University of Isfahan, and got the full grade of the BS project under the supervision of Dr. Nematbakhsh. He is currently studying MS degree in Artificial Intelligence and member of DML lab under the supervision of prof. Rabiee. Formerly he was a web developer and developed many websites to help their business. He also holds several certified degrees from different organizations in the field of computer science. He works with many well-known companies and use his knowledge about computer to help them grow their business and subsequently increase their sales. Considering the titles and positions he has held in these companies, he is a great leader who has the ability to manage various projects simultaneously.
 
 <div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0;">
-  <img src="/images/portfolio/IMG_2174.jpg" alt="Photo 1" style="width: calc(33.333% - 10px); height: 350px; object-fit: cover; border-radius: 10px;">
-  <img src="/images/portfolio/IMG_3165.JPG" alt="Photo 2" style="width: calc(33.333% - 10px); height: 350px; object-fit: cover; border-radius: 10px;">
-  <img src="/images/portfolio/IMG_3590.JPG" alt="Photo 3" style="width: calc(33.333% - 10px); height: 350px; object-fit: cover; border-radius: 10px;">
+  <img src="/images/portfolio/IMG_2174.jpg" alt="Photo 1" style="width: calc(33.333% - 10px); height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;" onclick="openModal('/images/portfolio/IMG_2174.jpg')">
+  <img src="/images/portfolio/IMG_3165.JPG" alt="Photo 2" style="width: calc(33.333% - 10px); height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;" onclick="openModal('/images/portfolio/IMG_3165.JPG')">
+  <img src="/images/portfolio/IMG_3590.JPG" alt="Photo 3" style="width: calc(33.333% - 10px); height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;" onclick="openModal('/images/portfolio/IMG_3590.JPG')">
 </div>
+
+<!-- Modal -->
+<div id="imageModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); justify-content: center; align-items: center;">
+  <span style="position: absolute; top: 20px; right: 35px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; z-index: 1001;" onclick="closeModal()">&times;</span>
+  <img id="modalImage" style="max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 10px;">
+</div>
+
+<script>
+function openModal(src) {
+  document.getElementById('modalImage').src = src;
+  document.getElementById('imageModal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('imageModal').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside the image
+document.getElementById('imageModal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closeModal();
+  }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeModal();
+  }
+});
+</script>
+
+<style>
+#imageModal {
+  transition: opacity 0.3s ease;
+}
+
+#modalImage {
+  transition: transform 0.3s ease;
+}
+
+img[onclick]:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+</style>
 
 ## Soft Skills
 
-| Column 1            | Column 2                        |
-| ------------------- | ------------------------------- |
-| Adaptability        | Collaboration                   |
-| Teamwork            | Public relation and negotiation |
-| Problem solving     | Communication skills            |
-| Crisis management   | Enlightened                     |
-| Critical thinking   | Responsibility                  |
-| Work ethic          | Management                      |
-| Leadership          | Interpersonal skills            |
-| Conflict resolution | Contractual affairs and sales   |
+| Column 1 | Column 2 |
+|----------|----------|
+| Adaptability | Collaboration |
+| Teamwork | Public relation and negotiation |
+| Problem solving | Communication skills |
+| Crisis management | Enlightened |
+| Critical thinking | Responsibility |
+| Work ethic | Management |
+| Leadership | Interpersonal skills |
+| Conflict resolution | Contractual affairs and sales |
 
 ## A Little Extra About Me (My Hobbies)
 
