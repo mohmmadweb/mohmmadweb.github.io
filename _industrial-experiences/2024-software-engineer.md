@@ -4,6 +4,7 @@ collection: industrial-experiences
 permalink: /industrial-experiences/present/senior-software-engineer/
 employment_type: "Full-time"
 company: "Tech Company Inc."
+company_url: "https://www.startupxyz.com"
 start_date: 2025-06-01
 end_date: "Present"
 location: "San Francisco, CA"

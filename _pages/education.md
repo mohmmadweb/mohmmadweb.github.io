@@ -11,7 +11,7 @@ redirect_from:
 
 **SEP 2023 – [EXPECTED] AUG 2025**  
 **M.Sc. – Artificial Intelligence**, Sharif University of Technology, Tehran, IRAN  
-Thesis Title: "Unknown" under the supervision of prof. Rabiee
+Thesis Title: "Faimess-Aware Community Detection in Complex Networks" under the supervision of prof. Rabiee
 
 **SEP 2019 – AUG 2023**  
 **B.Sc. – Computer Software Engineering** (GPA: 3.3/4.0), University of Isfahan, Isfahan, IRAN  
@@ -25,24 +25,30 @@ _See the relevant coursework at the end of this CV._
 
 ## Research Interests
 
-- Machine learningg
+- Large Language Models (LLM)
+- Machine learning
 - Deep learning
-- Data science
-- Data Analysis
-- Graph Mining
+- Natural Language Processing (NLP)
+- Social Network Analysis
+- Data Mining
 - Social Networks
 - Complex Network
+- Graph Networks
+- Graph Mining
+- Data science
+- Data Analysis
 - Business Intelligence
 - Software Engineering
 
 ## Technical Skills
-•	Programming C/C++, Java, Python 
-•	Web development: Javascript, HTML, CSS, PHP, Laravel
-•	Software Engineering: Design Patterns, OO Design and Analysis (USDP, RUP), Software Project Management, Agile, Scrum
-•	Modeling: UML, BPMN
-•	Database: MySQL and NoSQL and Familiar with Oracle
-•	Quality Assurance
-•	WordPress
+• Programming: Python (Primary), C/C++, Java
+• Machine Learning & Deep Learning: Scikit-learn, TensorFlow, PyTorch
+• Natural Language Processing: Transformers, LLM Fine-tuning, Text Processing
+• Data Science & Analysis: Pandas, NumPy, Matplotlib, Seaborn, Statistical Analysis
+• Graph Networks & Social Network Analysis: NetworkX, Graph Algorithms
+• Database: MySQL, NoSQL, Oracle
+• Web Development: JavaScript, HTML, CSS, PHP, Laravel
+• Software Engineering: Object-Oriented Design, UML, Agile, Scrum
 
 ## Relevant Coursework
 

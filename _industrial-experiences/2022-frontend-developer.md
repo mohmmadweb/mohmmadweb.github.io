@@ -4,6 +4,7 @@ collection: industrial-experiences
 permalink: /industrial-experiences/2022/frontend-developer/
 employment_type: "Full-time"
 company: "Startup XYZ"
+company_url: "https://www.startupxyz.com"
 start_date: 2021-03-15
 end_date: 2022-12-20
 location: "New York, NY"
