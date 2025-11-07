@@ -24,6 +24,9 @@ media:
   - url: "portfolio/IMG_3165.JPG"
     alt: "Another image"
     caption: "Additional research work"
+  - url: "portfolio/IMG_3165.JPG"
+    alt: "Another image2"
+    caption: "Additional research work"
 ---
 
 ## Role Description
