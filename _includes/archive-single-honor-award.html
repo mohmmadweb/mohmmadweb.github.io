@@ -8,9 +8,9 @@
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <div class="experience-card {% if item.type == 'license' %}license-card{% elsif item.type == 'honor' %}honor-card{% else %}award-card{% endif %}">
       <div class="experience-header">
-        {% if item.image %}
+        {% if item.logo %}
         <div class="experience-logo">
-          <img src="{{ item.image | prepend: '/images/' | prepend: base_path }}" alt="{{ item.title }} image">
+          <img src="{{ item.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ item.institution }} logo">
         </div>
         {% endif %}
         
@@ -40,6 +40,14 @@
           {% if item.description %}
           <div class="honor-description">
             <p>{{ item.description }}</p>
+          </div>
+          {% endif %}
+
+          {% if item.document_image %}
+          <div class="document-button-container">
+            <button class="see-document-btn" onclick="openDocumentModal('{{ item.document_image | prepend: '/images/' | prepend: base_path }}')">
+              See document
+            </button>
           </div>
           {% endif %}
         </div>
