@@ -1,0 +1,49 @@
+{% include base_path %}
+
+{% if include.item %}
+  {% assign item = include.item %}
+{% endif %}
+
+<div class="{{ include.type | default: 'list' }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="experience-card {% if item.type == 'license' %}license-card{% elsif item.type == 'honor' %}honor-card{% else %}award-card{% endif %}">
+      <div class="experience-header">
+        {% if item.image %}
+        <div class="experience-logo">
+          <img src="{{ item.image | prepend: '/images/' | prepend: base_path }}" alt="{{ item.title }} image">
+        </div>
+        {% endif %}
+        
+        <div class="experience-content">
+          <div class="experience-title-line">
+            <h3 class="experience-title" itemprop="headline">
+              {{ item.title }}
+            </h3>
+            <span class="title-separator">-</span>
+            <span class="honor-type">{{ item.type | capitalize }}</span>
+            <span class="title-separator">-</span>
+            <span class="institution">
+              {% if item.institution_url %}
+                <a href="{{ item.institution_url }}" target="_blank" rel="noopener noreferrer">{{ item.institution }}</a>
+              {% else %}
+                {{ item.institution }}
+              {% endif %}
+            </span>
+          </div>
+          
+          <div class="experience-details">
+            <span class="dates">
+              {{ item.date | date: "%b %Y" }}
+            </span>
+          </div>
+          
+          {% if item.description %}
+          <div class="honor-description">
+            <p>{{ item.description }}</p>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </article>
+</div>

@@ -894,3 +894,28 @@
     box-shadow: 0 2px 12px rgba(149, 165, 166, 0.15);
   }
 }
+
+.license-card {
+  border-left: 4px solid #3498db;
+  background: linear-gradient(90deg, rgba(52, 152, 219, 0.05) 0%, transparent 100%);
+}
+
+.honor-card {
+  border-left: 4px solid #e74c3c;
+  background: linear-gradient(90deg, rgba(231, 76, 60, 0.05) 0%, transparent 100%);
+}
+
+.award-card {
+  border-left: 4px solid #2ecc71;
+  background: linear-gradient(90deg, rgba(46, 204, 113, 0.05) 0%, transparent 100%);
+}
+
+.honor-type {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.license-card .honor-type { color: #3498db; }
+.honor-card .honor-type { color: #e74c3c; }
+.award-card .honor-type { color: #2ecc71; }
