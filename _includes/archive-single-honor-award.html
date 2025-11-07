@@ -35,19 +35,17 @@
             <span class="dates">
               {{ item.date | date: "%b %Y" }}
             </span>
+            {% if item.document_image %}
+            <span class="separator">•</span>
+            <button class="see-document-btn" onclick="openDocumentModal('{{ item.document_image | prepend: '/images/' | prepend: base_path }}')">
+              See document
+            </button>
+            {% endif %}
           </div>
           
           {% if item.description %}
           <div class="honor-description">
             <p>{{ item.description }}</p>
-          </div>
-          {% endif %}
-
-          {% if item.document_image %}
-          <div class="document-button-container">
-            <button class="see-document-btn" onclick="openDocumentModal('{{ item.document_image | prepend: '/images/' | prepend: base_path }}')">
-              See document
-            </button>
           </div>
           {% endif %}
         </div>
