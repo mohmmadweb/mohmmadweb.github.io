@@ -1,7 +1,7 @@
 ---
 title: "Dean's List of Distinguished Students"
 type: license  
-date: 2022-12-20
+date: 2023-12-20
 institution: "Sharif University of Technology"
 institution_url: "https://www.sharif.edu/"
 institution_logo: "academic-career/Sharif_University_Logo.png"
