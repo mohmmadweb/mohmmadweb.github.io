@@ -31,7 +31,13 @@
             <span class="title-separator">-</span>
             <span class="employment-type">{{ post.employment_type }}</span>
             <span class="title-separator">-</span>
-            <span class="company">{{ post.company }}</span>
+            <span class="company">
+              {% if post.company_url %}
+                <a href="{{ post.company_url }}" target="_blank" rel="noopener noreferrer">{{ post.company }}</a>
+              {% else %}
+                {{ post.company }}
+              {% endif %}
+            </span>
           </div>
           
           <div class="experience-details">
