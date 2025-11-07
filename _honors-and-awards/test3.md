@@ -1,9 +1,8 @@
 ---
-title: "Best Research Paper Award"
+title: "Sample Award"
 type: award
-date: 2023-09-10  
-institution: "International Conference on AI"
-institution_url: "https://icai-conference.org/"
-image: "honors/best-paper.jpg"
-description: "Awarded for innovative research in machine learning applications."
+date: 2024-01-01
+institution: "Sample University"
+institution_url: "https://example.com"
+description: "This is a sample award for testing."
 ---

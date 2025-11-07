@@ -216,7 +216,7 @@ collections:
     output: true
     permalink: /academic-career/:path/
   honors-and-awards:
-    output: false
+    output: true
     permalink: /honors-and-awards/:path/
   industrial-experiences:
     output: true
@@ -266,6 +266,15 @@ defaults:
       type: academic-career
     values:
       layout: academic-career
+      author_profile: false
+      share: false
+      comments: true
+    # _honors-and-awards
+  - scope:
+      path: ""
+      type: honors-and-awards
+    values:
+      layout: single
       author_profile: false
       share: false
       comments: true
