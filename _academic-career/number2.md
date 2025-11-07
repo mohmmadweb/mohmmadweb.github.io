@@ -1,9 +1,10 @@
 ---
 title: "PhD Researcher in Machine Learning"
 collection: academic-career
-permalink: /academic-career/2024/phd-researcher-machine-learning-2/
+permalink: /academic-career/present/phd-researcher-machine-learning-2/
 employment_type: "Full-time"
 company: "Sharif University of Technology"
+company_url: "https://www.sharif.edu/"
 start_date: 2024-02-15
 end_date: "Present"
 location: "Tehran, Iran"
