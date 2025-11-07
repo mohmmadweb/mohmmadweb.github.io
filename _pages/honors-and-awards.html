@@ -1,0 +1,53 @@
+---
+layout: archive
+title: "Honors and Awards"
+permalink: /honors-and-awards/
+author_profile: false
+---
+
+{% include base_path %}
+
+<style>
+.page__content {
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+.license-card { border-left: 4px solid #3498db; }
+.honor-card { border-left: 4px solid #e74c3c; }
+.award-card { border-left: 4px solid #2ecc71; }
+</style>
+
+{% assign honors_awards = site.honors-and-awards %}
+{% if honors_awards.size > 0 %}
+  <div class="experiences-timeline">
+    {% assign years = "" | split: "," %}
+    {% for item in honors_awards %}
+      {% assign year = item.date | date: "%Y" %}
+      {% unless years contains year %}
+        {% assign years = years | push: year %}
+      {% endunless %}
+    {% endfor %}
+    
+    {% assign years_sorted = years | sort | reverse %}
+    
+    {% for year in years_sorted %}
+      <h3 class="experience-year">{{ year }}</h3>
+      {% assign year_items = "" | split: "," %}
+      {% for item in honors_awards %}
+        {% assign item_year = item.date | date: "%Y" %}
+        {% if item_year == year %}
+          {% assign year_items = year_items | push: item %}
+        {% endif %}
+      {% endfor %}
+      {% assign year_sorted = year_items | sort: "date" | reverse %}
+      {% for item in year_sorted %}
+        {% include archive-single-honor-award.html %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+{% else %}
+  <p style="text-align: center; color: #7f8c8d; font-style: italic; margin: 2em 0;">
+    No honors or awards found.
+  </p>
+{% endif %}
