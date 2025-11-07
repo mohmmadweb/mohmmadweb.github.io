@@ -1,10 +1,10 @@
 ---
 title: "Dean's List of Distinguished Students"
-type: honor  
+type: license  
 date: 2022-12-20
 institution: "Sharif University of Technology"
 institution_url: "https://www.sharif.edu/"
-logo: "honors/sharif-logo.png"
-document_image: "honors/deans-list-certificate.jpg"
+institution_logo: "academic-career/Sharif_University_Logo.png"
+document_image: "portfolio/IMG_3590.JPG"
 description: "Awarded for academic excellence and top 5% GPA in the faculty."
 ---
