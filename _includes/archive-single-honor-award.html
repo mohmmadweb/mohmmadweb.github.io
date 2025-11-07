@@ -31,15 +31,19 @@
             </span>
           </div>
           
-          <div class="experience-details">
-            <span class="dates">
-              {{ item.date | date: "%b %Y" }}
-            </span>
+          <div class="experience-details-container">
+            <div class="experience-details">
+              <span class="dates">
+                {{ item.date | date: "%b %Y" }}
+              </span>
+            </div>
+            
             {% if item.document_image %}
-            <span class="separator">•</span>
-            <button class="see-document-btn" onclick="openDocumentModal('{{ item.document_image | prepend: '/images/' | prepend: base_path }}')">
-              See document
-            </button>
+            <div class="document-button-wrapper">
+              <button class="see-document-btn" onclick="openDocumentModal('{{ item.document_image | prepend: '/images/' | prepend: base_path }}')">
+                See document
+              </button>
+            </div>
             {% endif %}
           </div>
           
