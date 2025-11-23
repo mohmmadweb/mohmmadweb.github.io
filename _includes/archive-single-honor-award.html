@@ -34,14 +34,14 @@
           <div class="experience-details-container">
             <div class="experience-details">
               <span class="dates">
-                {{ item.date | date: "%b %Y" }}
+                {{ item.date | date: "%B %Y" }}
               </span>
             </div>
             
             {% if item.document_image %}
             <div class="document-button-wrapper">
               <button class="see-document-btn" onclick="openDocumentModal('{{ item.document_image | prepend: '/images/' | prepend: base_path }}')">
-                See document
+                📄 View Document
               </button>
             </div>
             {% endif %}

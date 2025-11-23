@@ -9,47 +9,21 @@ author_profile: false
 
 <style>
 .page__content {
-  font-size: 0.85em;
-  line-height: 1.4;
+  font-size: 0.9em;
+  line-height: 1.5;
 }
 
-.license-card { border-left: 4px solid #3498db; }
-.honor-card { border-left: 4px solid #e74c3c; }
-.award-card { border-left: 4px solid #2ecc71; }
-
-.see-document-btn {
-  background: #3498db;
-  color: white;
-  border: none;
-  padding: 6px 14px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.85em;
-  transition: background 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
+.honors-section {
+  position: relative;
 }
 
-.see-document-btn:hover {
-  background: #2980b9;
-}
-
-.experience-details-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 5px;
-}
-
-.experience-details {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.document-button-wrapper {
-  margin-left: auto;
+.page__title {
+  color: #8e44ad;
+  border-bottom: 3px solid #9b59b6;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-weight: 700;
 }
 
 #documentModal {
@@ -60,7 +34,7 @@ author_profile: false
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
   justify-content: center;
   align-items: center;
 }
@@ -68,35 +42,41 @@ author_profile: false
 .modal-content {
   position: relative;
   background: white;
-  border-radius: 10px;
-  padding: 15px;
-  max-width: 70%;
-  max-height: 80%;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 80%;
+  max-height: 85%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .close-document {
   position: absolute;
-  top: 8px;
-  right: 12px;
+  top: 10px;
+  right: 15px;
   color: #333;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   cursor: pointer;
   z-index: 1001;
   background: white;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.close-document:hover {
+  background: #f8f9fa;
+  transform: scale(1.1);
 }
 
 #documentImage {
-  max-width: 1000px;
-  max-height: 500px;
+  max-width: 800px;
+  max-height: 600px;
   object-fit: contain;
   border-radius: 8px;
   display: block;
@@ -105,7 +85,7 @@ author_profile: false
 
 {% assign honors_awards = site.honors-and-awards %}
 {% if honors_awards.size > 0 %}
-  <div class="experiences-timeline">
+  <div class="honors-section experiences-timeline">
     {% assign years = "" | split: "," %}
     {% for item in honors_awards %}
       {% assign year = item.date | date: "%Y" %}
@@ -132,9 +112,9 @@ author_profile: false
     {% endfor %}
   </div>
 {% else %}
-  <p style="text-align: center; color: #7f8c8d; font-style: italic; margin: 2em 0;">
-    No honors or awards found.
-  </p>
+  <div class="empty-state">
+    <p>No honors or awards found.</p>
+  </div>
 {% endif %}
 
 <div id="documentModal">
