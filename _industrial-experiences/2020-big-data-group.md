@@ -4,7 +4,7 @@ collection: industrial-experiences
 permalink: /industrial-experiences/2020/big-data-group/
 employment_type: "Full-time"
 company: "Big Data Group - University of Isfahan"
-company_url: ""
+company_url: "https://bigdata-ui.ir/fa/home-fa/"
 start_date: 2019-11-01
 end_date: 2020-11-30
 location: "Isfahan, Iran"

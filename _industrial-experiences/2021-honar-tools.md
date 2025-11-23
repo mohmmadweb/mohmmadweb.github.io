@@ -4,12 +4,12 @@ collection: industrial-experiences
 permalink: /industrial-experiences/2021/honar-tools/
 employment_type: "Full-time"
 company: "Honar Tools"
-company_url: ""
+company_url: "https://honartools.ir"
 start_date: 2020-10-01
 end_date: 2021-10-31
 location: "Iran"
 location_type: "Remote"
-logo: ""
+logo: "industrial-experiences/honartools.jpeg"
 description: "Developed e-commerce website for tools retailer."
 skills:
   - "Tools Retail"

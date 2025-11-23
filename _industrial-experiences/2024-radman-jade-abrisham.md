@@ -1,15 +1,15 @@
 ---
-title: "IT Consultant and Web Developer"
+title: "Head of IT Department"
 collection: industrial-experiences
 permalink: /industrial-experiences/2024/radman-jade-abrisham/
 employment_type: "Full-time"
 company: "Radman Jade Abrisham Factory"
-company_url: ""
+company_url: "ahanamn.com"
 start_date: 2020-06-01
 end_date: 2024-12-31
 location: "Iran"
 location_type: "On-site"
-logo: ""
+logo: "industrial-experiences/ahanamn.png"
 description: "Provided IT consulting and web development services for textile factory."
 skills:
   - "Web Development"

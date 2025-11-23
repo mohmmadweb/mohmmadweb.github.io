@@ -4,12 +4,12 @@ collection: industrial-experiences
 permalink: /industrial-experiences/2021/siavash-exchange/
 employment_type: "Full-time"
 company: "Siavash Exchange"
-company_url: ""
+company_url: "https://siavashexchange.com/"
 start_date: 2020-11-01
 end_date: 2021-11-30
 location: "Iran"
 location_type: "Remote"
-logo: ""
+logo: "industrial-experiences/faribagodarzi.jpg"
 description: "Developed website for currency exchange services including dollar sales and service queuing."
 skills:
   - "Financial Services"

@@ -4,12 +4,12 @@ collection: industrial-experiences
 permalink: /industrial-experiences/2021/rasa-light/
 employment_type: "Full-time"
 company: "Rasa Light"
-company_url: ""
+company_url: "https://rasalight.ir/"
 start_date: 2020-12-01
 end_date: 2021-12-31
 location: "Iran"
 location_type: "Remote"
-logo: ""
+logo: "industrial-experiences/rasalight.png"
 description: "Developed website for luxury lighting company serving high-end locations like Iran Mall."
 skills:
   - "Luxury Products"

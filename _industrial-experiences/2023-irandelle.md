@@ -4,12 +4,12 @@ collection: industrial-experiences
 permalink: /industrial-experiences/2023/irandelle/
 employment_type: "Full-time"
 company: "Irandelle"
-company_url: ""
+company_url: "https://irandelle.com/"
 start_date: 2020-09-01
 end_date: 2023-12-31
 location: "Iran"
 location_type: "Hybrid"
-logo: ""
+logo: "industrial-experiences/irandelle.png"
 description: "Developed web solutions and conducted business R&D for tourism company providing tours and services for visitors to Iran."
 skills:
   - "Tourism"

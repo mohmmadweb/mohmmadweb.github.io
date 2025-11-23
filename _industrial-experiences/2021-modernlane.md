@@ -4,12 +4,12 @@ collection: industrial-experiences
 permalink: /industrial-experiences/2021/modernlane/
 employment_type: "Full-time"
 company: "Modernlane"
-company_url: ""
+company_url: "https://modernlane.ir/"
 start_date: 2020-09-01
 end_date: 2021-09-30
 location: "Iran"
 location_type: "Remote"
-logo: ""
+logo: "industrial-experiences/modernlane.jpeg"
 description: "Developed website and managed content for phone and accessories retailer."
 skills:
   - "Web Development"

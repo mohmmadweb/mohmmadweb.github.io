@@ -4,12 +4,12 @@ collection: industrial-experiences
 permalink: /industrial-experiences/2023/mejortime/
 employment_type: "Full-time"
 company: "Mejortime"
-company_url: ""
+company_url: "https://mejortime.com"
 start_date: 2022-08-01
 end_date: 2023-08-31
 location: "Iran"
 location_type: "Hybrid"
-logo: ""
+logo: "industrial-experiences/mejortime.png"
 description: "Developed web solutions and conducted business R&D for immigration services company with 7 different service areas."
 skills:
   - "Web Development"

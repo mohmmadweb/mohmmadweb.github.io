@@ -4,12 +4,12 @@ collection: industrial-experiences
 permalink: /industrial-experiences/2021/hamyar/
 employment_type: "Part-time"
 company: "Hamyar Cooperation"
-company_url: ""
+company_url: "https://hamyar.co/"
 start_date: 2021-02-01
 end_date: 2021-05-31
 location: "Iran"
 location_type: "Remote"
-logo: ""
+logo: "industrial-experiences/hamyar.png"
 description: "Assisted in advertising and selling Instagram courses teaching Instagram marketing."
 skills:
   - "Social Media Advertising"

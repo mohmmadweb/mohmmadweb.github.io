@@ -4,12 +4,12 @@ collection: industrial-experiences
 permalink: /industrial-experiences/2024/nikarokh/
 employment_type: "Full-time"
 company: "Nikarokh"
-company_url: ""
+company_url: "nikarokh.com"
 start_date: 2020-04-01
 end_date: 2024-01-31
 location: "Iran"
 location_type: "Remote"
-logo: ""
+logo: "industrial-experiences/nikarokh.jpeg"
 description: "Developed and maintained website for skin and hair cosmetics company."
 skills:
   - "Cosmetics E-commerce"
