@@ -9,45 +9,43 @@
   {% assign is_current = true %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <div class="experience-card {% if is_current %}current-experience{% else %}past-experience{% endif %}">
-      <div class="experience-header">
-        {% if post.logo %}
-        <div class="experience-logo">
-          <img src="{{ post.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ post.company }} logo">
-        </div>
-        {% endif %}
+<div class="timeline-item {% if is_current %}current-timeline-item{% endif %}">
+  <div class="timeline-marker"></div>
+  <article class="academic-card" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="academic-header">
+      {% if post.logo %}
+      <div class="academic-logo">
+        <img src="{{ post.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ post.company }} logo">
+      </div>
+      {% endif %}
+      
+      <div class="academic-content">
+        <h3 class="academic-title" itemprop="headline">
+          {% if post.permalink %}
+            <a href="{{ post.permalink | relative_url }}" rel="permalink">{{ post.title }}</a>
+          {% else %}
+            {{ post.title }}
+          {% endif %}
+        </h3>
         
-        <div class="experience-content">
-          <div class="experience-title-line">
-            <h3 class="experience-title" itemprop="headline">
-              {% if post.permalink %}
-                <a href="{{ post.permalink | relative_url }}" rel="permalink">{{ post.title }}</a>
-              {% else %}
-                {{ post.title }}
-              {% endif %}
-            </h3>
-            <span class="title-separator">-</span>
-            <span class="employment-type">{{ post.employment_type }}</span>
-            <span class="title-separator">-</span>
-            <span class="company">{{ post.company }}</span>
-          </div>
-          
-          <div class="experience-details">
-            <span class="dates">
-              {{ post.start_date | date: "%b %Y" }} - 
-              {% if post.end_date == "Present" %}
-                Present
-              {% else %}
-                {{ post.end_date | date: "%b %Y" }}
-              {% endif %}
-            </span>
-            <span class="separator">•</span>
-            <span class="location">{{ post.location }}</span>
-            <span class="separator">•</span>
-            <span class="location-type">{{ post.location_type }}</span>
-          </div>
+        <div class="academic-meta">
+          <span class="employment-type">{{ post.employment_type }}</span>
+          <span class="separator">at</span>
+          <span class="company">{{ post.company }}</span>
+        </div>
+        
+        <div class="experience-details">
+          <span class="dates">
+            <i class="fas fa-calendar-alt" style="opacity: 0.7; margin-right: 4px;"></i>
+            {{ post.start_date | date: "%b %Y" }} - 
+            {% if post.end_date == "Present" %}
+              <span style="color: #2ecc71; font-weight: bold;">Present</span>
+            {% else %}
+              {{ post.end_date | date: "%b %Y" }}
+            {% endif %}
+          </span>
+          <span class="separator">•</span>
+          <span class="location">{{ post.location }}</span>
         </div>
       </div>
     </div>

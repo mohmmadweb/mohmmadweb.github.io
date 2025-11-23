@@ -639,155 +639,225 @@
   gap: 8px;
   justify-content: center;
 }
-// Academic Career Experience Styles
+
 .experience-year {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 1.1em;
+  font-weight: 700;
   color: #2c3e50;
-  margin: 2em 0 0.8em 0;
-  padding-bottom: 0.4em;
-  border-bottom: 1px solid #eaeaea;
-  letter-spacing: 0.5px;
+  margin: 2.5em 0 1.5em 0;
+  position: relative;
+  display: inline-block;
+  
+  &::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 3px;
+    background: #3498db;
+    margin-top: 5px;
+    border-radius: 2px;
+  }
 }
 
-.experience-card {
-  margin-bottom: 1em;
-  padding: 1.2em;
-  border: 1px solid #e8ecef;
-  border-radius: 6px;
+.timeline-wrapper {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid #e8ecef;
+  margin-left: 10px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5em;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -36px;
+  top: 15px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
   background: #fff;
-  transition: all 0.2s ease;
-  border-left: 4px solid #bdc3c7;
-  cursor: default;
-  font-size: 0.85em;
-  
-  &:hover {
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
-  }
+  border: 3px solid #bdc3c7;
+  transition: all 0.3s ease;
+  z-index: 1;
 }
 
-.current-experience {
-  border-left-color: #f39c12;
-  background: linear-gradient(135deg, #fff 0%, #fef9e7 100%);
-  
-  &:hover {
-    background: linear-gradient(135deg, #fff 0%, #fdf5e1 100%);
-    box-shadow: 0 2px 12px rgba(243, 156, 18, 0.15);
-  }
+.current-timeline-item .timeline-marker {
+  border-color: #3498db;
+  background: #3498db;
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.2);
 }
 
-.past-experience {
-  border-left-color: #95a5a6;
-  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
-  
-  &:hover {
-    background: linear-gradient(135deg, #fff 0%, #e9ecef 100%);
-    box-shadow: 0 2px 12px rgba(149, 165, 166, 0.15);
-  }
-}
-
-.experience-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8em;
-}
-
-.experience-logo {
-  flex: 0 0 40px;
-  height: 40px;
-  border-radius: 6px;
-  overflow: hidden;
+.academic-card {
   background: #fff;
-  border: 1px solid #e8ecef;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.1em;
+  border-radius: 8px;
+  padding: 0;
+  border: 1px solid #eee;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   
-  img {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
-  }
-}
-
-.experience-content {
-  flex: 1;
-}
-
-.experience-title-line {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.3em;
-  margin-bottom: 0.3em;
-  line-height: 1.2;
-}
-
-.experience-title {
-  margin: 0;
-  font-size: 1em;
-  font-weight: 600;
-  
-  a {
-    color: #2c3e50;
-    text-decoration: none;
-    transition: color 0.2s ease;
+  &:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     
-    &:hover {
-      color: #3498db;
-      text-decoration: none;
+    .timeline-marker {
+      transform: scale(1.2);
     }
   }
 }
 
-.title-separator {
-  color: #bdc3c7;
-  font-weight: 400;
+.academic-header {
+  display: flex;
+  padding: 1.2em;
+  gap: 1.2em;
+  align-items: flex-start;
 }
 
-.employment-type {
-  font-weight: 500;
-  color: #555;
-  font-size: 0.95em;
+.academic-logo {
+  flex: 0 0 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  
+  img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+  }
 }
 
-.company {
-  color: #555;
-  font-weight: 500;
-  font-size: 0.95em;
+.academic-content {
+  flex: 1;
 }
 
-.experience-details {
-  color: #666;
+.academic-title {
+  margin: 0 0 0.3em 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #2c3e50;
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover { color: #3498db; }
+  }
+}
+
+.academic-meta {
   font-size: 0.9em;
-  line-height: 1.3;
+  color: #7f8c8d;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  align-items: center;
 }
 
-.dates {
+.tech-card-wrapper {
+  margin-bottom: 1.5em;
+}
+
+.tech-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5em;
+  border: 1px solid #eaeaea;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-color: #3498db;
+  }
+}
+
+.current-tech-card {
+  border: 1px solid rgba(52, 152, 219, 0.3);
+  background: linear-gradient(to bottom right, #fff, #f8fbff);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #3498db;
+  }
+}
+
+.tech-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+
+.tech-info {
+  display: flex;
+  gap: 1em;
+}
+
+.tech-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  
+  img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+}
+
+.tech-title-group h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #2d3436;
+}
+
+.tech-company {
+  font-size: 0.95em;
+  color: #636e72;
+  margin-top: 0.2em;
+  display: block;
   font-weight: 500;
-  color: #555;
 }
 
-.location {
-  color: #666;
+.status-badge {
+  background: #e1f5fe;
+  color: #0288d1;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.location-type {
-  color: #666;
-  font-style: italic;
+.tech-details {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #f1f2f6;
+  display: flex;
+  justify-content: space-between;
+  color: #95a5a6;
+  font-size: 0.85em;
 }
 
-.separator {
-  color: #bdc3c7;
-  margin: 0 0.3em;
-}
-
-.experiences-timeline {
-  margin-top: 1.5em;
-}
-
-// Single experience page styles
 .experience-meta {
   margin: 1.5em 0;
   padding: 1.5em;
@@ -874,26 +944,6 @@
   font-style: italic;
   line-height: 1.3;
 }
-// Industrial Experience Styles - Purple theme
-.current-industrial-experience {
-  border-left-color: #6a59e9;
-  background: linear-gradient(135deg, #fff 0%, #f0eeff 100%);
-  
-  &:hover {
-    background: linear-gradient(135deg, #fff 0%, #e8e5ff 100%);
-    box-shadow: 0 2px 12px rgba(106, 89, 233, 0.15);
-  }
-}
-
-.past-industrial-experience {
-  border-left-color: #95a5a6;
-  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
-  
-  &:hover {
-    background: linear-gradient(135deg, #fff 0%, #e9ecef 100%);
-    box-shadow: 0 2px 12px rgba(149, 165, 166, 0.15);
-  }
-}
 
 .license-card {
   border-left: 4px solid #3498db;
@@ -919,3 +969,88 @@
 .license-card .honor-type { color: #3498db; }
 .honor-card .honor-type { color: #e74c3c; }
 .award-card .honor-type { color: #2ecc71; }
+
+.see-document-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85em;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.see-document-btn:hover {
+  background: #2980b9;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.experience-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.document-button-wrapper {
+  margin-left: auto;
+}
+
+#documentModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 70%;
+  max-height: 80%;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+}
+
+.close-document {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  background: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#documentImage {
+  max-width: 1000px;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}

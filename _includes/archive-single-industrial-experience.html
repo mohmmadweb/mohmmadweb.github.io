@@ -9,47 +9,44 @@
   {% assign is_current = true %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <div class="experience-card {% if is_current %}current-industrial-experience{% else %}past-industrial-experience{% endif %}">
-      <div class="experience-header">
+<div class="tech-card-wrapper">
+  <article class="tech-card {% if is_current %}current-tech-card{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="tech-header">
+      <div class="tech-info">
         {% if post.logo %}
-        <div class="experience-logo">
+        <div class="tech-logo">
           <img src="{{ post.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ post.company }} logo">
         </div>
         {% endif %}
-        
-        <div class="experience-content">
-          <div class="experience-title-line">
-            <h3 class="experience-title" itemprop="headline">
-              {% if post.permalink %}
-                <a href="{{ post.permalink | relative_url }}" rel="permalink">{{ post.title }}</a>
-              {% else %}
-                {{ post.title }}
-              {% endif %}
-            </h3>
-            <span class="title-separator">-</span>
-            <span class="employment-type">{{ post.employment_type }}</span>
-            <span class="title-separator">-</span>
-            <span class="company">{{ post.company }}</span>
-          </div>
-          
-          <div class="experience-details">
-            <span class="dates">
-              {{ post.start_date | date: "%b %Y" }} - 
-              {% if post.end_date == "Present" %}
-                Present
-              {% else %}
-                {{ post.end_date | date: "%b %Y" }}
-              {% endif %}
-            </span>
-            <span class="separator">•</span>
-            <span class="location">{{ post.location }}</span>
-            <span class="separator">•</span>
-            <span class="location-type">{{ post.location_type }}</span>
-          </div>
+        <div class="tech-title-group">
+          <h3 itemprop="headline">
+            {% if post.permalink %}
+              <a href="{{ post.permalink | relative_url }}" rel="permalink" style="text-decoration: none; color: inherit;">{{ post.title }}</a>
+            {% else %}
+              {{ post.title }}
+            {% endif %}
+          </h3>
+          <span class="tech-company">{{ post.company }}</span>
         </div>
       </div>
+      
+      {% if is_current %}
+      <span class="status-badge">Active</span>
+      {% endif %}
+    </div>
+    
+    <div class="tech-details">
+      <span class="dates">
+        {{ post.start_date | date: "%b %Y" }} - 
+        {% if post.end_date == "Present" %}
+          Present
+        {% else %}
+          {{ post.end_date | date: "%b %Y" }}
+        {% endif %}
+      </span>
+      <span class="location">
+        <i class="fas fa-map-marker-alt" style="margin-right: 4px;"></i> {{ post.location }}
+      </span>
     </div>
   </article>
 </div>

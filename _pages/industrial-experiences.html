@@ -16,35 +16,39 @@ author_profile: false
 
 {% assign industrial_experiences = site.industrial-experiences %}
 {% if industrial_experiences.size > 0 %}
-  <div class="experiences-timeline">
-    <!-- Present Positions - sorted by start_date descending -->
-    <h3 class="experience-year">Present Working Positions</h3>
-    {% assign present_posts = "" | split: "," %}
-    {% for post in industrial_experiences %}
-      {% if post.end_date == "Present" %}
-        {% assign present_posts = present_posts | push: post %}
-      {% endif %}
-    {% endfor %}
-    {% assign present_sorted = present_posts | sort: "start_date" | reverse %}
-    {% for post in present_sorted %}
-      {% include archive-single-industrial-experience.html %}
-    {% endfor %}
-    
-    <!-- Past Positions grouped by year and sorted by start_date -->
-    {% assign years = "" | split: "," %}
-    {% for post in industrial_experiences %}
-      {% if post.end_date != "Present" %}
-        {% assign year = post.end_date | date: "%Y" %}
-        {% unless years contains year %}
-          {% assign years = years | push: year %}
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
-    
-    {% assign years_sorted = years | sort | reverse %}
-    
-    {% for year in years_sorted %}
-      <h3 class="experience-year">{{ year }}</h3>
+  
+  {% assign present_posts = "" | split: "," %}
+  {% for post in industrial_experiences %}
+    {% if post.end_date == "Present" %}
+      {% assign present_posts = present_posts | push: post %}
+    {% endif %}
+  {% endfor %}
+
+  {% if present_posts.size > 0 %}
+    <h3 class="experience-year">Current Roles</h3>
+    <div class="grid__item">
+      {% assign present_sorted = present_posts | sort: "start_date" | reverse %}
+      {% for post in present_sorted %}
+        {% include archive-single-industrial-experience.html %}
+      {% endfor %}
+    </div>
+  {% endif %}
+  
+  {% assign years = "" | split: "," %}
+  {% for post in industrial_experiences %}
+    {% if post.end_date != "Present" %}
+      {% assign year = post.end_date | date: "%Y" %}
+      {% unless years contains year %}
+        {% assign years = years | push: year %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign years_sorted = years | sort | reverse %}
+  
+  {% for year in years_sorted %}
+    <h3 class="experience-year">{{ year }}</h3>
+    <div>
       {% assign year_posts = "" | split: "," %}
       {% for post in industrial_experiences %}
         {% if post.end_date != "Present" %}
@@ -58,8 +62,9 @@ author_profile: false
       {% for post in year_sorted %}
         {% include archive-single-industrial-experience.html %}
       {% endfor %}
-    {% endfor %}
-  </div>
+    </div>
+  {% endfor %}
+
 {% else %}
   <p style="text-align: center; color: #7f8c8d; font-style: italic; margin: 2em 0;">
     No industrial experiences found.
