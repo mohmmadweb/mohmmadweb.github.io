@@ -7,7 +7,7 @@ company: "Fariba Goodarzi"
 company_url: "https://faribagoodarzi.ir"
 start_date: 2021-01-01
 end_date: 2021-04-30
-location: "Iran"
+location: "Isfahan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/faribagodarzi.jpg"
 description: "Developed website for election activities and campaigns."
