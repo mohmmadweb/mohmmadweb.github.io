@@ -2,12 +2,12 @@
 title: "WordPress Developer & E-commerce Specialist"
 collection: industrial-experiences
 permalink: /industrial-experiences/2026/sarasheyda/
-employment_type: "Full-time"
+employment_type: "Contract"
 company: "Sarasheyda"
 company_url: "https://sarasheyda.com/"
 start_date: 2024-11-08
 end_date: 2026-02-06
-location: "Iran"
+location: "Ahvaz, Khuzestan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/sarasheyda.png"
 description: "Developed comprehensive WordPress e-commerce platform for skin care and beauty services, featuring course sales, product marketplace, and integrated customer support system."
@@ -20,7 +20,6 @@ skills:
   - "Payment Integration"
   - "Content Management"
 ---
-
 ## Key Achievements
 
 - Designed and developed complete WordPress website for skin care and beauty services platform

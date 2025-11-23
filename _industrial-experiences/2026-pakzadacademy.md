@@ -2,12 +2,12 @@
 title: "WordPress Developer & Digital Platform Specialist"
 collection: industrial-experiences
 permalink: /industrial-experiences/2026/pakzad-academy/
-employment_type: "Full-time"
+employment_type: "Contract"
 company: "Pakzad Academy"
 company_url: "https://pakzadacademy.com/"
 start_date: 2024-06-16
 end_date: 2026-09-21
-location: "Iran"
+location: "Isfahan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/pakzadacademy.png"
 description: "Developed comprehensive WordPress website for Pakzad Academy, a premier swimming and water polo training center, showcasing their mission, achievements, and professional coaching services."
@@ -20,7 +20,6 @@ skills:
   - "Social Media Integration"
   - "Brand Presentation"
 ---
-
 ## Key Achievements
 
 - Designed and developed professional WordPress website for Pakzad Academy, highlighting Mansour Pakzad's credentials as former Iranian national water polo team member

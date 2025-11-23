@@ -2,12 +2,12 @@
 title: "Web Developer and Maintenance"
 collection: industrial-experiences
 permalink: /industrial-experiences/2024/nikarokh/
-employment_type: "Full-time"
+employment_type: "Part-time"
 company: "Nikarokh"
 company_url: "nikarokh.com"
 start_date: 2020-04-01
 end_date: 2024-01-31
-location: "Iran"
+location: "West Nazar Street, Isfahan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/nikarokh.jpeg"
 description: "Developed and maintained website for skin and hair cosmetics company."
@@ -16,7 +16,6 @@ skills:
   - "Website Maintenance"
   - "Beauty Products"
 ---
-
 ## Key Achievements
 
 - Built cosmetics e-commerce platform

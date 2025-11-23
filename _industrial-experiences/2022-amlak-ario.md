@@ -1,13 +1,13 @@
 ---
 title: "Web Developer"
 collection: industrial-experiences
-permalink: /industrial-experiences/2023/amlak-ario/
-employment_type: "Full-time"
+permalink: /industrial-experiences/2022/amlak-ario/
+employment_type: "Contract"
 company: "Ario Realstate"
 company_url: "amlakario.com"
 start_date: 2022-05-01
-end_date: 2023-05-31
-location: "Iran"
+end_date: 2022-08-01
+location: "Ahvaz, Khuzestan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/faribagodarzi.jpg"
 description: "Developed website for real estate business."

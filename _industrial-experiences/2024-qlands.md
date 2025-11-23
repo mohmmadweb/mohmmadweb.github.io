@@ -2,12 +2,12 @@
 title: "Frontend Developer & UI Specialist"
 collection: industrial-experiences
 permalink: /industrial-experiences/2024/q-lands/
-employment_type: "Full-time"
+employment_type: "Contract"
 company: "Q-Lands"
 company_url: "https://q-lands.com/"
 start_date: 2024-01-04
-end_date: 2024-07-04
-location: "Iran"
+end_date: 2024-04-04
+location: "Khane Esfahan, Isfahan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/faribagodarzi.jpg"
 description: "Developed frontend interface for investment platform specializing in capital attraction and investment solutions, featuring multi-level earning programs and smart investment systems."
@@ -20,7 +20,6 @@ skills:
   - "User Interface Optimization"
   - "Investment Calculator Integration"
 ---
-
 ## Key Achievements
 
 - Designed and developed user interface for Q-Lands investment and capital attraction platform

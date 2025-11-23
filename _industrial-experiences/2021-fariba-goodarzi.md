@@ -2,7 +2,7 @@
 title: "Web Developer"
 collection: industrial-experiences
 permalink: /industrial-experiences/2021/fariba-goodarzi/
-employment_type: "Full-time"
+employment_type: "Contract"
 company: "Fariba Goodarzi"
 company_url: "https://faribagoodarzi.ir"
 start_date: 2021-01-01
@@ -16,7 +16,6 @@ skills:
   - "Campaign Platforms"
   - "Election Systems"
 ---
-
 ## Key Achievements
 
 - Created platform for election activities

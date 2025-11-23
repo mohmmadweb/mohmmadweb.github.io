@@ -2,7 +2,7 @@
 title: "Web Developer"
 collection: industrial-experiences
 permalink: /industrial-experiences/2020/melorings/
-employment_type: "Full-time"
+employment_type: "Contract"
 company: "Melorings"
 company_url: "https://melorings.ir"
 start_date: 2020-08-01

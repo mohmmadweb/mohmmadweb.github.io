@@ -1,13 +1,13 @@
 ---
 title: "Full-Stack Developer"
 collection: industrial-experiences
-permalink: /industrial-experiences/2024/aveniex/
-employment_type: "Full-time"
+permalink: /industrial-experiences/2023/aveniex/
+employment_type: "Contract"
 company: "Aveniex"
 company_url: "https://aveniex.com/"
 start_date: 2024-05-20
-end_date: 2025-05-20
-location: "Iran"
+end_date: 2024-11-20
+location: "Tehran, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/faribagodarzi.jpg"
 description: "Developed comprehensive export management automation system and user panel with multi-service platform for contracts, consulting, and export development services."

@@ -2,12 +2,12 @@
 title: "Web Developer"
 collection: industrial-experiences
 permalink: /industrial-experiences/2021/honar-tools/
-employment_type: "Full-time"
+employment_type: "Contract"
 company: "Honar Tools"
 company_url: "https://honartools.ir"
 start_date: 2020-10-01
-end_date: 2021-10-31
-location: "Iran"
+end_date: 2021-01-01
+location: "Isfahan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/honartools.jpeg"
 description: "Developed e-commerce website for tools retailer."
@@ -16,7 +16,6 @@ skills:
   - "E-commerce"
   - "Product Catalog"
 ---
-
 ## Key Achievements
 
 - Built specialized tools retail platform

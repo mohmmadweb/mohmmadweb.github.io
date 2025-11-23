@@ -1,13 +1,13 @@
 ---
 title: "Web Developer"
 collection: industrial-experiences
-permalink: /industrial-experiences/2023/sasandezh/
-employment_type: "Full-time"
+permalink: /industrial-experiences/2022/sasandezh/
+employment_type: "Contract"
 company: "Sasandezh"
 company_url: "https://sasandezh.com/"
 start_date: 2022-04-01
-end_date: 2023-04-30
-location: "Iran"
+end_date: 2022-07-01
+location: "Isfahan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/sasandezh.webp"
 description: "Developed website for beam and block production and sales company."
@@ -16,7 +16,6 @@ skills:
   - "Product Catalog"
   - "Manufacturing"
 ---
-
 ## Key Achievements
 
 - Built specialized platform for construction materials

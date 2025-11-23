@@ -2,7 +2,7 @@
 title: "WordPress Developer & E-commerce Specialist"
 collection: industrial-experiences
 permalink: /industrial-experiences/2023/hyper-palace/
-employment_type: "Full-time"
+employment_type: "Contract"
 company: "Hyper Palace"
 company_url: "http://hyper-palace.com/"
 start_date: 2023-06-22
@@ -20,7 +20,6 @@ skills:
   - "Payment Gateway Integration"
   - "Responsive Web Design"
 ---
-
 ## Key Achievements
 
 - Designed and developed complete WordPress e-commerce website for Hyper Palace retail store
