@@ -9,7 +9,7 @@ start_date: 2024-06-16
 end_date: 2026-09-21
 location: "Iran"
 location_type: "Remote"
-logo: "industrial-experiences/pakzad-academy.jpg"
+logo: "industrial-experiences/pakzadacademy.png"
 description: "Developed comprehensive WordPress website for Pakzad Academy, a premier swimming and water polo training center, showcasing their mission, achievements, and professional coaching services."
 skills:
   - "WordPress Development"

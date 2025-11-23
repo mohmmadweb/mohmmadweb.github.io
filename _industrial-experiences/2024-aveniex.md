@@ -9,6 +9,7 @@ start_date: 2024-05-20
 end_date: 2025-05-20
 location: "Iran"
 location_type: "Remote"
+logo: "industrial-experiences/faribagodarzi.jpg"
 description: "Developed comprehensive export management automation system and user panel with multi-service platform for contracts, consulting, and export development services."
 skills:
   - "Full-Stack Development"
