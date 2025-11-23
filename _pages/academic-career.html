@@ -9,46 +9,28 @@ author_profile: false
 
 <style>
 .page__content {
-  font-size: 0.9em;
-  line-height: 1.5;
-}
-
-.academic-section {
-  position: relative;
-}
-
-.page__title {
-  color: #2980b9;
-  border-bottom: 3px solid #3498db;
-  padding-bottom: 0.5em;
-  margin-bottom: 1.5em;
-  text-align: center;
-  font-weight: 700;
+  font-size: 0.85em;
+  line-height: 1.4;
 }
 </style>
 
 {% assign academic_career = site.academic-career %}
 {% if academic_career.size > 0 %}
-  <div class="academic-section experiences-timeline">
-    <!-- Present Positions -->
+  <div class="experiences-timeline">
+    <!-- Present Positions - sorted by start_date descending -->
+    <h3 class="experience-year">Present Working Positions</h3>
     {% assign present_posts = "" | split: "," %}
     {% for post in academic_career %}
       {% if post.end_date == "Present" %}
         {% assign present_posts = present_posts | push: post %}
       {% endif %}
     {% endfor %}
+    {% assign present_sorted = present_posts | sort: "start_date" | reverse %}
+    {% for post in present_sorted %}
+      {% include archive-single-academic-career.html %}
+    {% endfor %}
     
-    {% if present_posts.size > 0 %}
-    <div class="current-section">
-      <h2 class="current-section-title">Current Academic Positions</h2>
-      {% assign present_sorted = present_posts | sort: "start_date" | reverse %}
-      {% for post in present_sorted %}
-        {% include archive-single-academic-career.html type="grid" %}
-      {% endfor %}
-    </div>
-    {% endif %}
-    
-    <!-- Past Positions grouped by year -->
+    <!-- Past Positions grouped by year and sorted by start_date -->
     {% assign years = "" | split: "," %}
     {% for post in academic_career %}
       {% if post.end_date != "Present" %}
@@ -79,7 +61,7 @@ author_profile: false
     {% endfor %}
   </div>
 {% else %}
-  <div class="empty-state">
-    <p>No academic career experiences found.</p>
-  </div>
+  <p style="text-align: center; color: #7f8c8d; font-style: italic; margin: 2em 0;">
+    No academic career experiences found.
+  </p>
 {% endif %}

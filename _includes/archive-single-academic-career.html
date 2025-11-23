@@ -11,7 +11,7 @@
 
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <div class="experience-card {% if is_current %}academic-current{% else %}academic-past{% endif %}">
+    <div class="experience-card {% if is_current %}current-experience{% else %}past-experience{% endif %}">
       <div class="experience-header">
         {% if post.logo %}
         <div class="experience-logo">
@@ -31,30 +31,22 @@
             <span class="title-separator">-</span>
             <span class="employment-type">{{ post.employment_type }}</span>
             <span class="title-separator">-</span>
-            <span class="company">
-              {% if post.company_url %}
-                <a href="{{ post.company_url }}" target="_blank" rel="noopener noreferrer">{{ post.company }}</a>
-              {% else %}
-                {{ post.company }}
-              {% endif %}
-            </span>
+            <span class="company">{{ post.company }}</span>
           </div>
           
           <div class="experience-details">
             <span class="dates">
               {{ post.start_date | date: "%b %Y" }} - 
               {% if post.end_date == "Present" %}
-                <strong>Present</strong>
+                Present
               {% else %}
                 {{ post.end_date | date: "%b %Y" }}
               {% endif %}
             </span>
             <span class="separator">•</span>
             <span class="location">{{ post.location }}</span>
-            {% if post.location_type %}
             <span class="separator">•</span>
             <span class="location-type">{{ post.location_type }}</span>
-            {% endif %}
           </div>
         </div>
       </div>
