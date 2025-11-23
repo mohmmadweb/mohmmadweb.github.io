@@ -9,7 +9,7 @@ start_date: 2019-11-01
 end_date: 2020-11-30
 location: "Isfahan, Iran"
 location_type: "On-site"
-logo: ""
+logo: "industrial-experiences/big-data-group.png"
 description: "Developed web solutions and managed content for big data research group under supervision of Dr. Nematbakhsh and Dr. Fatemi."
 skills:
   - "Academic Projects"
