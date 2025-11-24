@@ -62,7 +62,7 @@
                 {{ post.title }}
               {% endif %}
             </h3>
-            <div class="line-1-separator"></div>
+            <span class="line-1-separator">|</span>
             <span class="dates">
               {{ post.start_date | date: "%b %Y" }} - 
               {% if post.end_date == "Present" %}
@@ -71,7 +71,7 @@
                 {{ post.end_date | date: "%b %Y" }}
               {% endif %}
             </span>
-            <div class="line-1-separator"></div>
+            <span class="line-1-separator">|</span>
             {% if duration_text != "" %}
             <span class="duration">{{ duration_text }}</span>
             {% endif %}
@@ -86,9 +86,9 @@
                 {{ post.company }}
               {% endif %}
             </span>
-            <div class="line-2-separator"></div>
+            <span class="line-2-separator">|</span>
             <span class="location">{{ post.location }}</span>
-            <div class="line-2-separator"></div>
+            <span class="line-2-separator">|</span>
             <span class="location-type">{{ post.location_type }}</span>
           </div>
         </div>

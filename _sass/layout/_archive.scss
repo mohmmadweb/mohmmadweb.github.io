@@ -925,53 +925,7 @@
 
 
 
-// Experience Statistics - Larger font
-.experience-stats {
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  margin: 1.5rem 0 2rem 0;
-  padding: 1.2rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-  border: 1px solid #e8ecef;
-  
-  @include breakpoint($small) {
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-}
-
-.stat-item {
-  text-align: center;
-}
-
-.stat-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #2c3e50;
-  line-height: 1;
-  
-  @include breakpoint($small) {
-    font-size: 1.7rem;
-  }
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  color: #7f8c8d;
-  margin-top: 0.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-// Present section styling
-.present-section {
-  border-bottom: 2px solid #6a59e9 !important;
-  color: #6a59e9 !important;
-}
-
-// Experience cards - Larger font with clean separators
+// Experience cards - Everything in two lines
 .experience-card {
   margin-bottom: 1rem;
   padding: 1.2rem;
@@ -1034,13 +988,14 @@
   min-width: 0;
 }
 
-// Line 1: Job Title | Dates | Duration
+// Line 1: Job Title | Dates | Duration - All in one line
 .experience-line-1 {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
-  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+  flex-wrap: nowrap;
   gap: 0.8rem;
+  overflow: hidden;
 }
 
 .experience-title {
@@ -1049,6 +1004,7 @@
   font-weight: 600;
   color: #2c3e50;
   flex-shrink: 0;
+  white-space: nowrap;
   
   a {
     color: #2c3e50;
@@ -1062,15 +1018,17 @@
 }
 
 .line-1-separator {
-  width: 1px;
-  height: 16px;
-  background: #e0e0e0;
+  color: #bdc3c7;
+  font-weight: 300;
+  flex-shrink: 0;
 }
 
 .dates {
   font-weight: 500;
   color: #555;
   font-size: 0.95em;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .duration {
@@ -1080,21 +1038,26 @@
   background: #f8f9fa;
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-// Line 2: Company | Location | Location Type
+// Line 2: Company | Location | Location Type - All in one line
 .experience-line-2 {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   font-size: 0.95em;
   color: #666;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .company {
   font-weight: 500;
   color: #555;
+  white-space: nowrap;
+  flex-shrink: 0;
   
   a {
     color: #555;
@@ -1109,66 +1072,37 @@
 }
 
 .line-2-separator {
-  width: 1px;
-  height: 14px;
-  background: #e0e0e0;
+  color: #bdc3c7;
+  font-weight: 300;
+  flex-shrink: 0;
 }
 
 .location {
   color: #666;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .location-type {
   color: #666;
   font-style: italic;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.experiences-timeline {
-  margin-top: 1.5rem;
-}
-
-.experience-year {
-  font-size: 1.1em;
-  font-weight: 600;
-  color: #2c3e50;
-  margin: 2rem 0 1rem 0;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid #eaeaea;
-}
-
-.year-count {
-  font-size: 0.8em;
-  color: #7f8c8d;
-  font-weight: normal;
-  margin-left: 0.3em;
-}
-
-.no-positions {
-  text-align: center;
-  color: #7f8c8d;
-  font-style: italic;
-  margin: 2rem 0;
-  font-size: 1em;
-}
-
-// Mobile optimizations
+// Mobile optimizations - Still keep two lines but adjust spacing
 @include breakpoint($small) {
   .experience-line-1 {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 0.4rem;
-  }
-  
-  .line-1-separator {
-    display: none;
   }
   
   .experience-line-2 {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 0.4rem;
   }
   
+  .line-1-separator,
   .line-2-separator {
     display: none;
   }
@@ -1185,13 +1119,5 @@
       width: 24px;
       height: 24px;
     }
-  }
-  
-  .stat-number {
-    font-size: 1.8rem;
-  }
-  
-  .stat-label {
-    font-size: 0.85rem;
   }
 }
