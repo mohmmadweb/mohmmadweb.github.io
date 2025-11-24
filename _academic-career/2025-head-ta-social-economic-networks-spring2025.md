@@ -6,7 +6,7 @@ employment_type: "Part-time"
 company: "Dr Maryam Ramezani"
 company_url: "https://sut-ce-courses.github.io/socialnetwork/"
 start_date: 2025-01-13
-end_date: 2025-05-02
+end_date: 2025-05-03
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"

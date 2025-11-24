@@ -3,7 +3,7 @@ title: "TA - Deep Learning, Spring 2025"
 collection: academic-career
 permalink: /academic-career/2025/ta-deep-learning-spring2025/
 employment_type: "Part-time"
-company: "Sharif University of Technology"
+company: "Dr. Soleymani"
 company_url: ""
 start_date: 2025-01-13
 end_date: 2025-05-02

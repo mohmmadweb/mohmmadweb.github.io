@@ -5,7 +5,7 @@ permalink: /academic-career/Present/ta-biomedical-images-fall2025/
 employment_type: "Part-time"
 company: "Dr. Rohban"
 company_url: "https://sharif.ir/~rohban/IABI/"
-start_date: 2025-08-25
+start_date: 2025-08-24
 end_date: "Present"
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
