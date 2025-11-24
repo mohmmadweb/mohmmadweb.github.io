@@ -4,7 +4,7 @@ collection: academic-career
 permalink: /academic-career/2025/ta-linear-algebra-fall2024/
 academic_role: "TA"
 employment_type: "Part-time"
-company: "Sharif University of Technology"
+company: "Course website"
 company_url: "https://jabrekh.github.io/fall_2024"
 start_date: 2024-08-26
 end_date: 2024-12-13

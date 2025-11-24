@@ -4,7 +4,7 @@ collection: academic-career
 permalink: /academic-career/2025/scientific-team-member-rayan-ai/
 academic_role: "Competitions & Hackathons"
 employment_type: "Seasonal"
-company: "Rayan AI Contest"
+company: "Competition website"
 company_url: "https://ai.rayan.global/"
 start_date: 2024-09-01
 end_date: 2025-11-30

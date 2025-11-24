@@ -4,7 +4,7 @@ collection: academic-career
 permalink: /academic-career/2025/ta-deep-learning-spring2025/
 academic_role: "TA"
 employment_type: "Part-time"
-company: "Dr. Soleymani"
+company: "Course website"
 company_url: ""
 start_date: 2025-01-12
 end_date: 2025-05-03

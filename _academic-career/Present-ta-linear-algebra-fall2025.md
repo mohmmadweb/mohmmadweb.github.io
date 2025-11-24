@@ -4,7 +4,7 @@ collection: academic-career
 permalink: /academic-career/Present/ta-linear-algebra-fall2025/
 academic_role: "TA"
 employment_type: "Part-time"
-company: "Prof. Rabiee & Dr. Ramezani"
+company: "Course website"
 company_url: "https://sut-ce-courses.github.io/linearalgebra/"
 start_date: 2025-08-23
 end_date: "Present"

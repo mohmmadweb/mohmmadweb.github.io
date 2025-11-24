@@ -4,7 +4,7 @@ collection: academic-career
 permalink: /academic-career/2022/council-member-sbisc/
 academic_role: "Student Leadership"
 employment_type: "Part-time"
-company: "SBISC"
+company: "SBISC's page"
 company_url: "https://www.linkedin.com/company/42311695/"
 start_date: 2021-11-01
 end_date: 2022-06-30

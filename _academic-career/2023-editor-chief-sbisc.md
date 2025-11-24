@@ -4,7 +4,7 @@ collection: academic-career
 permalink: /academic-career/2023/editor-chief-zero-day-magazine/
 academic_role: "Student Leadership"
 employment_type: "Part-time"
-company: "SBISC"
+company: "SBISC's page"
 company_url: "https://www.linkedin.com/company/42311695/"
 start_date: 2019-11-01
 end_date: 2023-01-31

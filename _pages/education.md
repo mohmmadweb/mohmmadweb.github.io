@@ -10,7 +10,7 @@ redirect_from:
 ## Education
 
 **SEP 2023 – [EXPECTED] AUG 2025**  
-**M.Sc. – Artificial Intelligence**, Sharif University of Technology, Tehran, IRAN  
+**M.Sc. – Artificial Intelligence** (GPA: 3.3/4.0), Sharif University of Technology, Tehran, IRAN  
 Thesis Title: "Faimess-Aware Community Detection in Complex Networks" under the supervision of prof. Rabiee
 
 **SEP 2019 – AUG 2023**  

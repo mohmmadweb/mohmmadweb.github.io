@@ -4,7 +4,7 @@ collection: academic-career
 permalink: /academic-career/Present/ta-high-dimensional-statistics-fall2025/
 academic_role: "TA"
 employment_type: "Part-time"
-company: "Dr. Rohban"
+company: "Course website"
 company_url: "https://hdssut.vercel.app/#course-references"
 start_date: 2025-08-25
 end_date: "Present"

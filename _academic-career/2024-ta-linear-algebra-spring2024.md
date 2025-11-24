@@ -4,7 +4,7 @@ collection: academic-career
 permalink: /academic-career/2024/ta-linear-algebra-spring2024/
 academic_role: "TA"
 employment_type: "Part-time"
-company: "Prof. Rabiee & Dr. Ramezani"
+company: "Course website"
 company_url: "https://jabrekh.github.io/"
 start_date: 2024-01-16
 end_date: 2024-05-10
