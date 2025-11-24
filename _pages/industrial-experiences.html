@@ -16,9 +16,10 @@ author_profile: false
 
 {% assign industrial_experiences = site.industrial-experiences %}
 {% if industrial_experiences.size > 0 %}
-  <!-- Statistics Box - Horizontal & Minimal -->
+  <!-- Statistics Box - Merged -->
   <div class="stats-box">
-    <div class="stats-content">
+    <!-- Line 1: Main Stats -->
+    <div class="stats-line stats-line-main">
       <span class="stat-item">
         <strong class="stat-number">{{ industrial_experiences.size }}</strong>
         <span class="stat-label">Experiences</span>
@@ -27,8 +28,9 @@ author_profile: false
       <span class="stat-item">
         {% assign companies = "" | split: "," %}
         {% for exp in industrial_experiences %}
-          {% unless companies contains exp.company %}
-            {% assign companies = companies | push: exp.company %}
+          {% assign company_name = exp.company | strip %}
+          {% unless companies contains company_name %}
+            {% assign companies = companies | push: company_name %}
           {% endunless %}
         {% endfor %}
         <strong class="stat-number">{{ companies.size }}</strong>
@@ -47,23 +49,10 @@ author_profile: false
         <strong class="stat-number">{{ current_year | minus: earliest_year }}</strong>
         <span class="stat-label">Years</span>
       </span>
-      <span class="stat-separator">•</span>
-      <span class="stat-item">
-        {% assign employment_types = "" | split: "," %}
-        {% for exp in industrial_experiences %}
-          {% if exp.employment_type %}
-            {% assign employment_types = employment_types | push: exp.employment_type %}
-          {% endif %}
-        {% endfor %}
-        <strong class="stat-number">{{ employment_types | uniq | size }}</strong>
-        <span class="stat-label">Employment Types</span>
-      </span>
     </div>
-  </div>
-
-  <!-- Employment Type Statistics -->
-  <div class="stats-box employment-type-stats">
-    <div class="stats-content">
+    
+    <!-- Line 2: Employment Type Stats -->
+    <div class="stats-line stats-line-secondary">
       {% assign type_counts = "" | split: "," %}
       {% for exp in industrial_experiences %}
         {% if exp.employment_type %}
@@ -79,12 +68,12 @@ author_profile: false
             {% assign count = count | plus: 1 %}
           {% endif %}
         {% endfor %}
-        <span class="stat-item">
-          <strong class="stat-number">{{ count }}</strong>
-          <span class="stat-label">{{ type }}</span>
+        <span class="stat-item-secondary">
+          <strong class="stat-number-secondary">{{ count }}</strong>
+          <span class="stat-label-secondary">{{ type }}</span>
         </span>
         {% unless forloop.last %}
-          <span class="stat-separator">•</span>
+          <span class="stat-separator-secondary">•</span>
         {% endunless %}
       {% endfor %}
     </div>
@@ -140,7 +129,8 @@ author_profile: false
       
       {% if year_posts.size > 0 %}
         <h3 class="experience-year">
-          {{ year }} <span class="year-count">({{ year_posts.size }})</span>
+          <span class="year-main">{{ year }}</span>
+          <span class="year-count">({{ year_posts.size }})</span>
           {% assign unique_year_types = year_type_counts | uniq %}
           {% for type in unique_year_types %}
             {% assign type_count = 0 %}

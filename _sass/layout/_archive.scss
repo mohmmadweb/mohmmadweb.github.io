@@ -639,6 +639,7 @@
   gap: 8px;
   justify-content: center;
 }
+
 // Academic Career Experience Styles
 .experience-year {
   font-size: 1em;
@@ -881,6 +882,7 @@
   font-style: italic;
   line-height: 1.3;
 }
+
 // Industrial Experience Styles - Purple theme
 
 // Employment Type on the right side
@@ -943,18 +945,18 @@
   font-size: 0.8em;
 }
 
-// Statistics Box - Horizontal & Minimal
+// Merged Statistics Box
 .stats-box {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border: 1px solid #dee2e6;
   border-radius: 10px;
-  padding: 1.2rem;
+  padding: 1.5rem;
   margin: 1.5rem 0 2rem 0;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.stats-content {
+.stats-line {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -962,6 +964,16 @@
   flex-wrap: wrap;
 }
 
+.stats-line-main {
+  margin-bottom: 0.8rem;
+}
+
+.stats-line-secondary {
+  padding-top: 0.8rem;
+  border-top: 1px solid #dee2e6;
+}
+
+// Main stats (Line 1)
 .stat-item {
   display: flex;
   align-items: center;
@@ -987,6 +999,34 @@
   color: #adb5bd;
   font-weight: 300;
   font-size: 1.2rem;
+}
+
+// Secondary stats (Line 2 - Employment Types)
+.stat-item-secondary {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.stat-number-secondary {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6c757d;
+  line-height: 1;
+}
+
+.stat-label-secondary {
+  font-size: 0.75rem;
+  color: #868e96;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.stat-separator-secondary {
+  color: #ced4da;
+  font-weight: 300;
+  font-size: 0.8rem;
 }
 
 // Experience cards with new separators
@@ -1146,13 +1186,39 @@
   flex-shrink: 0;
 }
 
+// Year styling - only year number is large
+.year-main {
+  font-size: 1em;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.year-count {
+  font-size: 0.7em;
+  color: #7f8c8d;
+  font-weight: normal;
+  margin-left: 0.3em;
+}
+
+.year-type-separator {
+  color: #bdc3c7;
+  margin: 0 0.5rem;
+}
+
+.year-type {
+  color: #666;
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
 // Mobile optimizations
 @include breakpoint($small) {
-  .stats-content {
+  .stats-line {
     gap: 1rem;
   }
   
-  .stat-item {
+  .stat-item,
+  .stat-item-secondary {
     flex-direction: column;
     gap: 0.2rem;
   }
@@ -1161,8 +1227,16 @@
     font-size: 1.6rem;
   }
   
+  .stat-number-secondary {
+    font-size: 0.8rem;
+  }
+  
   .stat-label {
     font-size: 0.8rem;
+  }
+  
+  .stat-label-secondary {
+    font-size: 0.7rem;
   }
   
   .experience-line-1,
@@ -1199,23 +1273,4 @@
 // Present section styling for academic career
 .present-section {
   border-bottom: 1px solid var(--global-border-color) !important;
-}
-
-// Employment Type Statistics
-.employment-type-stats {
-  background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
-  border: 1px solid #cce7ff;
-  margin-top: 1rem;
-}
-
-// Year with employment type breakdown
-.year-type-separator {
-  color: #bdc3c7;
-  margin: 0 0.5rem;
-}
-
-.year-type {
-  color: #555;
-  font-size: 0.9em;
-  font-weight: 500;
 }
