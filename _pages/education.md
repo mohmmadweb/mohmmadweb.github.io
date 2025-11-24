@@ -9,12 +9,14 @@ redirect_from:
 
 ## Education
 
-**Sep 2023 – Present (Expected: Aug 2025)**  
+**Sep 2023 – Present (Expected: Dec 2025)**  
 **Master of Science in Artificial Intelligence**  
 **[Sharif University of Technology](https://sharif.edu/)**, Tehran, Iran  
 *Cumulative GPA: 3.3 / 4.0*  
 **Thesis Title:** "Fairness-Aware Community Detection in Complex Networks"  
-**Supervisors:** [Prof. Hamid R. Rabiee](https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en) & [Prof. Mohammad T. Manzuri Shalmani](https://scholar.google.com/citations?user=NXYyxTMAAAAJ&hl=en)
+**Supervisors:** [Prof. Hamid R. Rabiee](https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en) & [Dr. Mohammad T. Manzuri Shalmani](https://scholar.google.com/citations?user=NXYyxTMAAAAJ&hl=en)
+*Thesis Grade: ?*
+
 
 **Sep 2019 – Aug 2023**  
 **Bachelor of Science in Computer Software Engineering**  
@@ -35,7 +37,8 @@ redirect_from:
 ## Standardized Test Scores
 
 - **TOEFL iBT:** 110 / 120
-- **ILI (Iran Language Institute):** Above Average
+- **Iran Language Institute (ILI):** Course Completion Certificate at ILI (Advanced 3) - Above Average - Issued Jul 2018
+
 
 ---
 
@@ -72,7 +75,7 @@ redirect_from:
 - Machine Learning (20/20)
 - Natural Language Processing (19.6/20)
 - Enterprise Information Technology Architecture (18/20)
-- Generative Models
+- Deep Generative Models
 - Machine Learning Theory
 
 ### Bachelor of Science Level
