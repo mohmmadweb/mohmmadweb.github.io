@@ -1274,3 +1274,52 @@
 .present-section {
   border-bottom: 1px solid var(--global-border-color) !important;
 }
+
+// Employment Type on the right side
+.employment-type-right {
+  flex-shrink: 0;
+  margin-left: auto;
+  padding-left: 1rem;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+
+.employment-type-text {
+  color: #666;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.company-button {
+  background: #f8f9fa;
+  color: #555;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8em;
+  text-decoration: none;
+  border: 1px solid #e8ecef;
+  transition: all 0.2s ease;
+  text-align: center;
+  
+  &:hover {
+    background: #e9ecef;
+    border-color: #bdc3c7;
+    text-decoration: none;
+    color: #2c3e50;
+  }
+}
+
+.company-button.no-link {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #666;
+  
+  &:hover {
+    background: transparent;
+    border-color: transparent;
+    color: #666;
+  }
+}

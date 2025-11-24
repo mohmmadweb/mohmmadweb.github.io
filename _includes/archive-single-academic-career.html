@@ -77,11 +77,11 @@
             {% endif %}
           </div>
           
-          <!-- Line 2: First Supervisor - Location (linked to company_url) - Location Type -->
+          <!-- Line 2: First Supervisor - Location - Location Type -->
           <div class="experience-line-2">
             <span class="company">
-              {% if post.supervisors and post.supervisors.first %}
-                {% assign first_supervisor = post.supervisors.first %}
+              {% if post.supervisors and post.supervisors.size > 0 %}
+                {% assign first_supervisor = post.supervisors[0] %}
                 {% if first_supervisor.url %}
                   <a href="{{ first_supervisor.url }}" target="_blank" rel="noopener">{{ first_supervisor.name }}</a>
                 {% else %}
@@ -92,21 +92,22 @@
               {% endif %}
             </span>
             <span class="dash-separator">-</span>
-            <span class="location">
-              {% if post.company_url %}
-                <a href="{{ post.company_url }}" target="_blank" rel="noopener">{{ post.location }}</a>
-              {% else %}
-                {{ post.location }}
-              {% endif %}
-            </span>
+            <span class="location">{{ post.location }}</span>
             <span class="dash-separator">-</span>
             <span class="location-type">{{ post.location_type }}</span>
           </div>
         </div>
 
-        <!-- Employment Type on the right side -->
+        <!-- Right side: Employment Type and Company Button -->
         <div class="employment-type-right">
-          {{ post.employment_type }}
+          <div class="employment-type-text">{{ post.employment_type }}</div>
+          {% if post.company_url %}
+          <a href="{{ post.company_url }}" target="_blank" rel="noopener" class="company-button">
+            {{ post.company }}
+          </a>
+          {% else %}
+          <span class="company-button no-link">{{ post.company }}</span>
+          {% endif %}
         </div>
       </div>
     </div>
