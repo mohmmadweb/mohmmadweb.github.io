@@ -5,8 +5,8 @@ permalink: /industrial-experiences/2023/aghajani-handicrafts/
 employment_type: "Full-time"
 company: "Aghajani Handicrafts Factory"
 company_url: "https://aghajani.net/"
-start_date: 2023-04-01
-end_date: 2023-08-31
+start_date: 2023-05-05
+end_date: 2023-09-21
 location: "Dolat Abad, Isfahan, Iran"
 location_type: "On-site"
 logo: "industrial-experiences/aghajani.png"
