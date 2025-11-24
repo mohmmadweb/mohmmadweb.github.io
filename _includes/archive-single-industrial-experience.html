@@ -45,44 +45,36 @@
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <div class="experience-card {% if is_current %}current-industrial-experience{% else %}past-industrial-experience{% endif %}">
-      <div class="experience-header">
-        {% if post.logo %}
-        <div class="experience-logo">
-          <img src="{{ post.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ post.company }} logo">
-        </div>
-        {% endif %}
-        
-        <div class="experience-content">
-          <div class="experience-main-line">
-            <h3 class="experience-title">{{ post.title }}</h3>
-            <span class="experience-meta">
-              {{ post.employment_type }} • 
-              {% if post.company_url %}
-                <a href="{{ post.company_url }}" target="_blank" rel="noopener">{{ post.company }} ↗</a>
-              {% else %}
-                {{ post.company }}
-              {% endif %}
-            </span>
-          </div>
-          
-          <div class="experience-details">
-            <span class="dates">
-              {{ post.start_date | date: "%b %Y" }} - 
-              {% if post.end_date == "Present" %}
-                Present
-              {% else %}
-                {{ post.end_date | date: "%b %Y" }}
-              {% endif %}
-            </span>
-            {% if duration_text != "" %}
-            <span class="separator">•</span>
-            <span class="duration">{{ duration_text }}</span>
+      <div class="experience-content">
+        <div class="experience-main-line">
+          <strong class="experience-title">{{ post.title }}</strong>
+          <span class="experience-meta">
+            {{ post.employment_type }} • 
+            {% if post.company_url %}
+              <a href="{{ post.company_url }}" target="_blank" rel="noopener">{{ post.company }} ↗</a>
+            {% else %}
+              {{ post.company }}
             {% endif %}
-            <span class="separator">•</span>
-            <span class="location">{{ post.location }}</span>
-            <span class="separator">•</span>
-            <span class="location-type">{{ post.location_type }}</span>
-          </div>
+          </span>
+        </div>
+        
+        <div class="experience-details">
+          <span class="dates">
+            {{ post.start_date | date: "%b %Y" }} - 
+            {% if post.end_date == "Present" %}
+              Present
+            {% else %}
+              {{ post.end_date | date: "%b %Y" }}
+            {% endif %}
+          </span>
+          {% if duration_text != "" %}
+          <span class="separator">•</span>
+          <span class="duration">{{ duration_text }}</span>
+          {% endif %}
+          <span class="separator">•</span>
+          <span class="location">{{ post.location }}</span>
+          <span class="separator">•</span>
+          <span class="location-type">{{ post.location_type }}</span>
         </div>
       </div>
     </div>
