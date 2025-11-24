@@ -6,7 +6,7 @@ employment_type: "Contract"
 company: "Sarasheyda"
 company_url: "https://sarasheyda.com/"
 start_date: 2024-11-08
-end_date: 2026-02-06
+end_date: 2025-09-01
 location: "Ahvaz, Khuzestan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/sarasheyda.png"

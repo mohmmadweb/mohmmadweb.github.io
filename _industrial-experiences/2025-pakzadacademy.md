@@ -1,12 +1,12 @@
 ---
 title: "WordPress Developer & Digital Platform Specialist"
 collection: industrial-experiences
-permalink: /industrial-experiences/2026/pakzad-academy/
+permalink: /industrial-experiences/2025/pakzad-academy/
 employment_type: "Contract"
 company: "Pakzad Academy"
 company_url: "https://pakzadacademy.com/"
 start_date: 2024-06-16
-end_date: 2026-09-21
+end_date: 2025-09-01
 location: "Isfahan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/pakzadacademy.png"
