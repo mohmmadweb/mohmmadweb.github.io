@@ -8,7 +8,7 @@ company_url: "https://cloudzy.com/"
 start_date: 2023-08-07
 end_date: 2024-11-07
 location: "Tehran, Iran / Dubai"
-location_type: "Remote"
+location_type: "On-Site"
 logo: "industrial-experiences/cloudzy.jpg"
 description: "Developed and maintained WordPress-based solutions for a leading cloud computing platform, contributing to web infrastructure and user experience enhancements."
 skills:

@@ -9,13 +9,13 @@ redirect_from:
 
 ## Education
 
-**Sep 2023 – Present (Expected: Dec 2025)**  
+**Sep 2023 – Present**  
 **Master of Science in Artificial Intelligence**  
 **[Sharif University of Technology](https://sharif.edu/)**, Tehran, Iran  
 *Cumulative GPA: 3.3 / 4.0*  
 **Thesis Title:** "Fairness-Aware Community Detection in Complex Networks"  
 **Supervisors:** [Prof. Hamid R. Rabiee](https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en) & [Dr. Mohammad T. Manzuri Shalmani](https://scholar.google.com/citations?user=NXYyxTMAAAAJ&hl=en)
-*Thesis Grade: ?*
+
 
 
 **Sep 2019 – Aug 2023**  
