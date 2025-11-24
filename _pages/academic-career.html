@@ -67,26 +67,86 @@ author_profile: false
       </span>
     </div>
     
-    <!-- Line 2: Academic Role Stats -->
+    <!-- Line 2: Academic Role Stats with Duration -->
     <div class="stats-line stats-line-secondary">
-      {% assign role_counts = "" | split: "," %}
+      {% assign role_data = "" | split: "," %}
       {% for exp in academic_career %}
         {% if exp.academic_role %}
-          {% assign role_counts = role_counts | push: exp.academic_role %}
+          {% assign role_item = exp.academic_role | append: "|" | append: exp.start_date | append: "|" | append: exp.end_date %}
+          {% assign role_data = role_data | push: role_item %}
         {% endif %}
       {% endfor %}
       
-      {% assign unique_roles = role_counts | uniq %}
-      {% for role in unique_roles %}
-        {% assign count = 0 %}
-        {% for item in role_counts %}
-          {% if item == role %}
-            {% assign count = count | plus: 1 %}
+      {% assign role_groups = "" | split: "," %}
+      {% for role_item in role_data %}
+        {% assign parts = role_item | split: "|" %}
+        {% assign role_name = parts[0] %}
+        {% assign start_date = parts[1] %}
+        {% assign end_date = parts[2] %}
+        
+        {% assign found = false %}
+        {% for group in role_groups %}
+          {% assign group_parts = group | split: "|" %}
+          {% if group_parts[0] == role_name %}
+            {% assign new_count = group_parts[1] | plus: 1 %}
+            {% assign new_duration = group_parts[2] | append: "," | append: start_date | append: "," | append: end_date %}
+            {% assign new_group = role_name | append: "|" | append: new_count | append: "|" | append: new_duration %}
+            {% assign role_groups = role_groups | where_exp: "item", "item != group" | push: new_group %}
+            {% assign found = true %}
+            {% break %}
           {% endif %}
         {% endfor %}
+        
+        {% unless found %}
+          {% assign new_group = role_name | append: "|1|" | append: start_date | append: "," | append: end_date %}
+          {% assign role_groups = role_groups | push: new_group %}
+        {% endunless %}
+      {% endfor %}
+      
+      {% for group in role_groups %}
+        {% assign parts = group | split: "|" %}
+        {% assign role_name = parts[0] %}
+        {% assign role_count = parts[1] %}
+        {% assign duration_data = parts[2] | split: "," %}
+        
+        {% assign total_months = 0 %}
+        {% for i in (0..duration_data.size) %}
+          {% if i % 2 == 0 and i < duration_data.size %}
+            {% assign start_date_str = duration_data[i] %}
+            {% assign end_date_str = duration_data[i+1] %}
+            
+            {% capture start_seconds %}{{ start_date_str | date: "%s" }}{% endcapture %}
+            {% if end_date_str == "Present" %}
+              {% capture end_seconds %}{{ site.time | date: "%s" }}{% endcapture %}
+            {% else %}
+              {% capture end_seconds %}{{ end_date_str | date: "%s" }}{% endcapture %}
+            {% endif %}
+            
+            {% if start_seconds != "" and end_seconds != "" %}
+              {% assign start_seconds_num = start_seconds | plus: 0 %}
+              {% assign end_seconds_num = end_seconds | plus: 0 %}
+              {% if start_seconds_num > 0 and end_seconds_num > 0 %}
+                {% assign duration_seconds = end_seconds_num | minus: start_seconds_num %}
+                {% assign duration_months = duration_seconds | divided_by: 2592000 %}
+                {% assign total_months = total_months | plus: duration_months %}
+              {% endif %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        
+        {% assign years = total_months | divided_by: 12 %}
+        {% assign months = total_months | modulo: 12 %}
+        
         <span class="stat-item-secondary">
-          <strong class="stat-number-secondary">{{ count }}</strong>
-          <span class="stat-label-secondary">{{ role }}</span>
+          <strong class="stat-number-secondary">{{ role_count }}</strong>
+          <span class="stat-label-secondary">
+            {{ role_name }}
+            {% if years > 0 or months > 0 %}
+            - 
+            {% if years > 0 %}{{ years }} yr{% if years > 1 %}s{% endif %} {% endif %}
+            {% if months > 0 %}{{ months }} mos{% endif %}
+            {% endif %}
+          </span>
         </span>
         {% unless forloop.last %}
           <span class="stat-separator-secondary">•</span>
@@ -95,6 +155,7 @@ author_profile: false
     </div>
   </div>
 
+  <!-- بقیه کد بدون تغییر -->
   <div class="experiences-timeline">
     <!-- Present Positions -->
     <h3 class="experience-year present-section">Present Academic Positions</h3>
