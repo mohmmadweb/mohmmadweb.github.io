@@ -14,7 +14,7 @@ logo: "academic-career/Sharif_University_Logo.png"
 description: "Teaching Assistant for Intelligent Analysis of Biomedical Images course under supervision of Dr. Rohban"
 supervisors:
   - name: "Dr. Rohban"
-    url: "https://scholar.google.com/citations?user=S1U0KlgAAAAJ&hl=en"
+    url: "https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en"
 skills:
   - "Medical Image Analysis"
   - "Computer Vision"
@@ -27,7 +27,7 @@ skills:
 
 **Course:** Intelligent Analysis of Biomedical Images
 **Semester:** Fall 2025
-**Instructor:** [Dr. Rohban](https://scholar.google.com/citations?user=S1U0KlgAAAAJ&hl=en)
+**Instructor:** [Dr. Rohban](https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en)
 
 **Responsibilities:**
 

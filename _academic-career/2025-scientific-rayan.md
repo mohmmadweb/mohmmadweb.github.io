@@ -13,7 +13,7 @@ logo: "academic-career/rayan.jpeg"
 description: "International AI Contest - Trustworthiness in Deep Learning. Evaluating the contest questions in phase 1, revising both the questions and their solutions in Department of Computer Engineering, SUT."
 supervisors:
   - name: "Dr. Rohban"
-    url: "https://scholar.google.com/citations?user=S1U0KlgAAAAJ&hl=en"
+    url: "https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en"
 skills:
   - "Deep Learning"
   - "Trustworthy AI"

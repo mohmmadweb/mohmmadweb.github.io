@@ -14,7 +14,7 @@ logo: "academic-career/Sharif_University_Logo.png"
 description: "Head Teaching Assistant for Social and Economic Networks course under supervision of Dr. Ramezani"
 supervisors:
   - name: "Dr. Maryam Ramezani"
-    url: "https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en"
+    url: "https://scholar.google.com/citations?user=cBR8x-4AAAAJ&hl=en"
 skills:
   - "Network Analysis"
   - "Graph Theory"
@@ -28,7 +28,7 @@ skills:
 
 **Course:** Social and Economic Networks
 **Semester:** Spring 2025
-**Instructor:** [Dr. Ramezani](https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en)
+**Instructor:** [Dr. Ramezani](https://scholar.google.com/citations?user=cBR8x-4AAAAJ&hl=en)
 
 **Responsibilities:**
 

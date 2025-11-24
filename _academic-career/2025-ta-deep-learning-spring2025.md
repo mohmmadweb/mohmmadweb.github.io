@@ -14,7 +14,7 @@ logo: "academic-career/Sharif_University_Logo.png"
 description: "Teaching Assistant for Deep Learning course under supervision of Dr. Soleymani"
 supervisors:
   - name: "Dr. Soleymani"
-    url: "https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en"
+    url: "https://scholar.google.com/citations?user=S1U0KlgAAAAJ&hl=en"
 skills:
   - "Deep Learning"
   - "Neural Networks"
@@ -27,7 +27,7 @@ skills:
 
 **Course:** Deep Learning
 **Semester:** Spring 2025
-**Instructor:** [Dr. Soleymani](https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en)
+**Instructor:** [Dr. Soleymani](https://scholar.google.com/citations?user=S1U0KlgAAAAJ&hl=en)
 
 **Responsibilities:**
 

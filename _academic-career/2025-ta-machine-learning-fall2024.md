@@ -14,7 +14,7 @@ logo: "academic-career/Sharif_University_Logo.png"
 description: "Teaching Assistant for Machine Learning course under supervision of Dr. Sharifi"
 supervisors:
   - name: "Dr. Sharifi"
-    url: "https://scholar.google.com/citations?user=cBR8x-4AAAAJ&hl=en"
+    url: "https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en"
 skills:
   - "Machine Learning"
   - "Deep Learning"
@@ -27,7 +27,7 @@ skills:
 
 **Course:** Machine Learning
 **Semester:** Fall 2024
-**Instructor:** [Dr. Sharifi](https://scholar.google.com/citations?user=cBR8x-4AAAAJ&hl=en)
+**Instructor:** [Dr. Sharifi](https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en)
 
 **Responsibilities:**
 
