@@ -16,9 +16,10 @@ author_profile: false
 
 {% assign academic_career = site.academic-career %}
 {% if academic_career.size > 0 %}
-  <!-- Statistics Box - Horizontal & Minimal -->
+  <!-- Statistics Box - Merged -->
   <div class="stats-box">
-    <div class="stats-content">
+    <!-- Line 1: Main Stats -->
+    <div class="stats-line stats-line-main">
       <span class="stat-item">
         <strong class="stat-number">{{ academic_career.size }}</strong>
         <span class="stat-label">Positions</span>
@@ -27,8 +28,9 @@ author_profile: false
       <span class="stat-item">
         {% assign institutions = "" | split: "," %}
         {% for exp in academic_career %}
-          {% unless institutions contains exp.company %}
-            {% assign institutions = institutions | push: exp.company %}
+          {% assign institution_name = exp.company | strip %}
+          {% unless institutions contains institution_name %}
+            {% assign institutions = institutions | push: institution_name %}
           {% endunless %}
         {% endfor %}
         <strong class="stat-number">{{ institutions.size }}</strong>
@@ -47,6 +49,33 @@ author_profile: false
         <strong class="stat-number">{{ current_year | minus: earliest_year }}</strong>
         <span class="stat-label">Years</span>
       </span>
+    </div>
+    
+    <!-- Line 2: Employment Type Stats -->
+    <div class="stats-line stats-line-secondary">
+      {% assign type_counts = "" | split: "," %}
+      {% for exp in academic_career %}
+        {% if exp.employment_type %}
+          {% assign type_counts = type_counts | push: exp.employment_type %}
+        {% endif %}
+      {% endfor %}
+      
+      {% assign unique_types = type_counts | uniq %}
+      {% for type in unique_types %}
+        {% assign count = 0 %}
+        {% for item in type_counts %}
+          {% if item == type %}
+            {% assign count = count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        <span class="stat-item-secondary">
+          <strong class="stat-number-secondary">{{ count }}</strong>
+          <span class="stat-label-secondary">{{ type }}</span>
+        </span>
+        {% unless forloop.last %}
+          <span class="stat-separator-secondary">•</span>
+        {% endunless %}
+      {% endfor %}
     </div>
   </div>
 
@@ -84,19 +113,39 @@ author_profile: false
     
     {% for year in years_sorted %}
       {% assign year_posts = "" | split: "," %}
+      {% assign year_type_counts = "" | split: "," %}
+      
       {% for post in academic_career %}
         {% if post.end_date != "Present" %}
           {% assign post_year = post.end_date | date: "%Y" %}
           {% if post_year == year %}
             {% assign year_posts = year_posts | push: post %}
+            {% if post.employment_type %}
+              {% assign year_type_counts = year_type_counts | push: post.employment_type %}
+            {% endif %}
           {% endif %}
         {% endif %}
       {% endfor %}
       
       {% if year_posts.size > 0 %}
-        <h3 class="experience-year">{{ year }} <span class="year-count">({{ year_posts.size }})</span></h3>
+        <h3 class="experience-year">
+          <span class="year-main">{{ year }}</span>
+          <span class="year-count">({{ year_posts.size }})</span>
+          {% assign unique_year_types = year_type_counts | uniq %}
+          {% for type in unique_year_types %}
+            {% assign type_count = 0 %}
+            {% for item in year_type_counts %}
+              {% if item == type %}
+                {% assign type_count = type_count | plus: 1 %}
+              {% endif %}
+            {% endfor %}
+            <span class="year-type-separator">-</span>
+            <span class="year-type">{{ type }} ({{ type_count }})</span>
+          {% endfor %}
+        </h3>
+        
         {% assign year_sorted = year_posts | sort: "start_date" | reverse %}
-        {% for post in year_posts %}
+        {% for post in year_sorted %}
           {% include archive-single-academic-career.html %}
         {% endfor %}
       {% endif %}
