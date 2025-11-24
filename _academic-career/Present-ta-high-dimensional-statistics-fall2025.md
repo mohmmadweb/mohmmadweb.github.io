@@ -3,10 +3,10 @@ title: "TA - High-Dimensional Statistics, Fall 2025"
 collection: academic-career
 permalink: /academic-career/2025/ta-high-dimensional-statistics-fall2025/
 employment_type: "Part-time"
-company: "Sharif University of Technology"
-company_url: ""
+company: "Dr. Rohban"
+company_url: "https://hdssut.vercel.app/#course-references"
 start_date: 2025-09-01
-end_date: 2025-12-01
+end_date: "Present"
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"

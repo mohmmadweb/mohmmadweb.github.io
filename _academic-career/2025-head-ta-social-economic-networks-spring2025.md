@@ -3,8 +3,8 @@ title: "Head TA - Social and Economic Networks, Spring 2025"
 collection: academic-career
 permalink: /academic-career/2025/head-ta-social-economic-networks-spring2025/
 employment_type: "Part-time"
-company: "Sharif University of Technology"
-company_url: ""
+company: "Dr Maryam Ramezani"
+company_url: "https://sut-ce-courses.github.io/socialnetwork/"
 start_date: 2025-02-01
 end_date: 2025-09-30
 location: "Sharif University of Technology, Tehran, Iran"

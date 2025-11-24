@@ -2,7 +2,7 @@
 title: "TA - Linear Algebra, Fall 2024"
 collection: academic-career
 permalink: /academic-career/2025/ta-linear-algebra-fall2024/
-employment_type: "Seasonal"
+employment_type: "Part-time"
 company: "Sharif University of Technology"
 company_url: ""
 start_date: 2024-09-01
@@ -19,16 +19,15 @@ skills:
   - "Mathematical Proofs"
   - "Problem Solving"
 ---
-
 ## Course Details
 
-**Course:** Linear Algebra for Computer Engineering Students  
-**Semester:** Fall 2024  
-**Instructors:**
+**Course:** Linear Algebra for Computer Engineering Students**Semester:** Fall 2024**Instructors:**
+
 - [Prof. Rabiee](https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en)
 - [Dr. Ramezani](https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en)
 
 **Responsibilities:**
+
 - Conducting tutorial sessions and problem-solving workshops
 - Assisting students with linear algebra concepts and mathematical proofs
 - Grading assignments and exams
