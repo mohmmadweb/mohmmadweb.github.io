@@ -5,8 +5,8 @@ permalink: /academic-career/2024/ta-linear-algebra-spring2024/
 employment_type: "Part-time"
 company: "Prof. Rabiee & Dr. Ramezani"
 company_url: "https://jabrekh.github.io/"
-start_date: 2023-02-01
-end_date: 2024-09-30
+start_date: 2024-01-16
+end_date: 2024-05-10
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"

@@ -5,8 +5,8 @@ permalink: /academic-career/2025/ta-machine-learning-fall2024/
 employment_type: "Part-time"
 company: "Dr. Sharifi"
 company_url: "https://sharifml.ir/team"
-start_date: 2024-09-01
-end_date: 2025-02-28
+start_date: 2024-08-26
+end_date: 2024-12-13
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"

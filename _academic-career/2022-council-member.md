@@ -1,7 +1,7 @@
 ---
 title: "Council Member"
 collection: academic-career
-permalink: /academic-career/past/2022/council-member-sbisc/
+permalink: /academic-career/2022/council-member-sbisc/
 employment_type: "Part-time"
 company: "SBISC"
 company_url: "https://www.linkedin.com/company/42311695/"
@@ -25,7 +25,6 @@ media:
     alt: "Council Events"
     caption: "Council organized events"
 ---
-
 ## Role Description
 
 Served as Council Member at SBISC (Esfahan University), participating in organizational decision-making, strategic planning, and student activity coordination for 8 months.

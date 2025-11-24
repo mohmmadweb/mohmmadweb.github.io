@@ -5,7 +5,7 @@ permalink: /academic-career/present/graduate-research-assistant/
 employment_type: "Full-time"
 company: "Data Science & Machine Learning Lab"
 company_url: "https://dml.ir/"
-start_date: 2023-09-01
+start_date: 2023-08-21
 end_date: "Present"
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
@@ -24,7 +24,6 @@ media:
     alt: "Graph Research"
     caption: "Graph mining research work"
 ---
-
 ## Research Focus
 
 My graduate research focuses on Graph mining in machine learning, working on social network analysis and graph networks under the supervision of Prof. Rabiee in the DML Lab at Department of Computer Engineering, Sharif University of Technology.

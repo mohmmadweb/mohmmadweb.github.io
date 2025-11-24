@@ -1,11 +1,11 @@
 ---
 title: "TA - Linear Algebra, Fall 2025"
 collection: academic-career
-permalink: /academic-career/2025/ta-linear-algebra-fall2025/
+permalink: /academic-career/Present/ta-linear-algebra-fall2025/
 employment_type: "Part-time"
 company: "Prof. Rabiee & Dr. Ramezani"
 company_url: "https://sut-ce-courses.github.io/linearalgebra/"
-start_date: 2025-09-01
+start_date: 2025-08-25
 end_date: "Present"
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
@@ -19,16 +19,15 @@ skills:
   - "Mathematical Proofs"
   - "Problem Solving"
 ---
-
 ## Course Details
 
-**Course:** Linear Algebra for Computer Engineering Students  
-**Semester:** Fall 2025  
-**Instructors:**
+**Course:** Linear Algebra for Computer Engineering Students**Semester:** Fall 2025**Instructors:**
+
 - [Prof. Rabiee](https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en)
 - [Dr. Ramezani](https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en)
 
 **Responsibilities:**
+
 - Conducting tutorial sessions and problem-solving workshops
 - Assisting students with linear algebra concepts and mathematical proofs
 - Grading assignments and exams

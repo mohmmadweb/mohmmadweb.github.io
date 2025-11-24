@@ -5,8 +5,8 @@ permalink: /academic-career/2025/head-ta-social-economic-networks-spring2025/
 employment_type: "Part-time"
 company: "Dr Maryam Ramezani"
 company_url: "https://sut-ce-courses.github.io/socialnetwork/"
-start_date: 2025-02-01
-end_date: 2025-09-30
+start_date: 2025-01-13
+end_date: 2025-05-02
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
@@ -20,14 +20,14 @@ skills:
   - "TA Management"
   - "Course Coordination"
 ---
-
 ## Course Details
 
-**Course:** Social and Economic Networks  
-**Semester:** Spring 2025  
+**Course:** Social and Economic Networks
+**Semester:** Spring 2025
 **Instructor:** [Dr. Ramezani](https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en)
 
 **Responsibilities:**
+
 - Leading and coordinating the teaching assistant team
 - Managing course organization and scheduling
 - Overseeing grading consistency and quality

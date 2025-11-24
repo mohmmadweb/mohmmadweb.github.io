@@ -7,7 +7,6 @@ company: "Rayan AI Contest"
 company_url: "https://ai.rayan.global/"
 start_date: 2024-09-01
 end_date: 2025-11-30
-location: "Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/rayan.jpeg"
 description: "International AI Contest - Trustworthiness in Deep Learning. Evaluating the contest questions in phase 1, revising both the questions and their solutions in Department of Computer Engineering, SUT."
@@ -25,7 +24,6 @@ media:
     alt: "Scientific Team"
     caption: "Scientific team working session"
 ---
-
 ## Contest Focus
 
 Working as a Scientific Team Member in the Rayan AI Contest focused on Trustworthiness in Deep Learning. Responsibilities include evaluating Phase 1 contest questions and revising both questions and their solutions for the international AI competition.

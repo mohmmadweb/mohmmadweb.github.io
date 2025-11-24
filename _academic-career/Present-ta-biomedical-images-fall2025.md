@@ -1,11 +1,11 @@
 ---
 title: "TA - Intelligent Analysis of Biomedical Images, Fall 2025"
 collection: academic-career
-permalink: /academic-career/2025/ta-biomedical-images-fall2025/
+permalink: /academic-career/Present/ta-biomedical-images-fall2025/
 employment_type: "Part-time"
 company: "Dr. Rohban"
 company_url: "https://sharif.ir/~rohban/IABI/"
-start_date: 2025-09-01
+start_date: 2025-08-25
 end_date: "Present"
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
@@ -19,14 +19,14 @@ skills:
   - "Image Processing"
   - "Healthcare AI"
 ---
-
 ## Course Details
 
-**Course:** Intelligent Analysis of Biomedical Images  
-**Semester:** Fall 2025  
+**Course:** Intelligent Analysis of Biomedical Images
+**Semester:** Fall 2025
 **Instructor:** [Dr. Rohban](https://scholar.google.com/citations?user=S1U0KlgAAAAJ&hl=en)
 
 **Responsibilities:**
+
 - Assisting with medical image analysis techniques
 - Supporting computer vision projects for biomedical applications
 - Guiding deep learning implementations for image analysis

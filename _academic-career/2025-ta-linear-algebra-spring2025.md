@@ -3,10 +3,10 @@ title: "TA - Linear Algebra, Spring 2025"
 collection: academic-career
 permalink: /academic-career/2025/ta-linear-algebra-spring2025/
 employment_type: "Part-time"
-company: "Sharif University of Technology"
+company: "Prof. Rabiee & Dr. Ramezani"
 company_url: "https://sut-ce-courses.github.io/LA_Spring_2025"
-start_date: 2025-02-01
-end_date: 2025-09-30
+start_date: 2025-01-13
+end_date: 2025-05-02
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"

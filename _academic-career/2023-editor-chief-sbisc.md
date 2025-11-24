@@ -1,7 +1,7 @@
 ---
 title: "Editor Chief of Zero Day Magazine"
 collection: academic-career
-permalink: /academic-career/past/2023/editor-chief-zero-day-magazine/
+permalink: /academic-career/2023/editor-chief-zero-day-magazine/
 employment_type: "Part-time"
 company: "SBISC"
 company_url: "https://www.linkedin.com/company/42311695/"
@@ -25,7 +25,6 @@ media:
     alt: "Editorial Team"
     caption: "Editorial team working session"
 ---
-
 ## Role Description
 
 Served as Editor Chief of Zero Day Magazine at SBISC (Esfahan University), responsible for overseeing magazine content, managing editorial team, and ensuring publication quality for 3 years and 3 months.
