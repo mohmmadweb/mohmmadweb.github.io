@@ -922,173 +922,237 @@
   text-transform: uppercase;
   font-size: 0.8em;
 }
-
-// Experience Statistics
+// Experience Statistics - Compact
 .experience-stats {
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  margin: 2rem 0 3rem 0;
-  padding: 1.5rem;
+  gap: 2rem;
+  margin: 1.5rem 0 2rem 0;
+  padding: 1rem;
   background: #f8f9fa;
   border-radius: 8px;
   border: 1px solid #e8ecef;
   
   @include breakpoint($small) {
-    gap: 1.5rem;
-    padding: 1rem;
+    gap: 1rem;
+    padding: 0.8rem;
   }
 }
 
 .stat-item {
   text-align: center;
+  min-width: 80px;
 }
 
 .stat-number {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #2c3e50;
   line-height: 1;
   
   @include breakpoint($small) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
 .stat-label {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #7f8c8d;
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-// Experience Filters
-.experience-filters {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 2rem 0 1rem 0;
-  
-  @include breakpoint($small) {
-    flex-wrap: wrap;
-    gap: 0.3rem;
-  }
+// Present section styling
+.present-section {
+  border-bottom: 2px solid #6a59e9 !important;
+  color: #6a59e9 !important;
 }
 
-.filter-btn {
-  padding: 0.5rem 1.5rem;
-  border: 1px solid #bdc3c7;
-  background: white;
-  color: #7f8c8d;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  cursor: pointer;
+// Compact experience cards
+.experience-card {
+  margin-bottom: 0.8em;
+  padding: 1em;
+  border: 1px solid #e8ecef;
+  border-radius: 6px;
+  background: #fff;
   transition: all 0.2s ease;
-  
-  @include breakpoint($small) {
-    padding: 0.4rem 1.2rem;
-    font-size: 0.8rem;
-  }
+  cursor: default;
+  font-size: 0.85em;
+  min-height: auto;
   
   &:hover {
-    border-color: #3498db;
-    color: #3498db;
-  }
-  
-  &.active {
-    background: #3498db;
-    border-color: #3498db;
-    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   }
 }
 
-// Duration styling
+.current-industrial-experience {
+  border-left: 4px solid #6a59e9;
+  background: linear-gradient(135deg, #fff 0%, #f0eeff 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #fff 0%, #e8e5ff 100%);
+    box-shadow: 0 2px 12px rgba(106, 89, 233, 0.15);
+  }
+}
+
+.past-industrial-experience {
+  border-left: 4px solid #95a5a6;
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #fff 0%, #e9ecef 100%);
+    box-shadow: 0 2px 12px rgba(149, 165, 166, 0.1);
+  }
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8em;
+}
+
+.experience-logo {
+  flex: 0 0 32px;
+  height: 32px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e8ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.1em;
+  
+  img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+}
+
+.experience-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.experience-main-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 0.3em;
+  line-height: 1.2;
+}
+
+.experience-title {
+  margin: 0;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #2c3e50;
+  flex-shrink: 0;
+}
+
+.experience-meta {
+  font-size: 0.85em;
+  color: #666;
+  flex: 1;
+  text-align: right;
+  
+  a {
+    color: #666;
+    text-decoration: none;
+    
+    &:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+  }
+}
+
+.experience-details {
+  color: #666;
+  font-size: 0.8em;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3em;
+}
+
+.dates {
+  font-weight: 500;
+  color: #555;
+}
+
 .duration {
   color: #7f8c8d;
   font-style: italic;
 }
 
-// External link styling
-.company a {
-  color: #555;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  
-  &:hover {
-    color: #3498db;
-    text-decoration: underline;
-  }
+.location {
+  color: #666;
 }
 
-// Enhanced animations
-.experience-card {
-  margin-bottom: 1em;
-  padding: 1.2em;
-  border: 1px solid #e8ecef;
-  border-radius: 6px;
-  background: #fff;
-  transition: all 0.3s ease;
-  border-left: 4px solid #bdc3c7;
-  cursor: default;
-  font-size: 0.85em;
-  opacity: 1;
-  transform: translateY(0);
-  
-  &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
-  }
+.location-type {
+  color: #666;
+  font-style: italic;
+}
+
+.separator {
+  color: #bdc3c7;
+}
+
+.experiences-timeline {
+  margin-top: 1em;
+}
+
+.experience-year {
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 1.5em 0 0.8em 0;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eaeaea;
+  letter-spacing: 0.3px;
+}
+
+.year-count {
+  font-size: 0.7em;
+  color: #7f8c8d;
+  font-weight: normal;
+  margin-left: 0.3em;
 }
 
 // Mobile optimizations
 @include breakpoint($small) {
-  .experience-header {
-    flex-direction: column;
-    gap: 0.8em;
-    align-items: flex-start;
-  }
-  
-  .experience-logo {
-    margin-top: 0;
-  }
-  
-  .experience-title-line {
+  .experience-main-line {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.2em;
   }
   
-  .title-separator {
-    display: none;
+  .experience-meta {
+    text-align: left;
+    width: 100%;
   }
   
   .experience-details {
-    display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.2em;
   }
   
   .separator {
     display: none;
   }
-}
-
-// Fade in animation for new elements
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
+  
+  .experience-stats {
+    gap: 0.8rem;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  .stat-item {
+    min-width: 60px;
   }
 }
-
-.experience-card {
-  animation: fadeInUp 0.4s ease-out;
-}
-.license-card .honor-type { color: #3498db; }
-.honor-card .honor-type { color: #e74c3c; }
-.award-card .honor-type { color: #2ecc71; }

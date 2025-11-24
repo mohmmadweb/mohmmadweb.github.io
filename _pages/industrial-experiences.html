@@ -16,11 +16,11 @@ author_profile: false
 
 {% assign industrial_experiences = site.industrial-experiences %}
 {% if industrial_experiences.size > 0 %}
-  <!-- Statistics Bar -->
+  <!-- Statistics Bar - Compact -->
   <div class="experience-stats">
     <div class="stat-item">
       <div class="stat-number">{{ industrial_experiences.size }}</div>
-      <div class="stat-label">Total Experiences</div>
+      <div class="stat-label">Experiences</div>
     </div>
     <div class="stat-item">
       {% assign companies = "" | split: "," %}
@@ -46,16 +46,9 @@ author_profile: false
     </div>
   </div>
 
-  <!-- Filter Tabs -->
-  <div class="experience-filters">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="current">Current</button>
-    <button class="filter-btn" data-filter="past">Past</button>
-  </div>
-
   <div class="experiences-timeline">
     <!-- Present Positions -->
-    <h3 class="experience-year">Present Working Positions</h3>
+    <h3 class="experience-year present-section">Present Working Positions</h3>
     {% assign present_posts = "" | split: "," %}
     {% for post in industrial_experiences %}
       {% if post.end_date == "Present" %}
@@ -69,7 +62,7 @@ author_profile: false
         {% include archive-single-industrial-experience.html %}
       {% endfor %}
     {% else %}
-      <p style="text-align: center; color: #7f8c8d; font-style: italic; margin: 2em 0;">
+      <p style="text-align: center; color: #7f8c8d; font-style: italic; margin: 1em 0;">
         Currently not engaged in any industrial position.
       </p>
     {% endif %}
@@ -112,63 +105,3 @@ author_profile: false
     No industrial experiences found.
   </p>
 {% endif %}
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const experienceCards = document.querySelectorAll('.experience-card');
-  
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      // Remove active class from all buttons
-      filterBtns.forEach(b => b.classList.remove('active'));
-      // Add active class to clicked button
-      this.classList.add('active');
-      
-      const filter = this.getAttribute('data-filter');
-      
-      experienceCards.forEach(card => {
-        switch(filter) {
-          case 'all':
-            card.style.display = 'block';
-            break;
-          case 'current':
-            if (card.classList.contains('current-industrial-experience')) {
-              card.style.display = 'block';
-            } else {
-              card.style.display = 'none';
-            }
-            break;
-          case 'past':
-            if (card.classList.contains('past-industrial-experience')) {
-              card.style.display = 'block';
-            } else {
-              card.style.display = 'none';
-            }
-            break;
-        }
-      });
-      
-      // Hide/show year headers based on visible cards
-      document.querySelectorAll('.experience-year').forEach(header => {
-        const year = header.textContent.split(' ')[0];
-        if (year !== 'Present') {
-          const nextElement = header.nextElementSibling;
-          let hasVisibleCards = false;
-          let nextSibling = nextElement;
-          
-          while (nextSibling && !nextSibling.classList.contains('experience-year')) {
-            if (nextSibling.style.display !== 'none') {
-              hasVisibleCards = true;
-              break;
-            }
-            nextSibling = nextSibling.nextElementSibling;
-          }
-          
-          header.style.display = hasVisibleCards ? 'block' : 'none';
-        }
-      });
-    });
-  });
-});
-</script>

@@ -29,20 +29,14 @@
       {% assign duration_months = remaining_seconds | divided_by: 2592000 %}
       
       {% if duration_years > 0 %}
-        {% assign duration_text = duration_years | append: " year" %}
-        {% if duration_years > 1 %}
-          {% assign duration_text = duration_text | append: "s" %}
-        {% endif %}
+        {% assign duration_text = duration_years | append: "y" %}
       {% endif %}
       
       {% if duration_months > 0 %}
         {% if duration_years > 0 %}
-          {% assign duration_text = duration_text | append: ", " %}
+          {% assign duration_text = duration_text | append: " " %}
         {% endif %}
-        {% assign duration_text = duration_text | append: duration_months | append: " month" %}
-        {% if duration_months > 1 %}
-          {% assign duration_text = duration_text | append: "s" %}
-        {% endif %}
+        {% assign duration_text = duration_text | append: duration_months | append: "m" %}
       {% endif %}
     {% endif %}
   {% endif %}
@@ -59,18 +53,10 @@
         {% endif %}
         
         <div class="experience-content">
-          <div class="experience-title-line">
-            <h3 class="experience-title" itemprop="headline">
-              {% if post.permalink %}
-                <a href="{{ post.permalink | relative_url }}" rel="permalink">{{ post.title }}</a>
-              {% else %}
-                {{ post.title }}
-              {% endif %}
-            </h3>
-            <span class="title-separator">-</span>
-            <span class="employment-type">{{ post.employment_type }}</span>
-            <span class="title-separator">-</span>
-            <span class="company">
+          <div class="experience-main-line">
+            <h3 class="experience-title">{{ post.title }}</h3>
+            <span class="experience-meta">
+              {{ post.employment_type }} • 
               {% if post.company_url %}
                 <a href="{{ post.company_url }}" target="_blank" rel="noopener">{{ post.company }} ↗</a>
               {% else %}
