@@ -53,7 +53,7 @@
         {% endif %}
         
         <div class="experience-content">
-          <!-- Line 1: Job Title | Dates | Duration -->
+          <!-- Line 1: Job Title • Dates • Duration -->
           <div class="experience-line-1">
             <h3 class="experience-title">
               {% if post.permalink %}
@@ -62,7 +62,7 @@
                 {{ post.title }}
               {% endif %}
             </h3>
-            <span class="line-1-separator">|</span>
+            <span class="bullet-separator">•</span>
             <span class="dates">
               {{ post.start_date | date: "%b %Y" }} - 
               {% if post.end_date == "Present" %}
@@ -71,13 +71,13 @@
                 {{ post.end_date | date: "%b %Y" }}
               {% endif %}
             </span>
-            <span class="line-1-separator">|</span>
+            <span class="bullet-separator">•</span>
             {% if duration_text != "" %}
             <span class="duration">{{ duration_text }}</span>
             {% endif %}
           </div>
           
-          <!-- Line 2: Company | Location | Location Type -->
+          <!-- Line 2: Company - Location - Location Type -->
           <div class="experience-line-2">
             <span class="company">
               {% if post.company_url %}
@@ -86,9 +86,9 @@
                 {{ post.company }}
               {% endif %}
             </span>
-            <span class="line-2-separator">|</span>
+            <span class="dash-separator">-</span>
             <span class="location">{{ post.location }}</span>
-            <span class="line-2-separator">|</span>
+            <span class="dash-separator">-</span>
             <span class="location-type">{{ post.location_type }}</span>
           </div>
         </div>
