@@ -5,8 +5,8 @@ permalink: /academic-career/2025/ta-deep-learning-spring2025/
 employment_type: "Part-time"
 company: "Dr. Soleymani"
 company_url: ""
-start_date: 2025-01-13
-end_date: 2025-05-02
+start_date: 2025-01-12
+end_date: 2025-05-03
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
