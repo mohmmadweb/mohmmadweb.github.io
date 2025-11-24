@@ -36,7 +36,7 @@ redirect_from:
 
 ## Standardized Test Scores
 
-- **TOEFL iBT:** 110 / 120
+<!-- - **TOEFL iBT:** 110 / 120 -->
 - **Iran Language Institute (ILI):** Course Completion Certificate at ILI (Advanced 3) - Above Average - Issued Jul 2018
 
 
