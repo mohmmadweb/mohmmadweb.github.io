@@ -29,14 +29,14 @@
       {% assign duration_months = remaining_seconds | divided_by: 2592000 %}
       
       {% if duration_years > 0 %}
-        {% assign duration_text = duration_years | append: "y" %}
+        {% assign duration_text = duration_years | append: " yrs" %}
       {% endif %}
       
       {% if duration_months > 0 %}
         {% if duration_years > 0 %}
           {% assign duration_text = duration_text | append: " " %}
         {% endif %}
-        {% assign duration_text = duration_text | append: duration_months | append: "m" %}
+        {% assign duration_text = duration_text | append: duration_months | append: " mos" %}
       {% endif %}
     {% endif %}
   {% endif %}
@@ -53,36 +53,43 @@
         {% endif %}
         
         <div class="experience-content">
-          <!-- Line 1: Job Title + Dates + Duration + Location Type -->
+          <!-- Line 1: Job Title | Dates | Duration -->
           <div class="experience-line-1">
-            <strong class="experience-title">{{ post.title }}</strong>
-            <span class="line-1-details">
-              <span class="dates">
-                {{ post.start_date | date: "%b %Y" }} - 
-                {% if post.end_date == "Present" %}
-                  Present
-                {% else %}
-                  {{ post.end_date | date: "%b %Y" }}
-                {% endif %}
-              </span>
-              {% if duration_text != "" %}
-              <span class="duration">{{ duration_text }}</span>
+            <h3 class="experience-title">
+              {% if post.permalink %}
+                <a href="{{ post.permalink | relative_url }}" rel="permalink">{{ post.title }}</a>
+              {% else %}
+                {{ post.title }}
               {% endif %}
-              <span class="location-type">{{ post.location_type }}</span>
+            </h3>
+            <div class="line-1-separator"></div>
+            <span class="dates">
+              {{ post.start_date | date: "%b %Y" }} - 
+              {% if post.end_date == "Present" %}
+                Present
+              {% else %}
+                {{ post.end_date | date: "%b %Y" }}
+              {% endif %}
             </span>
+            <div class="line-1-separator"></div>
+            {% if duration_text != "" %}
+            <span class="duration">{{ duration_text }}</span>
+            {% endif %}
           </div>
           
-          <!-- Line 2: Employment Type + Company + Location -->
+          <!-- Line 2: Company | Location | Location Type -->
           <div class="experience-line-2">
-            <span class="employment-type">{{ post.employment_type }}</span>
             <span class="company">
               {% if post.company_url %}
-                <a href="{{ post.company_url }}" target="_blank" rel="noopener">{{ post.company }} ↗</a>
+                <a href="{{ post.company_url }}" target="_blank" rel="noopener">{{ post.company }}</a>
               {% else %}
                 {{ post.company }}
               {% endif %}
             </span>
+            <div class="line-2-separator"></div>
             <span class="location">{{ post.location }}</span>
+            <div class="line-2-separator"></div>
+            <span class="location-type">{{ post.location_type }}</span>
           </div>
         </div>
       </div>
