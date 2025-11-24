@@ -9,16 +9,42 @@
   {% assign is_current = true %}
 {% endif %}
 
-{% comment %} Calculate duration {% endcomment %}
-{% assign start_date = post.start_date | date: "%s" | plus: 0 %}
-{% if post.end_date == "Present" %}
-  {% assign end_date = "now" | date: "%s" | plus: 0 %}
-{% else %}
-  {% assign end_date = post.end_date | date: "%s" | plus: 0 %}
+{% comment %} Calculate duration safely {% endcomment %}
+{% assign duration_text = "" %}
+{% if post.start_date and post.end_date %}
+  {% assign start_date = post.start_date | date: "%s" %}
+  {% if post.end_date == "Present" %}
+    {% assign end_date = "now" | date: "%s" %}
+  {% else %}
+    {% assign end_date = post.end_date | date: "%s" %}
+  {% endif %}
+  
+  {% if start_date and end_date %}
+    {% assign start_seconds = start_date | plus: 0 %}
+    {% assign end_seconds = end_date | plus: 0 %}
+    {% assign duration_seconds = end_seconds | minus: start_seconds %}
+    {% assign duration_years = duration_seconds | divided_by: 31536000 %}
+    {% assign remaining_seconds = duration_seconds | modulo: 31536000 %}
+    {% assign duration_months = remaining_seconds | divided_by: 2592000 %}
+    
+    {% if duration_years > 0 %}
+      {% assign duration_text = duration_years | append: " year" %}
+      {% if duration_years > 1 %}
+        {% assign duration_text = duration_text | append: "s" %}
+      {% endif %}
+    {% endif %}
+    
+    {% if duration_months > 0 %}
+      {% if duration_years > 0 %}
+        {% assign duration_text = duration_text | append: ", " %}
+      {% endif %}
+      {% assign duration_text = duration_text | append: duration_months | append: " month" %}
+      {% if duration_months > 1 %}
+        {% assign duration_text = duration_text | append: "s" %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
 {% endif %}
-{% assign duration_seconds = end_date | minus: start_date %}
-{% assign duration_years = duration_seconds | divided_by: 31536000 %}
-{% assign duration_months = duration_seconds | modulo: 31536000 | divided_by: 2592000 %}
 
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
@@ -60,15 +86,10 @@
                 {{ post.end_date | date: "%b %Y" }}
               {% endif %}
             </span>
+            {% if duration_text != "" %}
             <span class="separator">•</span>
-            <span class="duration">
-              {% if duration_years > 0 %}
-                {{ duration_years }} year{% if duration_years > 1 %}s{% endif %}
-              {% endif %}
-              {% if duration_months > 0 %}
-                {% if duration_years > 0 %}, {% endif %}{{ duration_months }} month{% if duration_months > 1 %}s{% endif %}
-              {% endif %}
-            </span>
+            <span class="duration">{{ duration_text }}</span>
+            {% endif %}
             <span class="separator">•</span>
             <span class="location">{{ post.location }}</span>
             <span class="separator">•</span>
