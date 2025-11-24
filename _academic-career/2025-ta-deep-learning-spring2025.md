@@ -12,6 +12,9 @@ location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
 description: "Teaching Assistant for Deep Learning course under supervision of Dr. Soleymani"
+supervisors:
+  - name: "Dr. Soleymani"
+    url: "https://scholar.google.com/citations?user=pRyJ6FkAAAAJ&hl=en"
 skills:
   - "Deep Learning"
   - "Neural Networks"

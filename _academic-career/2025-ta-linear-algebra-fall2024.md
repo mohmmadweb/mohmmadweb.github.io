@@ -12,6 +12,11 @@ location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
 description: "Teaching Assistant for Linear Algebra for CE students under supervision of Prof. Rabiee and Dr. Ramezani"
+supervisors:
+  - name: "Prof. Rabiee"
+    url: "https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en"
+  - name: "Dr. Ramezani"
+    url: "https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en"
 skills:
   - "Linear Algebra"
   - "Matrix Theory"

@@ -77,17 +77,28 @@
             {% endif %}
           </div>
           
-          <!-- Line 2: Institution - Location - Location Type -->
+          <!-- Line 2: First Supervisor - Location (linked to company_url) - Location Type -->
           <div class="experience-line-2">
             <span class="company">
-              {% if post.company_url %}
-                <a href="{{ post.company_url }}" target="_blank" rel="noopener">{{ post.company }}</a>
+              {% if post.supervisors and post.supervisors.first %}
+                {% assign first_supervisor = post.supervisors.first %}
+                {% if first_supervisor.url %}
+                  <a href="{{ first_supervisor.url }}" target="_blank" rel="noopener">{{ first_supervisor.name }}</a>
+                {% else %}
+                  {{ first_supervisor.name }}
+                {% endif %}
               {% else %}
                 {{ post.company }}
               {% endif %}
             </span>
             <span class="dash-separator">-</span>
-            <span class="location">{{ post.location }}</span>
+            <span class="location">
+              {% if post.company_url %}
+                <a href="{{ post.company_url }}" target="_blank" rel="noopener">{{ post.location }}</a>
+              {% else %}
+                {{ post.location }}
+              {% endif %}
+            </span>
             <span class="dash-separator">-</span>
             <span class="location-type">{{ post.location_type }}</span>
           </div>

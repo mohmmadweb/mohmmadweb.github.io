@@ -12,6 +12,11 @@ location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/dml.png"
 description: "Working on Graph mining in machine learning under the supervision of Prof. Rabiee in Department of Computer Engineering, SUT - DML Lab."
+supervisors:
+  - name: "Prof. Rabiee"
+    url: "https://scholar.google.com/citations?user=GbJMZLIAAAAJ&hl=en"
+  - name: "Mohammad T. Manzuri Shalmani"
+    url: "https://scholar.google.com/citations?user=NXYyxTMAAAAJ&hl=en"
 skills:
   - "Social Network Analysis"
   - "Graph Networks"

@@ -38,6 +38,22 @@ author_profile: false
       </span>
       <span class="stat-separator">•</span>
       <span class="stat-item">
+        {% assign all_supervisors = "" | split: "," %}
+        {% for exp in academic_career %}
+          {% if exp.supervisors %}
+            {% for supervisor in exp.supervisors %}
+              {% assign supervisor_name = supervisor.name | strip %}
+              {% unless all_supervisors contains supervisor_name %}
+                {% assign all_supervisors = all_supervisors | push: supervisor_name %}
+              {% endunless %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        <strong class="stat-number">{{ all_supervisors.size }}</strong>
+        <span class="stat-label">Supervisors</span>
+      </span>
+      <span class="stat-separator">•</span>
+      <span class="stat-item">
         {% assign current_year = site.time | date: '%Y' | plus: 0 %}
         {% assign earliest_year = current_year %}
         {% for exp in academic_career %}

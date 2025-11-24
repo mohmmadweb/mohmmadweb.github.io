@@ -12,6 +12,9 @@ location: "Esfahan, Iran"
 location_type: "On-site"
 logo: "academic-career/SBISC.jpeg"
 description: "Council Member at SBISC, Esfahan University"
+supervisors:
+  - name: "Behrouz Tork Ladani"
+    url: "https://scholar.google.com/citations?user=g1vKAL0AAAAJ&hl=en"
 skills:
   - "Strategic Planning"
   - "Committee Work"

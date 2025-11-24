@@ -12,6 +12,9 @@ location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
 description: "Teaching Assistant for Machine Learning course under supervision of Dr. Sharifi"
+supervisors:
+  - name: "Dr. Sharifi"
+    url: "https://scholar.google.com/citations?user=cBR8x-4AAAAJ&hl=en"
 skills:
   - "Machine Learning"
   - "Deep Learning"

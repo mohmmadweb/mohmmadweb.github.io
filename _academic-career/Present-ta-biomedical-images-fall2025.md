@@ -12,6 +12,9 @@ location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
 description: "Teaching Assistant for Intelligent Analysis of Biomedical Images course under supervision of Dr. Rohban"
+supervisors:
+  - name: "Dr. Rohban"
+    url: "https://scholar.google.com/citations?user=S1U0KlgAAAAJ&hl=en"
 skills:
   - "Medical Image Analysis"
   - "Computer Vision"

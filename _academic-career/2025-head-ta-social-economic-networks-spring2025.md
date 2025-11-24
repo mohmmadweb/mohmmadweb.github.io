@@ -12,6 +12,9 @@ location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
 description: "Head Teaching Assistant for Social and Economic Networks course under supervision of Dr. Ramezani"
+supervisors:
+  - name: "Dr. Maryam Ramezani"
+    url: "https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en"
 skills:
   - "Network Analysis"
   - "Graph Theory"
