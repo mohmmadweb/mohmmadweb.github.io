@@ -406,7 +406,6 @@
   flex-wrap: wrap;
 }
 
-// Minimal button styles for publication links
 .publication-links .btn {
   background: #f8f9fa;
   border: 1px solid #adb5bd;
@@ -421,7 +420,7 @@
 
 .publication-links .btn--primary {
   background: #f8f9fa;
-  border-color: #dee2e6;
+  border-color: #adb5bd;
   color: #000000;
 
   &:hover {
@@ -433,7 +432,7 @@
 
 .publication-links .btn--info {
   background: #f8f9fa;
-  border-color: #dee2e6;
+  border-color: #adb5bd;
   color: #000000;
 
   &:hover {
@@ -445,7 +444,7 @@
 
 .publication-links .btn--success {
   background: #f8f9fa;
-  border-color: #dee2e6;
+  border-color: #adb5bd;
   color: #000000;
 
   &:hover {
@@ -455,7 +454,6 @@
   }
 }
 
-// Minimal button styles for full publication links
 .publication-links-full .btn {
   background: #f8f9fa;
   border: 1px solid #adb5bd;
@@ -470,7 +468,7 @@
 
 .publication-links-full .btn--primary {
   background: #f8f9fa;
-  border-color: #dee2e6;
+  border-color: #adb5bd;
   color: #000000;
 
   &:hover {
@@ -482,7 +480,7 @@
 
 .publication-links-full .btn--info {
   background: #f8f9fa;
-  border-color: #dee2e6;
+  border-color: #adb5bd;
   color: #000000;
 
   &:hover {
@@ -494,7 +492,7 @@
 
 .publication-links-full .btn--success {
   background: #f8f9fa;
-  border-color: #dee2e6;
+  border-color: #adb5bd;
   color: #000000;
 
   &:hover {
@@ -506,7 +504,7 @@
 
 .publication-links-full .btn--warning {
   background: #f8f9fa;
-  border-color: #dee2e6;
+  border-color: #adb5bd;
   color: #000000;
 
   &:hover {
@@ -518,7 +516,7 @@
 
 .publication-links-full .btn--danger {
   background: #f8f9fa;
-  border-color: #dee2e6;
+  border-color: #adb5bd;
   color: #000000;
 
   &:hover {
@@ -530,8 +528,8 @@
 
 .publication-links-full .btn--dark {
   background: #f8f9fa;
-  border-color: #dee2e6;
-  color: #495057;
+  border-color: #adb5bd;
+  color: #000000;
 
   &:hover {
     background: #757575;
@@ -685,7 +683,6 @@
   justify-content: center;
 }
 
-// Academic Career Experience Styles
 .experience-year {
   font-size: 1em;
   font-weight: 600;
@@ -840,7 +837,6 @@
   margin-top: 1.5em;
 }
 
-// Single experience page styles
 .experience-meta {
   margin: 1.5em 0;
   padding: 1.5em;
@@ -928,9 +924,6 @@
   line-height: 1.3;
 }
 
-// Industrial Experience Styles - Purple theme
-
-// Employment Type on the right side
 .employment-type-right {
   flex-shrink: 0;
   color: #666;
@@ -941,7 +934,6 @@
   white-space: nowrap;
 }
 
-// Update experience-header to accommodate the new element
 .experience-header {
   display: flex;
   align-items: flex-start;
@@ -990,7 +982,6 @@
   font-size: 0.8em;
 }
 
-// Merged Statistics Box
 .stats-box {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border: 1px solid #dee2e6;
@@ -1018,7 +1009,6 @@
   border-top: 1px solid #dee2e6;
 }
 
-// Main stats (Line 1)
 .stat-item {
   display: flex;
   align-items: center;
@@ -1046,7 +1036,6 @@
   font-size: 1.2rem;
 }
 
-// Secondary stats (Line 2 - Employment Types)
 .stat-item-secondary {
   display: flex;
   align-items: center;
@@ -1074,7 +1063,6 @@
   font-size: 0.8rem;
 }
 
-// Experience cards with new separators
 .experience-card {
   margin-bottom: 1rem;
   padding: 1.2rem;
@@ -1129,7 +1117,6 @@
   min-width: 0;
 }
 
-// Line 1: Job Title • Dates • Duration
 .experience-line-1 {
   display: flex;
   align-items: center;
@@ -1183,7 +1170,6 @@
   flex-shrink: 0;
 }
 
-// Line 2: Company - Location - Location Type
 .experience-line-2 {
   display: flex;
   align-items: center;
@@ -1231,7 +1217,6 @@
   flex-shrink: 0;
 }
 
-// Year styling - only year number is large
 .year-main {
   font-size: 1em;
   font-weight: 600;
@@ -1256,7 +1241,6 @@
   font-weight: 400;
 }
 
-// Mobile optimizations
 @include breakpoint($small) {
   .stats-line {
     gap: 1rem;
@@ -1296,7 +1280,6 @@
   }
 }
 
-// Academic Career Experience Styles
 .current-academic-experience {
   border-left: 4px solid #f39c12;
   background: linear-gradient(135deg, #fff 0%, #fef9e7 100%);
@@ -1315,12 +1298,10 @@
   }
 }
 
-// Present section styling for academic career
 .present-section {
   border-bottom: 1px solid var(--global-border-color) !important;
 }
 
-// Employment Type on the right side
 .employment-type-right {
   flex-shrink: 0;
   margin-left: auto;
