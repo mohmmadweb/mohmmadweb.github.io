@@ -9,40 +9,51 @@ author_profile: false
 
 <style>
 .page__content {
-  font-size: 0.8em;
-  line-height: 1.3;
+  font-size: 0.85em;
+  line-height: 1.4;
 }
 </style>
 
 {% assign industrial_experiences = site.industrial-experiences %}
 {% if industrial_experiences.size > 0 %}
-  <!-- Statistics Bar - Ultra Compact -->
-  <div class="experience-stats">
-    <div class="stat-item">
-      <span class="stat-number">{{ industrial_experiences.size }}</span>
-      <span class="stat-label">Experiences</span>
+  <!-- Beautiful Statistics Cards -->
+  <div class="stats-container">
+    <div class="stat-card">
+      <div class="stat-icon">💼</div>
+      <div class="stat-content">
+        <div class="stat-number">{{ industrial_experiences.size }}</div>
+        <div class="stat-label">Experiences</div>
+      </div>
     </div>
-    <div class="stat-item">
-      {% assign companies = "" | split: "," %}
-      {% for exp in industrial_experiences %}
-        {% unless companies contains exp.company %}
-          {% assign companies = companies | push: exp.company %}
-        {% endunless %}
-      {% endfor %}
-      <span class="stat-number">{{ companies.size }}</span>
-      <span class="stat-label">Companies</span>
+    
+    <div class="stat-card">
+      <div class="stat-icon">🏢</div>
+      <div class="stat-content">
+        {% assign companies = "" | split: "," %}
+        {% for exp in industrial_experiences %}
+          {% unless companies contains exp.company %}
+            {% assign companies = companies | push: exp.company %}
+          {% endunless %}
+        {% endfor %}
+        <div class="stat-number">{{ companies.size }}</div>
+        <div class="stat-label">Companies</div>
+      </div>
     </div>
-    <div class="stat-item">
-      {% assign current_year = site.time | date: '%Y' | plus: 0 %}
-      {% assign earliest_year = current_year %}
-      {% for exp in industrial_experiences %}
-        {% assign exp_year = exp.start_date | date: '%Y' | plus: 0 %}
-        {% if exp_year and exp_year > 0 and exp_year < earliest_year %}
-          {% assign earliest_year = exp_year %}
-        {% endif %}
-      {% endfor %}
-      <span class="stat-number">{{ current_year | minus: earliest_year }}</span>
-      <span class="stat-label">Years</span>
+    
+    <div class="stat-card">
+      <div class="stat-icon">📅</div>
+      <div class="stat-content">
+        {% assign current_year = site.time | date: '%Y' | plus: 0 %}
+        {% assign earliest_year = current_year %}
+        {% for exp in industrial_experiences %}
+          {% assign exp_year = exp.start_date | date: '%Y' | plus: 0 %}
+          {% if exp_year and exp_year > 0 and exp_year < earliest_year %}
+            {% assign earliest_year = exp_year %}
+          {% endif %}
+        {% endfor %}
+        <div class="stat-number">{{ current_year | minus: earliest_year }}</div>
+        <div class="stat-label">Years</div>
+      </div>
     </div>
   </div>
 
