@@ -52,7 +52,7 @@ author_profile: false
 
   <div class="experiences-timeline">
     <!-- Present Positions -->
-    <h3 class="experience-year present-section">Present Positions</h3>
+    <h3 class="experience-year present-section">Present Academic Positions</h3>
     {% assign present_posts = "" | split: "," %}
     {% for post in academic_career %}
       {% if post.end_date == "Present" %}
@@ -96,7 +96,7 @@ author_profile: false
       {% if year_posts.size > 0 %}
         <h3 class="experience-year">{{ year }} <span class="year-count">({{ year_posts.size }})</span></h3>
         {% assign year_sorted = year_posts | sort: "start_date" | reverse %}
-        {% for post in year_sorted %}
+        {% for post in year_posts %}
           {% include archive-single-academic-career.html %}
         {% endfor %}
       {% endif %}
