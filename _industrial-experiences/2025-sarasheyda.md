@@ -1,7 +1,7 @@
 ---
 title: "WordPress Developer & E-commerce Specialist"
 collection: industrial-experiences
-permalink: /industrial-experiences/2026/sarasheyda/
+permalink: /industrial-experiences/2025/sarasheyda/
 employment_type: "Contract"
 company: "Sarasheyda"
 company_url: "https://sarasheyda.com/"

@@ -6,7 +6,7 @@ employment_type: "Full-time"
 company: "Startup XYZ"
 company_url: "https://www.startupxyz.com"
 start_date: 2021-03-15
-end_date: "Present"
+end_date: 2026-03-15
 location: "New York, NY"
 location_type: "Hybrid"
 logo: "academic-career/Sharif_University_Logo.png"
@@ -24,7 +24,6 @@ media:
     alt: "Another image"
     caption: "Additional research work"
 ---
-
 ## Key Achievements
 
 - Improved application performance by 40%
