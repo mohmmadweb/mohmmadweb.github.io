@@ -16,21 +16,60 @@ author_profile: false
 
 {% assign academic_career = site.academic-career %}
 {% if academic_career.size > 0 %}
+  <!-- Statistics Box - Horizontal & Minimal -->
+  <div class="stats-box">
+    <div class="stats-content">
+      <span class="stat-item">
+        <strong class="stat-number">{{ academic_career.size }}</strong>
+        <span class="stat-label">Positions</span>
+      </span>
+      <span class="stat-separator">•</span>
+      <span class="stat-item">
+        {% assign institutions = "" | split: "," %}
+        {% for exp in academic_career %}
+          {% unless institutions contains exp.company %}
+            {% assign institutions = institutions | push: exp.company %}
+          {% endunless %}
+        {% endfor %}
+        <strong class="stat-number">{{ institutions.size }}</strong>
+        <span class="stat-label">Institutions</span>
+      </span>
+      <span class="stat-separator">•</span>
+      <span class="stat-item">
+        {% assign current_year = site.time | date: '%Y' | plus: 0 %}
+        {% assign earliest_year = current_year %}
+        {% for exp in academic_career %}
+          {% assign exp_year = exp.start_date | date: '%Y' | plus: 0 %}
+          {% if exp_year and exp_year > 0 and exp_year < earliest_year %}
+            {% assign earliest_year = exp_year %}
+          {% endif %}
+        {% endfor %}
+        <strong class="stat-number">{{ current_year | minus: earliest_year }}</strong>
+        <span class="stat-label">Years</span>
+      </span>
+    </div>
+  </div>
+
   <div class="experiences-timeline">
-    <!-- Present Positions - sorted by start_date descending -->
-    <h3 class="experience-year">Present Working Positions</h3>
+    <!-- Present Positions -->
+    <h3 class="experience-year present-section">Present Positions</h3>
     {% assign present_posts = "" | split: "," %}
     {% for post in academic_career %}
       {% if post.end_date == "Present" %}
         {% assign present_posts = present_posts | push: post %}
       {% endif %}
     {% endfor %}
-    {% assign present_sorted = present_posts | sort: "start_date" | reverse %}
-    {% for post in present_sorted %}
-      {% include archive-single-academic-career.html %}
-    {% endfor %}
     
-    <!-- Past Positions grouped by year and sorted by start_date -->
+    {% if present_posts.size > 0 %}
+      {% assign present_sorted = present_posts | sort: "start_date" | reverse %}
+      {% for post in present_sorted %}
+        {% include archive-single-academic-career.html %}
+      {% endfor %}
+    {% else %}
+      <p class="no-positions">Currently not engaged in any academic position.</p>
+    {% endif %}
+    
+    <!-- Past Positions -->
     {% assign years = "" | split: "," %}
     {% for post in academic_career %}
       {% if post.end_date != "Present" %}
@@ -44,7 +83,6 @@ author_profile: false
     {% assign years_sorted = years | sort | reverse %}
     
     {% for year in years_sorted %}
-      <h3 class="experience-year">{{ year }}</h3>
       {% assign year_posts = "" | split: "," %}
       {% for post in academic_career %}
         {% if post.end_date != "Present" %}
@@ -54,14 +92,16 @@ author_profile: false
           {% endif %}
         {% endif %}
       {% endfor %}
-      {% assign year_sorted = year_posts | sort: "start_date" | reverse %}
-      {% for post in year_sorted %}
-        {% include archive-single-academic-career.html %}
-      {% endfor %}
+      
+      {% if year_posts.size > 0 %}
+        <h3 class="experience-year">{{ year }} <span class="year-count">({{ year_posts.size }})</span></h3>
+        {% assign year_sorted = year_posts | sort: "start_date" | reverse %}
+        {% for post in year_sorted %}
+          {% include archive-single-academic-career.html %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
   </div>
 {% else %}
-  <p style="text-align: center; color: #7f8c8d; font-style: italic; margin: 2em 0;">
-    No academic career experiences found.
-  </p>
+  <p class="no-positions">No academic career positions found.</p>
 {% endif %}

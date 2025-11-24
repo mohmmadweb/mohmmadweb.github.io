@@ -1158,3 +1158,28 @@
     display: none;
   }
 }
+
+// Academic Career Experience Styles
+.current-academic-experience {
+  border-left: 4px solid #f39c12;
+  background: linear-gradient(135deg, #fff 0%, #fef9e7 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #fff 0%, #fdf5e1 100%);
+  }
+}
+
+.past-academic-experience {
+  border-left: 4px solid #95a5a6;
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #fff 0%, #e9ecef 100%);
+  }
+}
+
+// Present section styling for academic career
+.present-section {
+  border-bottom: 2px solid #f39c12 !important;
+  color: #f39c12 !important;
+}
