@@ -69,51 +69,28 @@ author_profile: false
     
     <!-- Line 2: Academic Role Stats with Duration -->
     <div class="stats-line stats-line-secondary">
-      {% assign role_stats = "" | split: "," %}
+      {% assign roles = "" | split: "," %}
       {% for exp in academic_career %}
         {% if exp.academic_role %}
-          {% assign role_name = exp.academic_role %}
-          {% assign role_found = false %}
-          {% for role_stat in role_stats %}
-            {% if role_stat.role == role_name %}
-              {% assign role_found = true %}
-              {% assign new_count = role_stat.count | plus: 1 %}
-              {% assign new_durations = role_stat.durations | append: "," | append: exp.start_date | append: "," | append: exp.end_date %}
-              {% assign role_stats = role_stats | where_exp: "item", "item.role != role_name" %}
-              {% assign new_stat = "" | split: "," %}
-              {% assign new_stat = new_stat | push: "role" | push: role_name %}
-              {% assign new_stat = new_stat | push: "count" | push: new_count %}
-              {% assign new_stat = new_stat | push: "durations" | push: new_durations %}
-              {% assign role_stats = role_stats | push: new_stat %}
-              {% break %}
-            {% endif %}
-          {% endfor %}
-          {% unless role_found %}
-            {% assign new_stat = "" | split: "," %}
-            {% assign new_stat = new_stat | push: "role" | push: role_name %}
-            {% assign new_stat = new_stat | push: "count" | push: 1 %}
-            {% assign new_stat = new_stat | push: "durations" | push: exp.start_date | append: "," | append: exp.end_date %}
-            {% assign role_stats = role_stats | push: new_stat %}
-          {% endunless %}
+          {% assign roles = roles | push: exp.academic_role %}
         {% endif %}
       {% endfor %}
       
-      {% for role_stat in role_stats %}
-        {% assign role_name = role_stat[1] %}
-        {% assign role_count = role_stat[3] %}
-        {% assign durations = role_stat[5] | split: "," %}
-        
+      {% assign unique_roles = roles | uniq %}
+      
+      {% for role in unique_roles %}
+        {% assign role_count = 0 %}
         {% assign total_months = 0 %}
-        {% for i in (0..durations.size) %}
-          {% if i % 2 == 0 and i < durations.size %}
-            {% assign start_date_str = durations[i] %}
-            {% assign end_date_str = durations[i+1] %}
+        
+        {% for exp in academic_career %}
+          {% if exp.academic_role == role %}
+            {% assign role_count = role_count | plus: 1 %}
             
-            {% capture start_seconds %}{{ start_date_str | date: "%s" }}{% endcapture %}
-            {% if end_date_str == "Present" %}
+            {% capture start_seconds %}{{ exp.start_date | date: "%s" }}{% endcapture %}
+            {% if exp.end_date == "Present" %}
               {% capture end_seconds %}{{ site.time | date: "%s" }}{% endcapture %}
             {% else %}
-              {% capture end_seconds %}{{ end_date_str | date: "%s" }}{% endcapture %}
+              {% capture end_seconds %}{{ exp.end_date | date: "%s" }}{% endcapture %}
             {% endif %}
             
             {% if start_seconds != "" and end_seconds != "" %}
@@ -134,7 +111,7 @@ author_profile: false
         <span class="stat-item-secondary">
           <strong class="stat-number-secondary">{{ role_count }}</strong>
           <span class="stat-label-secondary">
-            {{ role_name }}
+            {{ role }}
             {% if years > 0 or months > 0 %}
             - 
             {% if years > 0 %}{{ years }} yr{% if years > 1 %}s{% endif %} {% endif %}
