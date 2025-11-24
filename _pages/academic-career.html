@@ -69,38 +69,31 @@ author_profile: false
     
     <!-- Line 2: Academic Role Stats with Duration -->
     <div class="stats-line stats-line-secondary">
-      {% assign role_data = "" | split: "," %}
+      {% assign role_groups = "" | split: "," %}
       {% for exp in academic_career %}
         {% if exp.academic_role %}
-          {% assign role_item = exp.academic_role | append: "|" | append: exp.start_date | append: "|" | append: exp.end_date %}
-          {% assign role_data = role_data | push: role_item %}
+          {% assign role_name = exp.academic_role %}
+          {% assign start_date = exp.start_date %}
+          {% assign end_date = exp.end_date %}
+          
+          {% assign found = false %}
+          {% for group in role_groups %}
+            {% assign group_parts = group | split: "|" %}
+            {% if group_parts[0] == role_name %}
+              {% assign new_count = group_parts[1] | plus: 1 %}
+              {% assign new_duration = group_parts[2] | append: "," | append: start_date | append: "," | append: end_date %}
+              {% assign new_group = role_name | append: "|" | append: new_count | append: "|" | append: new_duration %}
+              {% assign role_groups = role_groups | where_exp: "item", "item != group" | push: new_group %}
+              {% assign found = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          
+          {% unless found %}
+            {% assign new_group = role_name | append: "|1|" | append: start_date | append: "," | append: end_date %}
+            {% assign role_groups = role_groups | push: new_group %}
+          {% endunless %}
         {% endif %}
-      {% endfor %}
-      
-      {% assign role_groups = "" | split: "," %}
-      {% for role_item in role_data %}
-        {% assign parts = role_item | split: "|" %}
-        {% assign role_name = parts[0] %}
-        {% assign start_date = parts[1] %}
-        {% assign end_date = parts[2] %}
-        
-        {% assign found = false %}
-        {% for group in role_groups %}
-          {% assign group_parts = group | split: "|" %}
-          {% if group_parts[0] == role_name %}
-            {% assign new_count = group_parts[1] | plus: 1 %}
-            {% assign new_duration = group_parts[2] | append: "," | append: start_date | append: "," | append: end_date %}
-            {% assign new_group = role_name | append: "|" | append: new_count | append: "|" | append: new_duration %}
-            {% assign role_groups = role_groups | where_exp: "item", "item != group" | push: new_group %}
-            {% assign found = true %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-        
-        {% unless found %}
-          {% assign new_group = role_name | append: "|1|" | append: start_date | append: "," | append: end_date %}
-          {% assign role_groups = role_groups | push: new_group %}
-        {% endunless %}
       {% endfor %}
       
       {% for group in role_groups %}
@@ -155,7 +148,6 @@ author_profile: false
     </div>
   </div>
 
-  <!-- بقیه کد بدون تغییر -->
   <div class="experiences-timeline">
     <!-- Present Positions -->
     <h3 class="experience-year present-section">Present Academic Positions</h3>

@@ -409,7 +409,7 @@
 .publication-links .btn {
   background: #f8f9fa;
   border: 1px solid #adb5bd;
-  color: #000000;
+  color: #000000 !important;
   transition: all 0.2s ease;
   
   &:hover {
@@ -421,43 +421,43 @@
 .publication-links .btn--primary {
   background: #f8f9fa;
   border-color: #adb5bd;
-  color: #000000;
+  color: #000000 !important;
 
   &:hover {
     background: #d32f2f;
     border-color: #d32f2f;
-    color: white;
+    color: white !important;
   }
 }
 
 .publication-links .btn--info {
   background: #f8f9fa;
   border-color: #adb5bd;
-  color: #000000;
+  color: #000000 !important;
 
   &:hover {
     background: #0097a7;
     border-color: #0097a7;
-    color: white;
+    color: white !important;
   }
 }
 
 .publication-links .btn--success {
   background: #f8f9fa;
   border-color: #adb5bd;
-  color: #000000;
+  color: #000000 !important;
 
   &:hover {
     background: #43a047;
     border-color: #43a047;
-    color: white;
+    color: white !important;
   }
 }
 
 .publication-links-full .btn {
   background: #f8f9fa;
   border: 1px solid #adb5bd;
-  color: #000000;
+  color: #000000 !important;
   transition: all 0.2s ease;
   
   &:hover {
@@ -469,72 +469,72 @@
 .publication-links-full .btn--primary {
   background: #f8f9fa;
   border-color: #adb5bd;
-  color: #000000;
+  color: #000000 !important;
 
   &:hover {
     background: #d32f2f;
     border-color: #d32f2f;
-    color: white;
+    color: white !important;
   }
 }
 
 .publication-links-full .btn--info {
   background: #f8f9fa;
   border-color: #adb5bd;
-  color: #000000;
+  color: #000000 !important;
 
   &:hover {
     background: #0097a7;
     border-color: #0097a7;
-    color: white;
+    color: white !important;
   }
 }
 
 .publication-links-full .btn--success {
   background: #f8f9fa;
   border-color: #adb5bd;
-  color: #000000;
+  color: #000000 !important;
 
   &:hover {
     background: #43a047;
     border-color: #43a047;
-    color: white;
+    color: white !important;
   }
 }
 
 .publication-links-full .btn--warning {
   background: #f8f9fa;
   border-color: #adb5bd;
-  color: #000000;
+  color: #000000 !important;
 
   &:hover {
     background: #ffb300;
     border-color: #ffb300;
-    color: white;
+    color: white !important;
   }
 }
 
 .publication-links-full .btn--danger {
   background: #f8f9fa;
   border-color: #adb5bd;
-  color: #000000;
+  color: #000000 !important;
 
   &:hover {
     background: #8e24aa;
     border-color: #8e24aa;
-    color: white;
+    color: white !important;
   }
 }
 
 .publication-links-full .btn--dark {
   background: #f8f9fa;
   border-color: #adb5bd;
-  color: #000000;
+  color: #000000 !important;
 
   &:hover {
     background: #757575;
     border-color: #757575;
-    color: white;
+    color: white !important;
   }
 }
 
