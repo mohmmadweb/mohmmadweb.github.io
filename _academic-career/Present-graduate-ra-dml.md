@@ -2,6 +2,7 @@
 title: "Graduate Research Assistant"
 collection: academic-career
 permalink: /academic-career/present/graduate-research-assistant/
+academic_role: "RA"
 employment_type: "Full-time"
 company: "Data Science & Machine Learning Lab"
 company_url: "https://dml.ir/"

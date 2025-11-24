@@ -2,6 +2,7 @@
 title: "TA - Deep Learning, Spring 2025"
 collection: academic-career
 permalink: /academic-career/2025/ta-deep-learning-spring2025/
+academic_role: "TA"
 employment_type: "Part-time"
 company: "Dr. Soleymani"
 company_url: ""

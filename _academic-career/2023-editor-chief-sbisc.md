@@ -2,6 +2,7 @@
 title: "Editor Chief of Zero Day Magazine"
 collection: academic-career
 permalink: /academic-career/2023/editor-chief-zero-day-magazine/
+academic_role: "Student Leadership"
 employment_type: "Part-time"
 company: "SBISC"
 company_url: "https://www.linkedin.com/company/42311695/"

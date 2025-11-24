@@ -2,6 +2,7 @@
 title: "TA - Machine Learning, Fall 2024"
 collection: academic-career
 permalink: /academic-career/2025/ta-machine-learning-fall2024/
+academic_role: "TA"
 employment_type: "Part-time"
 company: "Dr. Sharifi"
 company_url: "https://sharifml.ir/team"

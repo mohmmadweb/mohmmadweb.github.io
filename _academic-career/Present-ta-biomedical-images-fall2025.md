@@ -2,6 +2,7 @@
 title: "TA - Intelligent Analysis of Biomedical Images, Fall 2025"
 collection: academic-career
 permalink: /academic-career/Present/ta-biomedical-images-fall2025/
+academic_role: "TA"
 employment_type: "Part-time"
 company: "Dr. Rohban"
 company_url: "https://sharif.ir/~rohban/IABI/"

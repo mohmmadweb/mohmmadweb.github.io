@@ -2,6 +2,7 @@
 title: "Head TA - Social and Economic Networks, Spring 2025"
 collection: academic-career
 permalink: /academic-career/2025/head-ta-social-economic-networks-spring2025/
+academic_role: "TA"
 employment_type: "Part-time"
 company: "Dr Maryam Ramezani"
 company_url: "https://sut-ce-courses.github.io/socialnetwork/"

@@ -2,6 +2,7 @@
 title: "Scientific Team's Member"
 collection: academic-career
 permalink: /academic-career/2025/scientific-team-member-rayan-ai/
+academic_role: "Competitions & Hackathons"
 employment_type: "Seasonal"
 company: "Rayan AI Contest"
 company_url: "https://ai.rayan.global/"
