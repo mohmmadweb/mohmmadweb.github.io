@@ -74,13 +74,13 @@ img[onclick]:hover {
 | Leadership | Interpersonal skills |
 | Conflict resolution | Contractual affairs and sales |
 
-## A Little Extra About Me (My Hobbies)
+## A Little Extra About Me and my extracurricular activities (My Hobbies)
 
 - Reading personal development's books
-- Reading Books about marketing and selling
 - Reading books about mental development
+- Reading Books about marketing and selling
 - Playing Billiard
 - Playing Basketball
-- Book Writing
 - Study about Cryptocurrency
 - Watch English movies about law
+- Book Writing

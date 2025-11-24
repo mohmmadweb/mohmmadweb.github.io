@@ -1200,3 +1200,22 @@
 .present-section {
   border-bottom: 1px solid var(--global-border-color) !important;
 }
+
+// Employment Type Statistics
+.employment-type-stats {
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+  border: 1px solid #cce7ff;
+  margin-top: 1rem;
+}
+
+// Year with employment type breakdown
+.year-type-separator {
+  color: #bdc3c7;
+  margin: 0 0.5rem;
+}
+
+.year-type {
+  color: #555;
+  font-size: 0.9em;
+  font-weight: 500;
+}
