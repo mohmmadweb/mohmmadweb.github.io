@@ -9,6 +9,17 @@
   {% assign is_current = true %}
 {% endif %}
 
+{% comment %} Calculate duration {% endcomment %}
+{% assign start_date = post.start_date | date: "%s" | plus: 0 %}
+{% if post.end_date == "Present" %}
+  {% assign end_date = "now" | date: "%s" | plus: 0 %}
+{% else %}
+  {% assign end_date = post.end_date | date: "%s" | plus: 0 %}
+{% endif %}
+{% assign duration_seconds = end_date | minus: start_date %}
+{% assign duration_years = duration_seconds | divided_by: 31536000 %}
+{% assign duration_months = duration_seconds | modulo: 31536000 | divided_by: 2592000 %}
+
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     <div class="experience-card {% if is_current %}current-industrial-experience{% else %}past-industrial-experience{% endif %}">
@@ -31,7 +42,13 @@
             <span class="title-separator">-</span>
             <span class="employment-type">{{ post.employment_type }}</span>
             <span class="title-separator">-</span>
-            <span class="company">{{ post.company }}</span>
+            <span class="company">
+              {% if post.company_url %}
+                <a href="{{ post.company_url }}" target="_blank" rel="noopener">{{ post.company }} ↗</a>
+              {% else %}
+                {{ post.company }}
+              {% endif %}
+            </span>
           </div>
           
           <div class="experience-details">
@@ -41,6 +58,15 @@
                 Present
               {% else %}
                 {{ post.end_date | date: "%b %Y" }}
+              {% endif %}
+            </span>
+            <span class="separator">•</span>
+            <span class="duration">
+              {% if duration_years > 0 %}
+                {{ duration_years }} year{% if duration_years > 1 %}s{% endif %}
+              {% endif %}
+              {% if duration_months > 0 %}
+                {% if duration_years > 0 %}, {% endif %}{{ duration_months }} month{% if duration_months > 1 %}s{% endif %}
               {% endif %}
             </span>
             <span class="separator">•</span>

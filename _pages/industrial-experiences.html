@@ -16,8 +16,45 @@ author_profile: false
 
 {% assign industrial_experiences = site.industrial-experiences %}
 {% if industrial_experiences.size > 0 %}
+  <!-- Statistics Bar -->
+  <div class="experience-stats">
+    <div class="stat-item">
+      <div class="stat-number">{{ industrial_experiences.size }}</div>
+      <div class="stat-label">Total Experiences</div>
+    </div>
+    <div class="stat-item">
+      {% assign companies = "" | split: "," %}
+      {% for exp in industrial_experiences %}
+        {% unless companies contains exp.company %}
+          {% assign companies = companies | push: exp.company %}
+        {% endunless %}
+      {% endfor %}
+      <div class="stat-number">{{ companies.size }}</div>
+      <div class="stat-label">Companies</div>
+    </div>
+    <div class="stat-item">
+      {% assign current_year = site.time | date: '%Y' %}
+      {% assign earliest_year = current_year %}
+      {% for exp in industrial_experiences %}
+        {% assign exp_year = exp.start_date | date: '%Y' | plus: 0 %}
+        {% if exp_year < earliest_year %}
+          {% assign earliest_year = exp_year %}
+        {% endif %}
+      {% endfor %}
+      <div class="stat-number">{{ current_year | minus: earliest_year }}</div>
+      <div class="stat-label">Years</div>
+    </div>
+  </div>
+
+  <!-- Filter Tabs -->
+  <div class="experience-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="current">Current</button>
+    <button class="filter-btn" data-filter="past">Past</button>
+  </div>
+
   <div class="experiences-timeline">
-    <!-- Present Positions - sorted by start_date descending -->
+    <!-- Present Positions -->
     <h3 class="experience-year">Present Working Positions</h3>
     {% assign present_posts = "" | split: "," %}
     {% for post in industrial_experiences %}
@@ -37,7 +74,7 @@ author_profile: false
       </p>
     {% endif %}
     
-    <!-- Past Positions grouped by year and sorted by start_date -->
+    <!-- Past Positions -->
     {% assign years = "" | split: "," %}
     {% for post in industrial_experiences %}
       {% if post.end_date != "Present" %}
@@ -75,3 +112,63 @@ author_profile: false
     No industrial experiences found.
   </p>
 {% endif %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const experienceCards = document.querySelectorAll('.experience-card');
+  
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Remove active class from all buttons
+      filterBtns.forEach(b => b.classList.remove('active'));
+      // Add active class to clicked button
+      this.classList.add('active');
+      
+      const filter = this.getAttribute('data-filter');
+      
+      experienceCards.forEach(card => {
+        switch(filter) {
+          case 'all':
+            card.style.display = 'block';
+            break;
+          case 'current':
+            if (card.classList.contains('current-industrial-experience')) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+            break;
+          case 'past':
+            if (card.classList.contains('past-industrial-experience')) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+            break;
+        }
+      });
+      
+      // Hide/show year headers based on visible cards
+      document.querySelectorAll('.experience-year').forEach(header => {
+        const year = header.textContent.split(' ')[0];
+        if (year !== 'Present') {
+          const nextElement = header.nextElementSibling;
+          let hasVisibleCards = false;
+          let nextSibling = nextElement;
+          
+          while (nextSibling && !nextSibling.classList.contains('experience-year')) {
+            if (nextSibling.style.display !== 'none') {
+              hasVisibleCards = true;
+              break;
+            }
+            nextSibling = nextSibling.nextElementSibling;
+          }
+          
+          header.style.display = hasVisibleCards ? 'block' : 'none';
+        }
+      });
+    });
+  });
+});
+</script>
