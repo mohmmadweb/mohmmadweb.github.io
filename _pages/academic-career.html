@@ -69,38 +69,39 @@ author_profile: false
     
     <!-- Line 2: Academic Role Stats with Duration -->
     <div class="stats-line stats-line-secondary">
-      {% assign role_hash = "" | split: "," %}
+      {% assign role_stats = "" | split: "," %}
       {% for exp in academic_career %}
         {% if exp.academic_role %}
           {% assign role_name = exp.academic_role %}
           {% assign role_found = false %}
-          {% for role_item in role_hash %}
-            {% if role_item.name == role_name %}
+          {% for role_stat in role_stats %}
+            {% if role_stat.role == role_name %}
               {% assign role_found = true %}
-              {% assign new_count = role_item.count | plus: 1 %}
-              {% assign new_durations = role_item.durations | append: "," | append: exp.start_date | append: "," | append: exp.end_date %}
-              {% assign updated_role = "" | split: "," %}
-              {% assign updated_role = updated_role | push: role_name %}
-              {% assign updated_role = updated_role | push: new_count %}
-              {% assign updated_role = updated_role | push: new_durations %}
-              {% assign role_hash = role_hash | where_exp: "item", "item.name != role_name" | push: updated_role %}
+              {% assign new_count = role_stat.count | plus: 1 %}
+              {% assign new_durations = role_stat.durations | append: "," | append: exp.start_date | append: "," | append: exp.end_date %}
+              {% assign role_stats = role_stats | where_exp: "item", "item.role != role_name" %}
+              {% assign new_stat = "" | split: "," %}
+              {% assign new_stat = new_stat | push: "role" | push: role_name %}
+              {% assign new_stat = new_stat | push: "count" | push: new_count %}
+              {% assign new_stat = new_stat | push: "durations" | push: new_durations %}
+              {% assign role_stats = role_stats | push: new_stat %}
               {% break %}
             {% endif %}
           {% endfor %}
           {% unless role_found %}
-            {% assign new_role = "" | split: "," %}
-            {% assign new_role = new_role | push: role_name %}
-            {% assign new_role = new_role | push: 1 %}
-            {% assign new_role = new_role | push: exp.start_date | append: "," | append: exp.end_date %}
-            {% assign role_hash = role_hash | push: new_role %}
+            {% assign new_stat = "" | split: "," %}
+            {% assign new_stat = new_stat | push: "role" | push: role_name %}
+            {% assign new_stat = new_stat | push: "count" | push: 1 %}
+            {% assign new_stat = new_stat | push: "durations" | push: exp.start_date | append: "," | append: exp.end_date %}
+            {% assign role_stats = role_stats | push: new_stat %}
           {% endunless %}
         {% endif %}
       {% endfor %}
       
-      {% for role_item in role_hash %}
-        {% assign role_name = role_item[0] %}
-        {% assign role_count = role_item[1] %}
-        {% assign durations = role_item[2] | split: "," %}
+      {% for role_stat in role_stats %}
+        {% assign role_name = role_stat[1] %}
+        {% assign role_count = role_stat[3] %}
+        {% assign durations = role_stat[5] | split: "," %}
         
         {% assign total_months = 0 %}
         {% for i in (0..durations.size) %}
