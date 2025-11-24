@@ -23,6 +23,14 @@ with great honors and achievements
 
 _See the relevant coursework at the end of this CV._
 
+
+## Test Scores 
+
+ILI : Above Average
+
+TOEFL: 110/120 
+
+
 ## Research Interests
 
 - Large Language Models (LLM)

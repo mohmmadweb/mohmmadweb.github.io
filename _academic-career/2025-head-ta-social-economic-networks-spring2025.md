@@ -1,0 +1,36 @@
+---
+title: "Head TA - Social and Economic Networks, Spring 2025"
+collection: academic-career
+permalink: /academic-career/2025/head-ta-social-economic-networks-spring2025/
+employment_type: "Part-time"
+company: "Sharif University of Technology"
+company_url: ""
+start_date: 2025-02-01
+end_date: 2025-09-30
+location: "Sharif University of Technology, Tehran, Iran"
+location_type: "On-site"
+logo: "academic-career/Sharif_University_Logo.png"
+description: "Head Teaching Assistant for Social and Economic Networks course under supervision of Dr. Ramezani"
+skills:
+  - "Network Analysis"
+  - "Graph Theory"
+  - "Social Networks"
+  - "Economic Networks"
+  - "Team Leadership"
+  - "TA Management"
+  - "Course Coordination"
+---
+
+## Course Details
+
+**Course:** Social and Economic Networks  
+**Semester:** Spring 2025  
+**Instructor:** [Dr. Ramezani](https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en)
+
+**Responsibilities:**
+- Leading and coordinating the teaching assistant team
+- Managing course organization and scheduling
+- Overseeing grading consistency and quality
+- Conducting advanced tutorial sessions
+- Facilitating communication between students and instructor
+- Supervising network analysis projects
