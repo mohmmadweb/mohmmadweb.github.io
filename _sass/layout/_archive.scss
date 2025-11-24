@@ -923,116 +923,138 @@
   font-size: 0.8em;
 }
 
-// Ultra Compact Statistics
+// Experience Statistics - Normal size
 .experience-stats {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  margin: 1rem 0 1.5rem 0;
-  padding: 0.8rem;
+  gap: 2rem;
+  margin: 1.5rem 0 2rem 0;
+  padding: 1rem;
   background: #f8f9fa;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid #e8ecef;
   
   @include breakpoint($small) {
-    gap: 1rem;
-    padding: 0.6rem;
+    gap: 1.5rem;
+    padding: 0.8rem;
   }
 }
 
 .stat-item {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.1rem;
 }
 
 .stat-number {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #2c3e50;
   line-height: 1;
+  
+  @include breakpoint($small) {
+    font-size: 1.5rem;
+  }
 }
 
 .stat-label {
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: #7f8c8d;
+  margin-top: 0.3rem;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
 }
 
 // Present section styling
 .present-section {
-  border-bottom: 1px solid #6a59e9 !important;
+  border-bottom: 2px solid #6a59e9 !important;
   color: #6a59e9 !important;
-  margin-bottom: 0.5rem !important;
 }
 
-// Ultra Compact experience cards
+// Experience cards - Normal size with new layout
 .experience-card {
-  margin-bottom: 0.5rem;
-  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.8rem;
+  padding: 1rem;
   border: 1px solid #e8ecef;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #fff;
-  font-size: 0.8em;
-  line-height: 1.2;
+  transition: all 0.2s ease;
+  font-size: 0.9em;
+  line-height: 1.4;
   
   &:hover {
-    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 }
 
 .current-industrial-experience {
-  border-left: 3px solid #6a59e9;
-  background: #f8f7ff;
+  border-left: 4px solid #6a59e9;
+  background: linear-gradient(135deg, #fff 0%, #f0eeff 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #fff 0%, #e8e5ff 100%);
+  }
 }
 
 .past-industrial-experience {
-  border-left: 3px solid #95a5a6;
+  border-left: 4px solid #95a5a6;
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  
+  &:hover {
+    background: linear-gradient(135deg, #fff 0%, #e9ecef 100%);
+  }
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.experience-logo {
+  flex: 0 0 40px;
+  height: 40px;
+  border-radius: 6px;
+  overflow: hidden;
   background: #fff;
+  border: 1px solid #e8ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
 }
 
 .experience-content {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
 }
 
-.experience-main-line {
+// Line 1: Job Title + Dates + Duration + Location Type
+.experience-line-1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .experience-title {
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 600;
   color: #2c3e50;
   flex-shrink: 0;
 }
 
-.experience-meta {
-  font-size: 0.75em;
-  color: #666;
-  text-align: right;
-  
-  a {
-    color: #666;
-    text-decoration: none;
-    
-    &:hover {
-      color: #3498db;
-    }
-  }
-}
-
-.experience-details {
-  color: #666;
-  font-size: 0.75em;
+.line-1-details {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.8rem;
+  font-size: 0.9em;
+  color: #666;
   flex-wrap: wrap;
 }
 
@@ -1044,10 +1066,10 @@
 .duration {
   color: #7f8c8d;
   font-style: italic;
-}
-
-.location {
-  color: #666;
+  background: #f8f9fa;
+  padding: 0.1rem 0.4rem;
+  border-radius: 12px;
+  font-size: 0.8em;
 }
 
 .location-type {
@@ -1055,71 +1077,119 @@
   font-style: italic;
 }
 
-.separator {
+// Line 2: Employment Type + Company + Location
+.experience-line-2 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.9em;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.employment-type {
+  font-weight: 500;
+  color: #555;
+}
+
+.company {
+  a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    
+    &:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+  }
+}
+
+.location {
+  color: #666;
+}
+
+// Separators
+.experience-line-2 .employment-type::after,
+.experience-line-2 .company::after {
+  content: "•";
   color: #bdc3c7;
-  font-size: 0.7em;
+  margin-left: 0.8rem;
+}
+
+.experience-line-2 .location::before {
+  content: "";
+  margin-left: 0;
+}
+
+// Remove last separator
+.experience-line-2 .location::after {
+  content: "";
 }
 
 .experiences-timeline {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .experience-year {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 600;
   color: #2c3e50;
-  margin: 1rem 0 0.5rem 0;
-  padding-bottom: 0.2rem;
+  margin: 1.5rem 0 0.8rem 0;
+  padding-bottom: 0.3rem;
   border-bottom: 1px solid #eaeaea;
 }
 
 .year-count {
-  font-size: 0.65em;
+  font-size: 0.7em;
   color: #7f8c8d;
   font-weight: normal;
+  margin-left: 0.3em;
 }
 
 .no-positions {
   text-align: center;
   color: #7f8c8d;
   font-style: italic;
-  margin: 1rem 0;
-  font-size: 0.8em;
+  margin: 1.5rem 0;
+  font-size: 0.9em;
 }
 
 // Mobile optimizations
 @include breakpoint($small) {
-  .experience-main-line {
+  .experience-line-1 {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.1rem;
-    margin-bottom: 0.3rem;
+    gap: 0.3rem;
   }
   
-  .experience-meta {
-    text-align: left;
-    width: 100%;
+  .line-1-details {
+    gap: 0.5rem;
   }
   
-  .experience-details {
+  .experience-line-2 {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.1rem;
+    gap: 0.3rem;
   }
   
-  .separator {
-    display: none;
+  .experience-line-2 .employment-type::after,
+  .experience-line-2 .company::after {
+    content: "";
+    margin-left: 0;
   }
   
-  .experience-stats {
-    gap: 0.8rem;
+  .experience-header {
+    gap: 0.6rem;
   }
   
-  .stat-number {
-    font-size: 1rem;
-  }
-  
-  .stat-label {
-    font-size: 0.6rem;
+  .experience-logo {
+    flex: 0 0 32px;
+    height: 32px;
+    
+    img {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
