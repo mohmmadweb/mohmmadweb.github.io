@@ -1,5 +1,5 @@
 ---
-title: "Explainable Artificial Intelligence Models in Predicting Major Cardiovascular Events: Insights from the PolyIran and PolyPars Prospective Studies Running"
+title: "Explainable Artificial Intelligence Models in Predicting Major Cardiovascular Events"
 collection: publications
 # permalink: /publication/preprint/2025-01-15-symmetry-aware-bayesian-optimization
 category: preprint
