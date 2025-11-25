@@ -7,7 +7,7 @@ employment_type: "Part-time"
 company: "Sadat School for Exceptional Talents"
 company_url: "https://schoolsadat.ir/"
 start_date: 2021-09-23
-end_date: 2021-12-21
+end_date: 2021-12-24
 location: "Isfahan, Iran"
 location_type: "On-site"
 logo: "academic-career/sadat.png"

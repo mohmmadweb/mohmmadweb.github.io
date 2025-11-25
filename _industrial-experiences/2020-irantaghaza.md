@@ -2,14 +2,14 @@
 title: "Web Developer & Co-founder"
 collection: industrial-experiences
 permalink: /industrial-experiences/2020/iran-taghaza/
-employment_type: "Full-time"
+employment_type: "Contract"
 company: "Iran Taghaza"
 company_url: ""
 start_date: 2020-05-21
 end_date: 2020-07-22
 location: "Tehran, Iran"
 location_type: "On-site"
-logo: "industrial-experiences/iran-taghaza.png"
+logo: "industrial-experiences/faribagodarzi.jpg"
 description: "Co-founded and developed Iran's first demand-side marketplace platform, creating an innovative reverse model of traditional classifieds where users could post their needs and demands instead of offers."
 skills:
   - "Startup Development"

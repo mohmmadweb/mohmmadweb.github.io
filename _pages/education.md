@@ -103,18 +103,20 @@ redirect_from:
 *This section is purely for nostalgic purposes and does not contain professionally relevant information.*
 
 ### High School (10th-12th Grade)
+**Alborz High School**, Isfahan, Iran
 - **Overall GPA:** 19.15 / 20
-
-- **10th Grade:** 19.50 / 20  (Rank 4th)
-- **11th Grade:** 19.14 / 20  (Rank 2th)
-- **12th Grade:** 18.79 / 20  (Rank 1th)
+- **10th Grade:** 19.50 / 20
+- **11th Grade:** 19.14 / 20  
+- **12th Grade:** 18.79 / 20
 
 ### Middle School (7th-9th Grade)
+**Khaghani Middle School**, Isfahan, Iran
 - **7th Grade:** 19.88 / 20
 - **8th Grade:** 19.88 / 20
 - **9th Grade:** 19.93 / 20
 
 ### Elementary School (1st-6th Grade)
+**Dr. Shariati Elementary School**, Isfahan, Iran
 - **1st Grade:** 20.00 / 20
 - **2nd Grade:** 20.00 / 20
 - **3rd Grade:** 20.00 / 20
