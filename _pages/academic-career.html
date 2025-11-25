@@ -111,7 +111,13 @@ author_profile: false
         <div class="stat-grid-item">
           <div class="stat-role-count">
             <strong class="stat-number-secondary">{{ role_count }}</strong>
-            <span class="stat-label-secondary">{{ role }}</span>
+            <span class="stat-label-secondary">
+              {% if role == "COMPETITIONS & HACKATHONS" %}
+                HACKATHONS
+              {% else %}
+                {{ role }}
+              {% endif %}
+            </span>
           </div>
           <div class="stat-duration">
             {% if years > 0 %}{{ years }}y{% endif %}{% if months > 0 %}{{ months }}m{% endif %}
@@ -183,7 +189,13 @@ author_profile: false
               {% endif %}
             {% endfor %}
             <span class="year-type-separator">-</span>
-            <span class="year-type">{{ role }} ({{ role_count }})</span>
+            <span class="year-type">
+              {% if role == "COMPETITIONS & HACKATHONS" %}
+                HACKATHONS ({{ role_count }})
+              {% else %}
+                {{ role }} ({{ role_count }})
+              {% endif %}
+            </span>
           {% endfor %}
         </h3>
         
