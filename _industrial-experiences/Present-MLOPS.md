@@ -1,5 +1,5 @@
 ---
-title: "Technical Team Lead"
+title: "MLOPS Technical Team"
 collection: industrial-experiences
 permalink: /industrial-experiences/present/aictri-ai-platform/
 employment_type: "Part-time"
@@ -10,7 +10,7 @@ end_date: "Present"
 location: "Sharif University of Technology, Tehran Province, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
-description: "Technical Team Lead for Iran's National Artificial Intelligence Platform (AIP) - a strategic national project under the supervision of the Vice Presidency for Science and Technology. Leading MLOps and Data teams at Advanced ICT Research Institute of Sharif University in developing Iran's sovereign AI infrastructure with focus on Kubernetes, model registry, and automated ML pipelines."
+description: "MLOPS Technical Team for Iran's National Artificial Intelligence Platform (AIP) - a strategic national project under the supervision of the Vice Presidency for Science and Technology. Leading MLOps and Data teams at Advanced ICT Research Institute of Sharif University in developing Iran's sovereign AI infrastructure with focus on Kubernetes, model registry, and automated ML pipelines."
 skills:
   - "MLOps"
   - "Kubernetes"

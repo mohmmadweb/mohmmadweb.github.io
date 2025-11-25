@@ -64,21 +64,20 @@ img[onclick]:hover {
 
 ## Objective
 
-write sth interesting
+I've always been driven by a desire to create things that matter—tools and solutions that genuinely improve people's daily lives and work. For me, the greatest satisfaction comes from knowing that something I built is helping others be more productive, efficient, and ultimately, happier. I'm not interested in working on abstract problems in a vacuum; even back in high school, I was the student trying to connect every mathematical theory to a tangible, real-world application.
 
+This mindset, fueled by a deep-seated passion for mathematics that has only grown through my studies in statistics, linear algebra, and machine learning theory, shapes how I approach computer science. I'm inherently drawn to building foundations—creating the underlying infrastructure that accelerates future work and empowers others to build upon it. I thrive in environments focused on meaningful impact and am constantly seeking to learn from those who are already making a positive dent in the world.
 
 ## Soft Skills
 
-| Column 1 | Column 2 |
-|----------|----------|
-| Adaptability | Collaboration |
-| Teamwork | Public relation and negotiation |
-| Problem solving | Communication skills |
-| Crisis management | Enlightened |
-| Critical thinking | Responsibility |
-| Work ethic | Management |
-| Leadership | Interpersonal skills |
-| Conflict resolution | Contractual affairs and sales |
+| Leadership & Management | Analytical & Problem-Solving | Interpersonal & Collaboration |
+|------------------------|------------------------------|-------------------------------|
+| Project Management | Critical Thinking | Communication Skills |
+| Team Leadership | Problem-Solving | Collaboration & Teamwork |
+| Strategic Thinking | Adaptability | Client Relations & Negotiation |
+| Crisis Management | Results-Oriented | Conflict Resolution |
+| Work Ethic & Responsibility | Data-Driven Decision Making | Public Speaking |
+| Mentorship & Coaching | Research & Analysis | Cross-functional Coordination |
 
 ## A Little Extra About Me and my extracurricular activities (My Hobbies)
 
