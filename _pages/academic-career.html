@@ -67,8 +67,8 @@ author_profile: false
       </span>
     </div>
     
-    <!-- Line 2 & 3: Academic Role Stats with Duration -->
-    <div class="stats-grid">
+    <!-- Line 2: Academic Role Stats with Duration -->
+    <div class="stats-line stats-line-secondary">
       {% assign roles = "" | split: "," %}
       {% for exp in academic_career %}
         {% if exp.academic_role %}
@@ -108,9 +108,9 @@ author_profile: false
         {% assign years = total_months | divided_by: 12 %}
         {% assign months = total_months | modulo: 12 %}
         
-        <div class="stat-grid-item">
-          <div class="stat-role-count">
-            <strong class="stat-number-secondary">{{ role_count }}</strong>
+        <span class="stat-item-secondary">
+          <span class="stat-role-with-duration">
+            <strong class="stat-number-secondary">{{ role_count }}×</strong>
             <span class="stat-label-secondary">
               {% if role == "COMPETITIONS & HACKATHONS" %}
                 HACKATHONS
@@ -118,12 +118,14 @@ author_profile: false
                 {{ role }}
               {% endif %}
             </span>
-          </div>
-          <div class="stat-duration">
-            {% if years > 0 %}{{ years }}y{% endif %}{% if months > 0 %}{{ months }}m{% endif %}
-            {% if years == 0 and months == 0 %}0m{% endif %}
-          </div>
-        </div>
+            <span class="stat-duration-parenthesis">
+              ({% if years > 0 %}{{ years }}y{% endif %}{% if months > 0 %}{{ months }}m{% endif %}{% if years == 0 and months == 0 %}0m{% endif %})
+            </span>
+          </span>
+        </span>
+        {% unless forloop.last %}
+          <span class="stat-separator-secondary">•</span>
+        {% endunless %}
       {% endfor %}
     </div>
   </div>

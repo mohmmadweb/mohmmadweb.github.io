@@ -1437,3 +1437,29 @@
     font-size: 0.65rem;
   }
 }
+
+.stat-role-with-duration {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.stat-duration-parenthesis {
+  font-size: 0.75rem;
+  color: #868e96;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+@include breakpoint($small) {
+  .stat-role-with-duration {
+    flex-direction: column;
+    gap: 0.1rem;
+    align-items: center;
+  }
+  
+  .stat-duration-parenthesis {
+    font-size: 0.7rem;
+  }
+}
