@@ -67,8 +67,8 @@ author_profile: false
       </span>
     </div>
     
-    <!-- Line 2: Academic Role Stats -->
-    <div class="stats-line stats-line-secondary">
+    <!-- Line 2 & 3: Academic Role Stats with Duration -->
+    <div class="stats-grid">
       {% assign roles = "" | split: "," %}
       {% for exp in academic_career %}
         {% if exp.academic_role %}
@@ -80,38 +80,12 @@ author_profile: false
       
       {% for role in unique_roles %}
         {% assign role_count = 0 %}
-        {% for exp in academic_career %}
-          {% if exp.academic_role == role %}
-            {% assign role_count = role_count | plus: 1 %}
-          {% endif %}
-        {% endfor %}
-        
-        <span class="stat-item-secondary">
-          <strong class="stat-number-secondary">{{ role_count }}</strong>
-          <span class="stat-label-secondary">{{ role }}</span>
-        </span>
-        {% unless forloop.last %}
-          <span class="stat-separator-secondary">•</span>
-        {% endunless %}
-      {% endfor %}
-    </div>
-    
-    <!-- Line 3: Duration Stats -->
-    <div class="stats-line stats-line-tertiary">
-      {% assign roles = "" | split: "," %}
-      {% for exp in academic_career %}
-        {% if exp.academic_role %}
-          {% assign roles = roles | push: exp.academic_role %}
-        {% endif %}
-      {% endfor %}
-      
-      {% assign unique_roles = roles | uniq %}
-      
-      {% for role in unique_roles %}
         {% assign total_months = 0 %}
         
         {% for exp in academic_career %}
           {% if exp.academic_role == role %}
+            {% assign role_count = role_count | plus: 1 %}
+            
             {% capture start_seconds %}{{ exp.start_date | date: "%s" }}{% endcapture %}
             {% if exp.end_date == "Present" %}
               {% capture end_seconds %}{{ site.time | date: "%s" }}{% endcapture %}
@@ -134,15 +108,16 @@ author_profile: false
         {% assign years = total_months | divided_by: 12 %}
         {% assign months = total_months | modulo: 12 %}
         
-        <span class="stat-item-tertiary">
-          <span class="stat-duration">
+        <div class="stat-grid-item">
+          <div class="stat-role-count">
+            <strong class="stat-number-secondary">{{ role_count }}</strong>
+            <span class="stat-label-secondary">{{ role }}</span>
+          </div>
+          <div class="stat-duration">
             {% if years > 0 %}{{ years }}y{% endif %}{% if months > 0 %}{{ months }}m{% endif %}
             {% if years == 0 and months == 0 %}0m{% endif %}
-          </span>
-        </span>
-        {% unless forloop.last %}
-          <span class="stat-separator-tertiary">•</span>
-        {% endunless %}
+          </div>
+        </div>
       {% endfor %}
     </div>
   </div>
