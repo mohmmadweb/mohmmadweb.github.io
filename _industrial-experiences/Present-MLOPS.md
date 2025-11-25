@@ -9,7 +9,6 @@ start_date: 2025-01-20
 end_date: "Present"
 location: "Sharif University of Technology, Tehran Province, Iran"
 location_type: "On-site"
-logo: "industrial-experiences/aictri.png"
 description: "Technical Team Lead for Iran's National Artificial Intelligence Platform (AIP) - a strategic national project under the supervision of the Vice Presidency for Science and Technology. Leading MLOps and Data teams at Advanced ICT Research Institute of Sharif University in developing Iran's sovereign AI infrastructure with focus on Kubernetes, model registry, and automated ML pipelines."
 skills:
   - "MLOps"
@@ -20,7 +19,6 @@ skills:
   - "AutoML"
   - "CI/CD for ML"
   - "Infrastructure Design"
-  - "Team Leadership"
   - "Data Engineering"
   - "AI Infrastructure"
   - "Distributed Systems"
