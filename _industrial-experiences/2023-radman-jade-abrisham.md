@@ -1,12 +1,12 @@
 ---
 title: "Head of IT Department"
 collection: industrial-experiences
-permalink: /industrial-experiences/2024/radman-jade-abrisham/
+permalink: /industrial-experiences/2023/radman-jade-abrisham/
 employment_type: "Part-time"
 company: "Radman Jade Abrisham Factory"
 company_url: "ahanamn.com"
 start_date: 2020-09-22
-end_date: 2024-12-31
+end_date: 2023-09-21
 location: "Tehran, Iran"
 location_type: "On-site"
 logo: "industrial-experiences/ahanamn.png"

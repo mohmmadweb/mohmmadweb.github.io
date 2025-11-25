@@ -5,8 +5,8 @@ permalink: /industrial-experiences/2025/pakzad-academy/
 employment_type: "Contract"
 company: "Pakzad Academy"
 company_url: "https://pakzadacademy.com/"
-start_date: 2024-06-16
-end_date: 2025-09-01
+start_date: 2024-06-22
+end_date: 2025-09-22
 location: "Isfahan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/pakzadacademy.png"

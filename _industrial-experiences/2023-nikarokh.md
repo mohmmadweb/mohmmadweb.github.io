@@ -1,12 +1,12 @@
 ---
 title: "Web Developer and Maintenance"
 collection: industrial-experiences
-permalink: /industrial-experiences/2024/nikarokh/
+permalink: /industrial-experiences/2023/nikarokh/
 employment_type: "Part-time"
 company: "Nikarokh"
 company_url: "nikarokh.com"
 start_date: 2020-04-01
-end_date: 2024-01-31
+end_date: 2023-12-20
 location: "West Nazar Street, Isfahan, Iran"
 location_type: "Remote"
 logo: "industrial-experiences/nikarokh.jpeg"

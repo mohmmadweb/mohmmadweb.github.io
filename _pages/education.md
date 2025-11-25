@@ -95,3 +95,29 @@ redirect_from:
 - Technical Language (19.75/20)
 - Research Method and Presentation (18.63/20)
 - Internship (19.75/20)
+
+---
+
+## Nostalgic Grades 
+
+*This section is purely for nostalgic purposes and does not contain professionally relevant information.*
+
+### High School (10th-12th Grade)
+- **Overall GPA:** 19.15 / 20
+
+- **10th Grade:** 19.50 / 20  (Rank 4th)
+- **11th Grade:** 19.14 / 20  (Rank 2th)
+- **12th Grade:** 18.79 / 20  (Rank 1th)
+
+### Middle School (7th-9th Grade)
+- **7th Grade:** 19.88 / 20
+- **8th Grade:** 19.88 / 20
+- **9th Grade:** 19.93 / 20
+
+### Elementary School (1st-6th Grade)
+- **1st Grade:** 20.00 / 20
+- **2nd Grade:** 20.00 / 20
+- **3rd Grade:** 20.00 / 20
+- **4th Grade:** 20.00 / 20
+- **5th Grade:** 19.91 / 20
+- **6th Grade:** 20.00 / 20

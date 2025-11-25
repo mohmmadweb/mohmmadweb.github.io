@@ -1,12 +1,12 @@
 ---
-title: "Web Developer & Business R&D"
+title: "Web Developer"
 collection: industrial-experiences
 permalink: /industrial-experiences/2023/irandelle/
 employment_type: "Part-time"
 company: "Irandelle"
 company_url: "https://irandelle.com/"
-start_date: 2020-09-01
-end_date: 2023-12-31
+start_date: 2020-10-11
+end_date: 2023-09-21
 location: "Jolfa, Isfahan, Iran"
 location_type: "Hybrid"
 logo: "industrial-experiences/irandelle.png"
