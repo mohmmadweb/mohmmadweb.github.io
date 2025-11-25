@@ -1,11 +1,11 @@
 ---
-title: "test"
+title: "Fairness in LLM's"
 collection: publications
 # permalink: /publication/preprint/2025-01-15-symmetry-aware-bayesian-optimization
 category: preprint
 excerpt: "A novel approach for Bayesian optimization that leverages symmetry properties through max kernels for improved sample efficiency."
 date: 2025-01-19
-authors: "Test1 , test2"
+authors: "Mohammad Aghaei"
 venue: "arXiv preprint arXiv:2509.25051"
 teaser: "publications/images.jpeg"
 pdf: "https://arxiv.org/pdf/2509.25051.pdf"
