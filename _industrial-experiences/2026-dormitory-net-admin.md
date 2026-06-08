@@ -6,7 +6,7 @@ employment_type: "Part-time"
 company: "Sharif University of Technology"
 company_url: "https://sharif.edu/"
 start_date: 2023-08-21
-end_date: "Present"
+end_date: 2026-03-02
 location: "Vezvaei Dormitory, Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
