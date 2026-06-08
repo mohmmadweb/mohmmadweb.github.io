@@ -7,7 +7,7 @@ employment_type: "Part-time"
 company: "Course website"
 company_url: "https://sut-ce-courses.github.io/linearalgebra/"
 start_date: 2025-08-23
-end_date: "Present"
+end_date: 2026-03-02
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/Sharif_University_Logo.png"
