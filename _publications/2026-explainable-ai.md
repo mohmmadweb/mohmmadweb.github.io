@@ -30,10 +30,10 @@ We developed and compared multiple machine learning approaches:
 - XGBoost
 - Logistic Regression
 - Decision Tree
-- Support Vector Machines
+- Support Vector Machines (SVM)
 - Random Forest
-- K-Nearest Neighbors
-- Multilayer Perceptron (deep learning)
+- K-Nearest Neighbors (KNN)
+- Multilayer Perceptron (MLP) deep learning model
 
 Class imbalance was addressed via SMOTE (Synthetic Minority Over-sampling Technique).
 
@@ -57,11 +57,11 @@ XGBoost performance remained consistent in the PolyIran and PolyPars cohorts, wi
 
 ### Key Predictors Identified by SHAP
 
-1. **Age** (most important)
-2. **Creatinine** (novel risk indicator)
+1. **Age** (most important predictor)
+2. **Creatinine** (novel risk indicator not included in traditional CVD scores)
 3. **Systolic Blood Pressure**
 4. **Fasting Blood Sugar (FBS)**
-5. **BMI**
+5. **Body Mass Index (BMI)**
 6. **LDL/HDL Ratio**
 7. **Male Sex**
 8. **Smoking Status**
@@ -75,21 +75,22 @@ SHAP analysis identified age, creatinine, and systolic blood pressure as the mos
 ## Discussion
 
 Our XAI models demonstrate that:
-1. ML approaches outperform traditional risk scores
-2. Model explainability facilitates clinical adoption
-3. Creatinine was identified as a novel risk indicator not included in traditional CVD scores
-4. These findings support incorporating kidney function screening into CVD risk stratification
+1. Machine learning approaches, particularly XGBoost, outperform traditional risk scores
+2. Model explainability through SHAP facilitates clinical adoption and trust
+3. Creatinine was identified as a novel risk indicator not included in traditional CVD scores such as Framingham or ASCVD
+4. These findings support incorporating kidney function screening into routine CVD risk stratification
 
 ### Clinical Implications
 
 The proposed models can be integrated into:
 - Electronic health records for real-time risk assessment
-- Primary care settings in low-resource environments
+- Primary care settings, particularly in low-resource environments
 - Personalized prevention strategies based on modifiable risk factors
+- Screening programs that include renal function tests alongside traditional cardiovascular risk factors
 
 ## Conclusion
 
-Explainable AI models, particularly XGBoost, demonstrated high predictive accuracy for MCVE and revealed creatinine as a novel risk indicator not included in traditional CVD scores. These findings support incorporating kidney function screening into CVD risk stratification and highlight the potential of AI-driven tools to enhance prevention strategies.
+Explainable AI models, particularly XGBoost, demonstrated high predictive accuracy for major cardiovascular events and revealed creatinine as a novel risk indicator not included in traditional CVD scores. These findings support incorporating kidney function screening into CVD risk stratification and highlight the potential of AI-driven tools to enhance prevention strategies. The combination of high predictive performance with interpretability makes these models suitable for potential clinical implementation in cardiovascular risk assessment.
 
 ## Acknowledgements
 
@@ -101,7 +102,7 @@ Amir Ghafari and Sadaf Sepanlou contributed equally to this work.
 
 ## Ethics Declarations
 
-This study is a secondary observational analysis based on two major clinical trials: PolyIran and PolyPars. The PolyPars trial was approved by the Ethics Committees of Shiraz University of Medical Sciences and Tehran University of Medical Sciences, and all participants provided written informed consent prior to enrollment. Similarly, the PolyIran trial was approved by the Ethics Committee of the Digestive Diseases Research Institute, Tehran University of Medical Sciences. Written informed consent was also obtained from all participants in this trial. Ethical approval for the current secondary analysis was obtained from the Tehran University of Medical Sciences (TUMS) under the ethical code IR.TUMS.DDRI.REC.1402.044. All data used for analysis were anonymized, ensuring no personally identifiable information was included. In the present study, all methods were carried out in accordance with relevant guidelines and regulations, including the principles of the Helsinki Declaration.
+This study is a secondary observational analysis based on two major clinical trials: PolyIran and PolyPars. The PolyPars trial (Polypill for primary and secondary prevention of cardiovascular disease: a pragmatic cluster-randomised controlled trial) was approved by the Ethics Committees of Shiraz University of Medical Sciences and Tehran University of Medical Sciences, and all participants provided written informed consent prior to enrollment. Similarly, the PolyIran trial (Polypill for the prevention of cardiovascular disease: a pragmatic cluster-randomised controlled trial) was approved by the Ethics Committee of the Digestive Diseases Research Institute, Tehran University of Medical Sciences. Written informed consent was also obtained from all participants in this trial. Ethical approval for the current secondary analysis was obtained from the Tehran University of Medical Sciences (TUMS) under the ethical code IR.TUMS.DDRI.REC.1402.044. All data used for analysis were anonymized, ensuring no personally identifiable information was included. In the present study, all methods were carried out in accordance with relevant guidelines and regulations, including the principles of the Helsinki Declaration.
 
 ## Competing Interests
 
@@ -119,4 +120,4 @@ During the preparation of this work, the authors used Grammarly and ChatGPT 4 to
 
 ## Rights and Permissions
 
-This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it.
+This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
