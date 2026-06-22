@@ -13,14 +13,16 @@ $doc-font-size              : 14;
 $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
-/* System typefaces */
+/* System typefaces
+   Serif (Crimson Pro) carries headings & long-form body copy for an elegant academic feel.
+   Inter carries UI chrome (nav, buttons, badges, meta) for a crisp, modern look. */
 $serif                      : "Crimson Pro", Georgia, Times, serif;
-$sans-serif                 : "Crimson Pro", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace                  : "Crimson Pro", Monaco, Consolas, "Lucida Console", monospace;
+$sans-serif                 : "Inter", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace                  : "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 /* Sans serif typefaces */
-$sans-serif-narrow          : "Crimson Pro", $sans-serif;
-$helvetica                  : "Crimson Pro", Helvetica, "Helvetica Neue", Arial, sans-serif;
+$sans-serif-narrow          : $sans-serif;
+$helvetica                  : "Inter", Helvetica, "Helvetica Neue", Arial, sans-serif;
 
 /* Serif typefaces */
 $georgia                    : "Crimson Pro", Georgia, serif;
@@ -39,7 +41,7 @@ $type-size-6                : 0.75em;   // ~12px
 $type-size-7                : 0.6875em; // ~11px
 $type-size-8                : 0.625em;  // ~10px
 
-// Global font families - Using serif as primary for elegant academic look
+// Global font families - serif for headings/body, sans for UI chrome
 $global-font-family         : $serif;
 $header-font-family         : $serif;
 $caption-font-family        : $serif;

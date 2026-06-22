@@ -9,28 +9,74 @@ redirect_from:
 
 ## Education
 
-**Sep 2023 – Present**  
-**Master of Science in Artificial Intelligence**  
-**[Sharif University of Technology](https://sharif.edu/)**, Tehran, Iran  
-*Cumulative GPA: 3.3 / 4.0*  
-**Thesis Title:** "Fairness-Aware Community Detection in Complex Networks"  
-**Supervisors:** [Prof. Hamid R. Rabiee](https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en) & [Dr. Mohammad T. Manzuri Shalmani](https://scholar.google.com/citations?user=NXYyxTMAAAAJ&hl=en)
+<div class="experiences-timeline">
 
+  <div class="experience-card current-academic-experience">
+    <div class="experience-header">
+      <div class="experience-content">
+        <div class="experience-title-line">
+          <h3 class="experience-title">Master of Science in Artificial Intelligence</h3>
+        </div>
+        <div class="experience-details-container">
+          <div class="experience-details">
+            <span class="dates">Sep 2023 &ndash; Present</span>
+            <span class="title-separator">&bull;</span>
+            <span class="institution"><a href="https://sharif.edu/" target="_blank" rel="noopener">Sharif University of Technology</a>, Tehran, Iran</span>
+          </div>
+        </div>
+        <div class="honor-description">
+          <em>Cumulative GPA: 3.3 / 4.0</em><br>
+          <strong>Thesis Title:</strong> "Fairness-Aware Community Detection in Complex Networks"<br>
+          <strong>Supervisors:</strong> <a href="https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Hamid R. Rabiee</a> &amp; <a href="https://scholar.google.com/citations?user=NXYyxTMAAAAJ&hl=en" target="_blank" rel="noopener">Dr. Mohammad T. Manzuri Shalmani</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="experience-card past-academic-experience">
+    <div class="experience-header">
+      <div class="experience-content">
+        <div class="experience-title-line">
+          <h3 class="experience-title">Bachelor of Science in Computer Software Engineering</h3>
+        </div>
+        <div class="experience-details-container">
+          <div class="experience-details">
+            <span class="dates">Sep 2019 &ndash; Aug 2023</span>
+            <span class="title-separator">&bull;</span>
+            <span class="institution"><a href="https://www.ui.ac.ir/" target="_blank" rel="noopener">University of Isfahan</a>, Isfahan, Iran</span>
+          </div>
+        </div>
+        <div class="honor-description">
+          <em>Cumulative GPA: 3.3 / 4.0</em><br>
+          <strong>Thesis Title:</strong> "Professors Home Page Creation" &mdash; <em>Thesis Grade: 20 / 20</em><br>
+          <strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=Z4QLt3IAAAAJ&hl=en" target="_blank" rel="noopener">Dr. Mohammad Ali Nematbakhsh</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-**Sep 2019 – Aug 2023**  
-**Bachelor of Science in Computer Software Engineering**  
-**[University of Isfahan](https://www.ui.ac.ir/)**, Isfahan, Iran  
-*Cumulative GPA: 3.3 / 4.0*  
-**Thesis Title:** "Professors Home Page Creation"  
-**Supervisor:** [Dr. Mohammad Ali Nematbakhsh](https://scholar.google.com/citations?user=Z4QLt3IAAAAJ&hl=en)  
-*Thesis Grade: 20 / 20*
+  <div class="experience-card past-academic-experience">
+    <div class="experience-header">
+      <div class="experience-content">
+        <div class="experience-title-line">
+          <h3 class="experience-title">Diploma in Mathematics and Physics</h3>
+        </div>
+        <div class="experience-details-container">
+          <div class="experience-details">
+            <span class="dates">Sep 2016 &ndash; Aug 2019</span>
+            <span class="title-separator">&bull;</span>
+            <span class="institution"><a href="https://maps.app.goo.gl/F3k5gS8vN8Hv8skx6" target="_blank" rel="noopener">Alborz High School</a>, Isfahan, Iran</span>
+          </div>
+        </div>
+        <div class="honor-description">
+          <em>Cumulative GPA: 4.0 / 4.0</em><br>
+          <em>Graduated with High Honors</em>
+        </div>
+      </div>
+    </div>
+  </div>
 
-**Sep 2016 – Aug 2019**  
-**Diploma in Mathematics and Physics**  
-**[Alborz High School](https://maps.app.goo.gl/F3k5gS8vN8Hv8skx6)**, Isfahan, Iran  
-*Cumulative GPA: 4.0 / 4.0*  
-*Graduated with High Honors*
+</div>
 
 ---
 

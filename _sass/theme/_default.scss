@@ -20,7 +20,8 @@ $success-color              : #62c462;
 $warning-color              : #f89406;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
+$border-radius              : 10px;
+$border-radius-sm           : 6px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
 $global-transition          : all 0.2s ease-in-out;
 $masthead-height            : 70px;
@@ -28,6 +29,10 @@ $navicon-width              : 28px;
 $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
+
+/* Brand accent - derived from the site's heading blue (#043361) */
+$accent                     : #1565c0;
+$accent-dark                : #043361;
 
 /* Default light theme for the site */
 :root {
@@ -39,14 +44,24 @@ $sidebar-screen-min-width   : 1024px;
     --global-code-background-color      : #fafafa;
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : mix(#fff,  #{$dark-gray}, 25%);
-    --global-link-color                 : #{$link}; 
+    --global-link-color                 : #{$link};
     --global-link-color-hover           : #{$link-dark};
     --global-link-color-visited         : #{$link-light};
     --global-masthead-link-color        : #{$dark-gray};
-    --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);    
+    --global-masthead-link-color-hover  : mix(#000, #{$gray}, 25%);
     --global-text-color                 : #{$dark-gray};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$lighter-gray};
-    --global-heading-color              : #043361;
+    --global-heading-color              : #{$accent-dark};
 
+    /* Design tokens used by cards/badges across academic-career, industrial-experiences,
+       honors-and-awards, publications and talks - kept theme-aware so dark mode works. */
+    --accent                            : #{$accent};
+    --accent-soft                       : rgba(21, 101, 192, 0.08);
+    --accent-text                       : #{$accent-dark};
+    --surface-color                     : #fff;
+    --surface-color-alt                 : #f8f9fa;
+    --card-border-color                 : #e8ecef;
+    --shadow-sm                         : 0 1px 3px rgba(15, 23, 42, 0.06);
+    --shadow-md                         : 0 4px 16px rgba(15, 23, 42, 0.1);
 }

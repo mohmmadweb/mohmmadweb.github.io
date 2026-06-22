@@ -10,20 +10,29 @@
   /* default button */
   display: inline-block;
   margin-bottom: 0.25em;
-  padding: 0.5em 1em;
+  padding: 0.6em 1.2em;
   color: #fff !important;
   font-family: $sans-serif;
   font-size: $type-size-6;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   text-align: center;
   text-decoration: none;
   background-color: var(--global-base-color);
   border: 0 !important;
-  border-radius: $border-radius;
+  border-radius: $border-radius-sm;
+  box-shadow: var(--shadow-sm);
   cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 
   &:hover {
     background-color: mix(white, #000, 20%);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 
   .icon {

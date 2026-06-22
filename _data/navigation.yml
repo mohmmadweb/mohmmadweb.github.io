@@ -36,10 +36,10 @@ main:
   #   url: /year-archive/
     
   - title: "Get CV"
-    url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
+    url: /cv-json/
+
+  # - title: "CV (markdown fallback)"
+  #   url: /cv/
     
   # - title: "Guide"
   #   url: /markdown/

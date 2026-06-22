@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# Script to update the CV JSON file from the markdown CV
-# Author: Yuan Chen
+# Script to regenerate _data/cv.json from the site's real content
+# (academic-career, industrial-experiences, education.md, publications, talks, etc.)
 
 # Set the base directory to the repository root
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 # Define file paths
-CV_MARKDOWN="$BASE_DIR/_pages/cv.md"
 CV_JSON="$BASE_DIR/_data/cv.json"
 CONFIG_FILE="$BASE_DIR/_config.yml"
 
@@ -18,15 +17,9 @@ if [ ! -f "$PYTHON_SCRIPT" ]; then
   exit 1
 fi
 
-# Check if the markdown CV exists
-if [ ! -f "$CV_MARKDOWN" ]; then
-  echo "Error: Markdown CV not found at $CV_MARKDOWN"
-  exit 1
-fi
-
-# Run the Python script to convert markdown to JSON
-echo "Converting markdown CV to JSON..."
-python3 "$PYTHON_SCRIPT" --input "$CV_MARKDOWN" --output "$CV_JSON" --config "$CONFIG_FILE"
+# Run the Python script to (re)generate the CV JSON
+echo "Generating CV JSON from site content..."
+python3 "$PYTHON_SCRIPT" --output "$CV_JSON" --config "$CONFIG_FILE" --repo-root "$BASE_DIR"
 
 # Check if the conversion was successful
 if [ $? -eq 0 ]; then

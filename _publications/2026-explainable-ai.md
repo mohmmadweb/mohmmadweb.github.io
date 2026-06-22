@@ -1,7 +1,7 @@
 ---
 title: "Explainable artificial intelligence models in predicting major cardiovascular events: insights from the PolyIran and PolyPars prospective studies"
 collection: publications
-category: journal
+category: journals
 excerpt: "This study develops and evaluates explainable AI models for predicting major cardiovascular events over 60 months using data from the PolyIran and PolyPars prospective studies."
 date: 2026-06-14
 authors: "Amir Ghafari, Sadaf Sepanlou, Gholamreza Roshandel, Seyed Amir Ahmad Safavi-Naini, Fatemeh Malekzadeh, Maryam Sharafkhah, Amir Kasaeian, Aakriti Gupta, Shubhadarshini Pawar, Zahra Dehghanian, Amir Azimi, Mohammad Aghaei, Akram Pourshams, Hossein Poustchi, Nasrallah Jahangard, Hamid R. Rabiee, Reza Malekzadeh"

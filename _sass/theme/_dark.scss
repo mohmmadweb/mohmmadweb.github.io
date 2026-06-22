@@ -51,4 +51,15 @@ html[data-theme="dark"] {
     --global-text-color                 : #{$text};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$background-lighter};
+    --global-heading-color              : #{$text};
+
+    /* Design tokens (dark variants) - cards float slightly above the page background */
+    --accent                            : #5b9cf0;
+    --accent-soft                       : rgba(91, 156, 240, 0.14);
+    --accent-text                       : #8fbcf4;
+    --surface-color                     : #{$background-light};
+    --surface-color-alt                 : #{mix(#fff, $background, 12%)};
+    --card-border-color                 : #{$background-light};
+    --shadow-sm                         : 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md                         : 0 4px 16px rgba(0, 0, 0, 0.4);
 }

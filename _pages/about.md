@@ -7,7 +7,21 @@ redirect_from:
   - /about.html
 ---
 
-Mohammad Aghaei received his BS degree from University of Isfahan, and got the full grade of the BS project under the supervision of Dr. Nematbakhsh. He is currently studying MS degree in Artificial Intelligence and member of DML lab under the supervision of prof. Rabiee. Formerly he was a web developer and developed many websites to help their business. He also holds several certified degrees from different organizations in the field of computer science. He works with many well-known companies and use his knowledge about computer to help them grow their business and subsequently increase their sales. Considering the titles and positions he has held in these companies, he is a great leader who has the ability to manage various projects simultaneously.
+<p class="lead-currently"><strong>Currently:</strong> MLOps Technical Team member at Sharif University's Advanced ICT Research Institute (AICTRI) &middot; M.Sc. thesis on <em>Fairness-Aware Community Detection in Complex Networks</em>, supervised by Prof. Hamid R. Rabiee</p>
+
+Mohammad Aghaei holds a BS in Computer Software Engineering from the University of Isfahan, where he received full marks on his BS project under the supervision of Dr. Nematbakhsh, and is currently pursuing an MS in Artificial Intelligence at Sharif University of Technology as a member of the DML Lab under Prof. Rabiee. He started out as a web developer, building websites for businesses, and has since earned several certified degrees across different areas of computer science. He has worked with many well-known companies, applying his technical expertise to help them grow their business and increase sales — and the range of titles and positions he has held along the way reflects his ability to lead and manage multiple projects at once.
+
+<style>
+.lead-currently {
+  margin: -0.5em 0 1.5em;
+  padding: 0.7em 1.1em;
+  font-size: 0.95em;
+  color: var(--accent-text);
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+}
+</style>
 
 <div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0;">
   <img src="/images/portfolio/IMG_2174.jpg" alt="Photo 1" style="width: calc(33.333% - 10px); height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;" onclick="openModal('/images/portfolio/IMG_2174.jpg')">
@@ -15,46 +29,7 @@ Mohammad Aghaei received his BS degree from University of Isfahan, and got the f
   <img src="/images/portfolio/IMG_3590.JPG" alt="Photo 3" style="width: calc(33.333% - 10px); height: 350px; object-fit: cover; border-radius: 10px; cursor: pointer;" onclick="openModal('/images/portfolio/IMG_3590.JPG')">
 </div>
 
-<!-- Modal -->
-<div id="imageModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
-  <div style="position: relative; background: white; border-radius: 10px; padding: 15px; max-width: 70%; max-height: 80%; box-shadow: 0 5px 25px rgba(0,0,0,0.3);">
-    <span style="position: absolute; top: 8px; right: 12px; color: #333; font-size: 24px; font-weight: bold; cursor: pointer; z-index: 1001; background: white; width: 35px; height: 35px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.2);" onclick="closeModal()">&times;</span>
-    <img id="modalImage" style="max-width: 1000px; max-height: 500px; object-fit: contain; border-radius: 8px; display: block;">
-  </div>
-</div>
-
-<script>
-function openModal(src) {
-  document.getElementById('modalImage').src = src;
-  document.getElementById('imageModal').style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-}
-
-function closeModal() {
-  document.getElementById('imageModal').style.display = 'none';
-  document.body.style.overflow = 'auto';
-}
-
-// Close modal when clicking outside the image
-document.getElementById('imageModal').addEventListener('click', function(e) {
-  if (e.target === this) {
-    closeModal();
-  }
-});
-
-// Close modal with Escape key
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-    closeModal();
-  }
-});
-</script>
-
 <style>
-#imageModal {
-  transition: opacity 0.3s ease;
-}
-
 img[onclick]:hover {
   opacity: 0.8;
   transition: opacity 0.3s ease;

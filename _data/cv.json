@@ -1,14 +1,14 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Mohammad Aghaei",
+    "email": "mohammadaghaei800@gmail.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://mohmmadweb.github.io",
+    "summary": "M.Sc Student in Computer Engineering. Affiliated with Sharif University of Technology",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
+      "city": "Tehran, IRAN",
       "countryCode": "US",
       "region": ""
     },
@@ -16,82 +16,756 @@
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=PhhGrdIAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0009-0008-1061-6884"
+      },
+      {
+        "network": "ResearchGate",
+        "username": "",
+        "url": "https://www.researchgate.net/profile/Mohammad-Aghaei-16/research"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "mohmmadweb",
+        "url": "https://github.com/mohmmadweb"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "mohammad--aghaei/",
+        "url": "https://www.linkedin.com/in/mohammad--aghaei/"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Advanced ICT Research Institute",
+      "position": "MLOPS Technical Team",
+      "website": "https://aict.sharif.ir/",
+      "location": "Sharif University of Technology, Tehran Province, Iran",
+      "startDate": "2025-01",
+      "endDate": "Present",
+      "summary": "MLOPS Technical Team for Iran's National Artificial Intelligence Platform (AIP) - a strategic national project under the supervision of the Vice Presidency for Science and Technology. Leading MLOps and Data teams at Advanced ICT Research Institute of Sharif University in developing Iran's sovereign AI infrastructure with focus on Kubernetes, model registry, and automated ML pipelines.",
+      "highlights": []
+    },
+    {
+      "company": "Data Science & Machine Learning Lab",
+      "position": "Graduate Research Assistant",
+      "website": "https://dml.ir/",
+      "location": "Sharif University of Technology, Tehran, Iran",
+      "startDate": "2023-08",
+      "endDate": "Present",
+      "summary": "Conducting cutting-edge research in graph mining and machine learning at Iran's premier AI research laboratory under Distinguished Professor Hamid R. Rabiee",
+      "highlights": []
+    },
+    {
+      "company": "Course website",
+      "position": "TA - High-Dimensional Statistics, Fall 2025",
+      "website": "https://hdssut.vercel.app/#course-references",
+      "location": "Sharif University of Technology, Tehran, Iran",
+      "startDate": "2025-08",
+      "endDate": "2026-03",
+      "summary": "Teaching Assistant for High-Dimensional Statistics course under supervision of Dr. Rohban",
+      "highlights": []
+    },
+    {
+      "company": "Course website",
+      "position": "TA - Intelligent Analysis of Biomedical Images, Fall 2025",
+      "website": "https://sharif.ir/~rohban/IABI/",
+      "location": "Sharif University of Technology, Tehran, Iran",
+      "startDate": "2025-08",
+      "endDate": "2026-03",
+      "summary": "Teaching Assistant for Intelligent Analysis of Biomedical Images course under supervision of Dr. Rohban",
+      "highlights": []
+    },
+    {
+      "company": "Course website",
+      "position": "TA - Linear Algebra, Fall 2025",
+      "website": "https://sut-ce-courses.github.io/linearalgebra/",
+      "location": "Sharif University of Technology, Tehran, Iran",
+      "startDate": "2025-08",
+      "endDate": "2026-03",
+      "summary": "Teaching Assistant for Linear Algebra for CE students under supervision of Prof. Rabiee and Dr. Ramezani",
+      "highlights": []
+    },
+    {
+      "company": "Young Scholars Club's page",
+      "position": "Instructor - AI Olympiad Phase 2",
+      "website": "https://www.linkedin.com/school/young-scholars-club/",
+      "location": "Tehran, Iran",
+      "startDate": "2025-06",
+      "endDate": "2025-08",
+      "summary": "Instructor for Artificial Intelligence Olympiad Phase 2, teaching advanced AI concepts to talented students",
+      "highlights": []
+    },
+    {
+      "company": "Course website",
+      "position": "Head Teaching Assistant - Social and Economic Networks, Spring 2025",
+      "website": "https://sut-ce-courses.github.io/socialnetwork/",
+      "location": "Sharif University of Technology, Tehran, Iran",
+      "startDate": "2025-01",
+      "endDate": "2025-05",
+      "summary": "Head Teaching Assistant for Social and Economic Networks course under the supervision of Dr. Ramezani",
+      "highlights": []
+    },
+    {
+      "company": "Course website",
+      "position": "TA - Deep Learning, Spring 2025",
+      "website": "",
+      "location": "Sharif University of Technology, Tehran, Iran",
+      "startDate": "2025-01",
+      "endDate": "2025-05",
+      "summary": "Teaching Assistant for Deep Learning course under supervision of Dr. Soleymani",
+      "highlights": []
+    },
+    {
+      "company": "Course website",
+      "position": "TA - Linear Algebra, Spring 2025",
+      "website": "https://sut-ce-courses.github.io/LA_Spring_2025",
+      "location": "Sharif University of Technology, Tehran, Iran",
+      "startDate": "2025-01",
+      "endDate": "2025-05",
+      "summary": "Teaching Assistant for Linear Algebra for CE students under supervision of Prof. Rabiee and Dr. Ramezani",
+      "highlights": []
+    },
+    {
+      "company": "Sarasheyda",
+      "position": "WordPress Developer & E-commerce Specialist",
+      "website": "https://sarasheyda.com/",
+      "location": "Ahvaz, Khuzestan, Iran",
+      "startDate": "2024-11",
+      "endDate": "2025-09",
+      "summary": "Developed comprehensive WordPress e-commerce platform for skin care and beauty services, featuring course sales, product marketplace, and integrated customer support system.",
+      "highlights": []
+    },
+    {
+      "company": "Competition website",
+      "position": "Scientific Team's Member",
+      "website": "https://ai.rayan.global/",
+      "location": "",
+      "startDate": "2024-09",
+      "endDate": "2025-11",
+      "summary": "International AI Contest - Trustworthiness in Deep Learning. Evaluating the contest questions in phase 1, revising both the questions and their solutions in Department of Computer Engineering, SUT.",
+      "highlights": []
+    },
+    {
+      "company": "Course website",
+      "position": "TA - Linear Algebra, Fall 2024",
+      "website": "https://jabrekh.github.io/fall_2024",
+      "location": "Sharif University of Technology, Tehran, Iran",
+      "startDate": "2024-08",
+      "endDate": "2024-12",
+      "summary": "Teaching Assistant for Linear Algebra for CE students under supervision of Prof. Rabiee and Dr. Ramezani",
+      "highlights": []
+    },
+    {
+      "company": "Course website",
+      "position": "TA - Machine Learning, Fall 2024",
+      "website": "https://sharifml.ir/team",
+      "location": "Sharif University of Technology, Tehran, Iran",
+      "startDate": "2024-08",
+      "endDate": "2024-12",
+      "summary": "Teaching Assistant for Machine Learning course under supervision of Dr. Sharifi",
+      "highlights": []
+    },
+    {
+      "company": "Pakzad Academy",
+      "position": "WordPress Developer & Digital Platform Specialist",
+      "website": "https://pakzadacademy.com/",
+      "location": "Isfahan, Iran",
+      "startDate": "2024-06",
+      "endDate": "2025-09",
+      "summary": "Developed comprehensive WordPress website for Pakzad Academy, a premier swimming and water polo training center, showcasing their mission, achievements, and professional coaching services.",
+      "highlights": []
+    },
+    {
+      "company": "Aveniex",
+      "position": "Full-Stack Developer",
+      "website": "https://aveniex.com/",
+      "location": "Tehran, Iran",
+      "startDate": "2024-05",
+      "endDate": "2024-11",
+      "summary": "Developed comprehensive export management automation system and user panel with multi-service platform for contracts, consulting, and export development services.",
+      "highlights": []
+    },
+    {
+      "company": "Argham Taraz",
+      "position": "Web Developer & Digital Solutions Specialist",
+      "website": "https://arghamtaraz.com/",
+      "location": "Tehran, Iran",
+      "startDate": "2024-05",
+      "endDate": "2024-11",
+      "summary": "Developed and maintained WordPress website for accounting and tax consulting firm specializing in financial services, tax declarations, and business advisory.",
+      "highlights": []
+    },
+    {
+      "company": "Rent-Toys",
+      "position": "WordPress Developer",
+      "website": "https://rent-toys.com/",
+      "location": "Tehran, Iran",
+      "startDate": "2024-05",
+      "endDate": "2024-08",
+      "summary": "Developed and maintained a specialized toy rental e-commerce platform using WordPress, creating a seamless rental experience for families and children.",
+      "highlights": []
+    },
+    {
+      "company": "Course website",
+      "position": "TA - Linear Algebra, Spring 2024",
+      "website": "https://jabrekh.github.io/",
+      "location": "Sharif University of Technology, Tehran, Iran",
+      "startDate": "2024-01",
+      "endDate": "2024-05",
+      "summary": "Teaching Assistant for Linear Algebra for CE students under supervision of Prof. Rabiee and Dr. Ramezani",
+      "highlights": []
+    },
+    {
+      "company": "Q-Lands",
+      "position": "Frontend Developer & UI Specialist",
+      "website": "https://q-lands.com/",
+      "location": "Khane Esfahan, Isfahan, Iran",
+      "startDate": "2024-01",
+      "endDate": "2024-04",
+      "summary": "Developed frontend interface for investment platform specializing in capital attraction and investment solutions, featuring multi-level earning programs and smart investment systems.",
+      "highlights": []
+    },
+    {
+      "company": "Sharif University of Technology",
+      "position": "Dormitory Network Administrator",
+      "website": "https://sharif.edu/",
+      "location": "Vezvaei Dormitory, Sharif University of Technology, Tehran, Iran",
+      "startDate": "2023-08",
+      "endDate": "2026-03",
+      "summary": "Managing and maintaining dormitory network infrastructure, troubleshooting network issues, and providing technical support to residents as a part-time network administrator.",
+      "highlights": []
+    },
+    {
+      "company": "Cloudzy",
+      "position": "WordPress Developer",
+      "website": "https://cloudzy.com/",
+      "location": "Tehran, Iran / Dubai",
+      "startDate": "2023-08",
+      "endDate": "2024-11",
+      "summary": "Developed and maintained WordPress-based solutions for a leading cloud computing platform, contributing to web infrastructure and user experience enhancements.",
+      "highlights": []
+    },
+    {
+      "company": "MirasBookStore",
+      "position": "Web Developer",
+      "website": "https://mirasbookstore.com/",
+      "location": "Kashan, Isfahan, Iran",
+      "startDate": "2023-07",
+      "endDate": "2023-10",
+      "summary": "Developed website for bookstore showcasing owner's ideas and selling books.",
+      "highlights": []
+    },
+    {
+      "company": "Hyper Palace",
+      "position": "WordPress Developer & E-commerce Specialist",
+      "website": "http://hyper-palace.com/",
+      "location": "Chabahar, Iran",
+      "startDate": "2023-06",
+      "endDate": "2023-09",
+      "summary": "Developed e-commerce website for Hyper Palace retail store in Chabahar, creating online presence and digital shopping platform for local retail business.",
+      "highlights": []
+    },
+    {
+      "company": "Armanpoosh",
+      "position": "Web Developer",
+      "website": "https://aramii.ir/",
+      "location": "Abdolrazagh, Isfahan, Iran",
+      "startDate": "2023-06",
+      "endDate": "2023-12",
+      "summary": "Developed shopping website for e-commerce platform.",
+      "highlights": []
+    },
+    {
+      "company": "Aghajani Handicrafts Factory",
+      "position": "Advertising Manager",
+      "website": "https://aghajani.net/",
+      "location": "Dolat Abad, Isfahan, Iran",
+      "startDate": "2023-05",
+      "endDate": "2023-09",
+      "summary": "Managed advertising for large handicrafts factory with 2500+ employees, 89 branches, and 3 main shops.",
+      "highlights": []
+    },
+    {
+      "company": "ReyDoor",
+      "position": "Web Developer",
+      "website": "http://reydoor.com/",
+      "location": "Isfahan, Iran",
+      "startDate": "2023-05",
+      "endDate": "2023-08",
+      "summary": "Developed e-commerce website for electric shutters store.",
+      "highlights": []
+    },
+    {
+      "company": "RoyalGulfOman",
+      "position": "Web Developer",
+      "website": "https://royalgulfoman.com/en/",
+      "location": "Oman",
+      "startDate": "2023-05",
+      "endDate": "2023-08",
+      "summary": "Developed real estate agency website for Al Mouj presenting buildings in Oman and Dubai.",
+      "highlights": []
+    },
+    {
+      "company": "Mejortime",
+      "position": "Web Developer and Business R&D",
+      "website": "https://mejortime.com",
+      "location": "Isfahan, Iran",
+      "startDate": "2022-08",
+      "endDate": "2023-09",
+      "summary": "Developed web solutions and conducted business R&D for immigration services company with 7 different service areas.",
+      "highlights": []
+    },
+    {
+      "company": "ShahrKala",
+      "position": "Web Developer",
+      "website": "https://shahrekalla.ir/",
+      "location": "Isfahan, Iran",
+      "startDate": "2022-07",
+      "endDate": "2023-07",
+      "summary": "Developed and maintained comprehensive e-commerce website for home appliances retailer specializing in kitchen appliances, home electronics, and furniture with direct-to-consumer sales model.",
+      "highlights": []
+    },
+    {
+      "company": "Copperradin",
+      "position": "WordPress Developer",
+      "website": "https://copperradin.ir/",
+      "location": "Isfahan, Iran",
+      "startDate": "2022-06",
+      "endDate": "2022-09",
+      "summary": "Developed and designed e-commerce website for wooden collection and wood products sales, creating an online platform for handmade wooden crafts and productions.",
+      "highlights": []
+    },
+    {
+      "company": "Ario Realstate",
+      "position": "Web Developer",
+      "website": "amlakario.com",
+      "location": "Ahvaz, Khuzestan, Iran",
+      "startDate": "2022-05",
+      "endDate": "2022-08",
+      "summary": "Developed website for real estate business.",
+      "highlights": []
+    },
+    {
+      "company": "Sasandezh",
+      "position": "Web Developer",
+      "website": "https://sasandezh.com/",
+      "location": "Isfahan, Iran",
+      "startDate": "2022-04",
+      "endDate": "2022-07",
+      "summary": "Developed website for beam and block production and sales company.",
+      "highlights": []
+    },
+    {
+      "company": "Baradaran Holding",
+      "position": "Web Developer",
+      "website": "https://baradaran-holding.com/",
+      "location": "Isfahan, Iran",
+      "startDate": "2022-03",
+      "endDate": "2022-09",
+      "summary": "Developed web solutions for holding company with wide range of food products.",
+      "highlights": []
+    },
+    {
+      "company": "My Therapist",
+      "position": "Web Developer",
+      "website": "darmangarman.ir",
+      "location": "Isfahan, Iran",
+      "startDate": "2022-02",
+      "endDate": "2022-05",
+      "summary": "Developed website providing psychology and mental coaching services.",
+      "highlights": []
+    },
+    {
+      "company": "TEDxUniversityOfIsfahan",
+      "position": "Marketing Consultant",
+      "website": "https://www.linkedin.com/company/tedxuniversityofisfahan/",
+      "location": "University of Isfahan, Isfahan, Iran",
+      "startDate": "2022-02",
+      "endDate": "2022-07",
+      "summary": "Strategic marketing consultant for TEDxUniversityOfIsfahan, driving audience engagement and brand visibility for one of Iran's premier intellectual platforms.",
+      "highlights": []
+    },
+    {
+      "company": "SBISC's page",
+      "position": "Council Member",
+      "website": "https://www.linkedin.com/company/42311695/",
+      "location": "Esfahan, Iran",
+      "startDate": "2021-11",
+      "endDate": "2022-06",
+      "summary": "Council Member at SBISC, Esfahan University",
+      "highlights": []
+    },
+    {
+      "company": "Sadat School for Exceptional Talents",
+      "position": "Web Design Instructor",
+      "website": "https://schoolsadat.ir/",
+      "location": "Isfahan, Iran",
+      "startDate": "2021-09",
+      "endDate": "2021-12",
+      "summary": "Taught practical web design and development to high school students at Sadat School for Exceptional Talents, focusing on hands-on programming skills and real-world projects.",
+      "highlights": []
+    },
+    {
+      "company": "Meetchain",
+      "position": "Co-founder, Scientific team lead",
+      "website": "https://www.linkedin.com/company/79703404/",
+      "location": "Molasadra, Isfahan, Iran",
+      "startDate": "2021-03",
+      "endDate": "2021-06",
+      "summary": "Co-founded Meetchain to address the shortage of specialized blockchain educational resources, leading scientific initiatives and event management to foster blockchain knowledge sharing.",
+      "highlights": []
+    },
+    {
+      "company": "Hitonix Startup",
+      "position": "Web Developer",
+      "website": "https://hitonix.ir",
+      "location": "Chaharbagh, Isfahan, Iran",
+      "startDate": "2021-02",
+      "endDate": "2021-03",
+      "summary": "Developed website for medicine startup helping people understand medication usage.",
+      "highlights": []
+    },
+    {
+      "company": "Hamyar Cooperation",
+      "position": "Advertising Assistant",
+      "website": "https://hamyar.co/",
+      "location": "Tehran, Iran",
+      "startDate": "2021-02",
+      "endDate": "2021-05",
+      "summary": "Assisted in advertising and selling Instagram courses teaching Instagram marketing.",
+      "highlights": []
+    },
+    {
+      "company": "Fariba Goodarzi",
+      "position": "Web Developer",
+      "website": "https://faribagoodarzi.ir",
+      "location": "Isfahan, Iran",
+      "startDate": "2021-01",
+      "endDate": "2021-04",
+      "summary": "Developed website for election activities and campaigns.",
+      "highlights": []
+    },
+    {
+      "company": "Mobile Pouya",
+      "position": "Web Developer",
+      "website": "https://mobilepouya.ir",
+      "location": "Tonekabon, Iran",
+      "startDate": "2020-12",
+      "endDate": "2021-03",
+      "summary": "Developed website for multi-branch phone and accessories retailer.",
+      "highlights": []
+    },
+    {
+      "company": "Rasa Light",
+      "position": "Web Developer",
+      "website": "https://rasalight.ir/",
+      "location": "Isfahan, Iran",
+      "startDate": "2020-12",
+      "endDate": "2021-03",
+      "summary": "Developed website for luxury lighting company serving high-end locations like Iran Mall.",
+      "highlights": []
+    },
+    {
+      "company": "Siavash Exchange",
+      "position": "Web Developer",
+      "website": "https://siavashexchange.com/",
+      "location": "Isfahan, Iran",
+      "startDate": "2020-11",
+      "endDate": "2021-02",
+      "summary": "Developed website for currency exchange services including dollar sales and service queuing.",
+      "highlights": []
+    },
+    {
+      "company": "Irandelle",
+      "position": "Business R&D Specialist and Content Manager",
+      "website": "https://irandelle.com/",
+      "location": "Jolfa, Isfahan, Iran",
+      "startDate": "2020-10",
+      "endDate": "2023-12",
+      "summary": "Developed web solutions and conducted comprehensive business R&D, market research, and content strategy for tourism company providing specialized tours and services for international visitors to Iran.",
+      "highlights": []
+    },
+    {
+      "company": "Irandelle",
+      "position": "Web Developer",
+      "website": "https://irandelle.com/",
+      "location": "Jolfa, Isfahan, Iran",
+      "startDate": "2020-10",
+      "endDate": "2023-09",
+      "summary": "Developed web solutions and conducted business R&D for tourism company providing tours and services for visitors to Iran.",
+      "highlights": []
+    },
+    {
+      "company": "Honar Tools",
+      "position": "Web Developer",
+      "website": "https://honartools.ir",
+      "location": "Isfahan, Iran",
+      "startDate": "2020-10",
+      "endDate": "2021-01",
+      "summary": "Developed e-commerce website for tools retailer.",
+      "highlights": []
+    },
+    {
+      "company": "Radman Jade Abrisham Factory",
+      "position": "Head of IT Department",
+      "website": "ahanamn.com",
+      "location": "Tehran, Iran",
+      "startDate": "2020-09",
+      "endDate": "2023-09",
+      "summary": "Provided IT consulting and web development services for textile factory.",
+      "highlights": []
+    },
+    {
+      "company": "Modernlane",
+      "position": "Web Developer & Content Manager",
+      "website": "https://modernlane.ir/",
+      "location": "Isfahan, Iran",
+      "startDate": "2020-09",
+      "endDate": "2020-12",
+      "summary": "Developed website and managed content for phone and accessories retailer.",
+      "highlights": []
+    },
+    {
+      "company": "Melorings",
+      "position": "Web Developer",
+      "website": "https://melorings.ir",
+      "location": "Tehran, Iran",
+      "startDate": "2020-08",
+      "endDate": "2020-12",
+      "summary": "Developed e-commerce website for jewelry retailer.",
+      "highlights": []
+    },
+    {
+      "company": "Ahanamn",
+      "position": "Head of Web Development Team & QA",
+      "website": "https://ahanamn.com/",
+      "location": "NajafAbad, Isfahan, Iran",
+      "startDate": "2020-06",
+      "endDate": "2022-09",
+      "summary": "Led web development team and managed quality assurance for iron selling company.",
+      "highlights": []
+    },
+    {
+      "company": "Mashhorstudio",
+      "position": "Web Developer & Maintenance",
+      "website": "https://mashhorstudio.ir/",
+      "location": "Isfahan, Iran",
+      "startDate": "2020-06",
+      "endDate": "2024-06",
+      "summary": "Developed and maintained gallery website for sharing photos and videos.",
+      "highlights": []
+    },
+    {
+      "company": "Iran Taghaza",
+      "position": "Web Developer & Co-founder",
+      "website": "",
+      "location": "Tehran, Iran",
+      "startDate": "2020-05",
+      "endDate": "2020-07",
+      "summary": "Co-founded and developed Iran's first demand-side marketplace platform, creating an innovative reverse model of traditional classifieds where users could post their needs and demands instead of offers.",
+      "highlights": []
+    },
+    {
+      "company": "Nikarokh",
+      "position": "Web Developer and Maintenance",
+      "website": "nikarokh.com",
+      "location": "West Nazar Street, Isfahan, Iran",
+      "startDate": "2020-04",
+      "endDate": "2023-12",
+      "summary": "Developed and maintained website for skin and hair cosmetics company.",
+      "highlights": []
+    },
+    {
+      "company": "Kosar 4 Daily Market",
+      "position": "Head of Web Development Team",
+      "website": "https://kowsar.market/pwa",
+      "location": "Isfahan, Iran",
+      "startDate": "2020-03",
+      "endDate": "2020-06",
+      "summary": "Led web development team for daily market under supervision of Isfahan municipality.",
+      "highlights": []
+    },
+    {
+      "company": "SBISC's page",
+      "position": "Editor Chief of Zero Day Magazine",
+      "website": "https://www.linkedin.com/company/42311695/",
+      "location": "Esfahan, Iran",
+      "startDate": "2019-11",
+      "endDate": "2023-01",
+      "summary": "Editor Chief of Zero Day Magazine at SBISC, Esfahan University",
+      "highlights": []
+    },
+    {
+      "company": "Big Data Lab",
+      "position": "Research Assistant",
+      "website": "https://bigdata-ui.ir/fa/home-fa/",
+      "location": "University of Isfahan, Isfahan, Iran",
+      "startDate": "2019-11",
+      "endDate": "2023-05",
+      "summary": "Research Assistant in Big Data group under supervision of Dr. Nematbakhsh and Dr. Fatemi at University of Isfahan",
+      "highlights": []
+    },
+    {
+      "company": "Big Data Group - University of Isfahan",
+      "position": "Web Developer & Content Manager",
+      "website": "https://bigdata-ui.ir/fa/home-fa/",
+      "location": "University of Isfahan, Isfahan, Iran",
+      "startDate": "2019-11",
+      "endDate": "2020-11",
+      "summary": "Developed web solutions and managed content for big data research group under supervision of Dr. Nematbakhsh and Dr. Fatemi.",
+      "highlights": []
+    },
+    {
+      "company": "Apexweb",
+      "position": "Founder & CEO",
+      "website": "https://apexweb.ir",
+      "location": "Chaharbagh Khajoo, Isfahan, Iran",
+      "startDate": "2019-11",
+      "endDate": "2022-09",
+      "summary": "Founded and managed a full-service digital marketing agency specializing in web design, content production, and advertising, leading a team of 11 professionals.",
+      "highlights": []
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Sharif University of Technology",
+      "area": "Master of Science in Artificial Intelligence",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "startDate": "Sep 2023",
+      "endDate": "Present",
+      "location": "Tehran, Iran",
+      "gpa": "3.3",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "University of Isfahan",
+      "area": "Bachelor of Science in Computer Software Engineering",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
+      "startDate": "Sep 2019",
+      "endDate": "Aug 2023",
+      "location": "Isfahan, Iran",
+      "gpa": "3.3",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "Alborz High School",
+      "area": "Diploma in Mathematics and Physics",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "startDate": "Sep 2016",
+      "endDate": "Aug 2019",
+      "location": "Isfahan, Iran",
+      "gpa": "4.0",
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": [
+        "Python (Primary)",
+        "C/C++",
+        "Java"
+      ]
+    },
+    {
+      "name": "Machine & Deep Learning",
+      "level": "",
+      "keywords": [
+        "Scikit-learn",
+        "TensorFlow",
+        "PyTorch"
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "level": "",
+      "keywords": [
+        "Transformers",
+        "LLM Fine-tuning",
+        "Text Processing"
+      ]
+    },
+    {
+      "name": "Data Analysis & Visualization",
+      "level": "",
+      "keywords": [
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Statistical Analysis"
+      ]
+    },
+    {
+      "name": "Graph & Network Analysis",
+      "level": "",
+      "keywords": [
+        "NetworkX",
+        "Graph Algorithms"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": [
+        "MySQL",
+        "NoSQL",
+        "Oracle"
+      ]
+    },
+    {
+      "name": "Web Technologies",
+      "level": "",
+      "keywords": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "PHP",
+        "Laravel"
+      ]
+    },
+    {
+      "name": "Software Engineering Methodologies",
+      "level": "",
+      "keywords": [
+        "Object-Oriented Design (OOD)",
+        "UML",
+        "Agile",
+        "Scrum"
+      ]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Fairness in Community Detection",
+      "publisher": "arXiv preprint arXiv:2509.25051",
+      "releaseDate": "2025-01-19",
+      "website": "",
+      "summary": "A novel approach for Bayesian optimization that leverages symmetry properties through max kernels for improved sample efficiency."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Fairness in LLM's",
+      "publisher": "arXiv preprint arXiv:2509.25051",
+      "releaseDate": "2025-01-19",
+      "website": "",
+      "summary": "A novel approach for Bayesian optimization that leverages symmetry properties through max kernels for improved sample efficiency."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Explainable artificial intelligence models in predicting major cardiovascular events: insights from the PolyIran and PolyPars prospective studies",
+      "publisher": "Scientific Reports",
+      "releaseDate": "2026-06-14",
+      "website": "",
+      "summary": "This study develops and evaluates explainable AI models for predicting major cardiovascular events over 60 months using data from the PolyIran and PolyPars prospective studies."
     }
   ],
   "presentations": [

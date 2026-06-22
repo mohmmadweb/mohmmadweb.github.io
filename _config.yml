@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "About"
 title_separator          : "-"
 name                     : &name "Your Name"
-description              : &description "personal description"
+description              : &description "M.Sc. student in Artificial Intelligence at Sharif University of Technology, researching fairness-aware community detection, graph mining, and machine learning."
 url                      : https://mohmmadweb.github.io
 baseurl                  : ""
 repository               : "mohmmadweb/mohmmadweb.github.io"
@@ -23,7 +23,7 @@ empty_array              : []
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "4055 d.jpg"
+  avatar           : "profile-photo.jpg"
   name             : "Mohammad Aghaei"
   pronouns         :  
   bio              : "M.Sc Student in Computer Engineering"
@@ -138,12 +138,17 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : 
-og_description           : 
+og_image                 : "profile-photo.jpg"
+og_description           : "Mohammad Aghaei — M.Sc. student in Artificial Intelligence at Sharif University of Technology, working on fairness-aware community detection, graph mining, and machine learning research."
 social:
-  type                   : 
-  name                   : 
-  links: 
+  type                   : "Person"
+  name                   : "Mohammad Aghaei"
+  links:
+    - "https://scholar.google.com/citations?user=PhhGrdIAAAAJ&hl=en"
+    - "https://orcid.org/0009-0008-1061-6884"
+    - "https://www.researchgate.net/profile/Mohammad-Aghaei-16/research"
+    - "https://github.com/mohmmadweb"
+    - "https://www.linkedin.com/in/mohammad--aghaei/"
 
 # Analytics
 analytics:

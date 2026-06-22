@@ -11,6 +11,51 @@ author_profile: false
 
 {% include base_path %}
 
+{% assign all_pubs = site.publications %}
+{% if all_pubs.size > 0 %}
+  <div class="stats-box">
+    <div class="stats-line stats-line-main">
+      <span class="stat-item">
+        <strong class="stat-number">{{ all_pubs.size }}</strong>
+        <span class="stat-label">Publications</span>
+      </span>
+      <span class="stat-separator">&bull;</span>
+      <span class="stat-item">
+        {% assign pub_years = "" | split: "," %}
+        {% for post in all_pubs %}
+          {% assign y = post.date | date: "%Y" %}
+          {% unless pub_years contains y %}
+            {% assign pub_years = pub_years | push: y %}
+          {% endunless %}
+        {% endfor %}
+        <strong class="stat-number">{{ pub_years.size }}</strong>
+        <span class="stat-label">Years</span>
+      </span>
+    </div>
+
+    {% if site.publication_category %}
+      {% assign nonzero_categories = "" | split: "," %}
+      {% for category in site.publication_category %}
+        {% assign cnt = all_pubs | where: "category", category[0] | size %}
+        {% if cnt > 0 %}
+          {% assign nonzero_categories = nonzero_categories | push: category[0] %}
+        {% endif %}
+      {% endfor %}
+
+      <div class="stats-line stats-line-secondary">
+        {% for key in nonzero_categories %}
+          {% assign cnt = all_pubs | where: "category", key | size %}
+          <span class="stat-item-secondary">
+            <strong class="stat-number-secondary">{{ cnt }}</strong>
+            <span class="stat-label-secondary">{{ site.publication_category[key].title }}</span>
+          </span>
+          {% unless forloop.last %}<span class="stat-separator-secondary">&bull;</span>{% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+
 {% if site.publication_category %}
   {% for category in site.publication_category %}
     {% assign posts_in_category = site.publications | where: "category", category[0] | sort: "date" | reverse %}
