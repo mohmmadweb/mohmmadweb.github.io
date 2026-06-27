@@ -395,12 +395,15 @@
   display: grid;
   /* mobile-first: single column by default so 450-500px-minimum cards
      never force horizontal overflow on narrow screens; multi-column
-     auto-fill only kicks in once there is actually room for it */
+     layout only kicks in once there is actually room for it. auto-fit
+     (not auto-fill) so that when a category has fewer cards than there
+     are columns, the empty tracks collapse instead of leaving a big
+     blank gap next to the last card. */
   grid-template-columns: 1fr;
   gap: 25px;
 
   @include breakpoint($medium) {
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
 }
 
