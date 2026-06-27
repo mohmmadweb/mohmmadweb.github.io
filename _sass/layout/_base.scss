@@ -416,4 +416,16 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   .page__footer {
     display: none;
   }
+
+  /* the fixed masthead and footer are hidden above, but body still
+     reserves their on-screen height via padding - drop that reserved
+     space so printed pages don't start with a large empty gap */
+  body {
+    padding: 0;
+  }
+
+  #main {
+    margin-top: 0;
+    animation: none;
+  }
 }

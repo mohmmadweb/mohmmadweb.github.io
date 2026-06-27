@@ -14,15 +14,16 @@ redirect_from:
 
 <style>
   .archive {
-    width: 80%;
+    width: 92%;
+    max-width: 1000px;
     margin: 0 auto;
     float: none;
     padding-right: 0;
   }
-  
+
   @media (min-width: 80em) {
     .archive {
-      width: 70%;
+      width: 80%;
     }
   }
 </style>

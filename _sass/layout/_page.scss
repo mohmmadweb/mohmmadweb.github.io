@@ -55,6 +55,15 @@
     border-bottom: 1px solid var(--global-border-color);
   }
 
+  /* let wide tables scroll horizontally on narrow screens instead of
+     overflowing the viewport or squashing column text unreadably */
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   p, li, dl {
     font-size: 1em;
   }

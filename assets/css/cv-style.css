@@ -1,235 +1,335 @@
-/* CV Template Styles */
-.cv-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
+/* CV / Resume page (/cv-json/) — two-column layout: gray contact sidebar +
+   blue ruled section headers, echoing the author's printed CV design.
+   Colors reuse the site's theme-aware CSS variables so dark mode just works. */
 
-/* Header Styles */
-.cv-header {
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #f2f2f2;
-  padding-bottom: 1rem;
-}
-
-.cv-header h1 {
-  margin-bottom: 0.5rem;
-  color: #2a7ae2;
-}
-
-.cv-contact-info {
+.resume {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
+  background: var(--surface-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
 }
 
-.cv-contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+/* ---------- Sidebar ---------- */
+
+.resume-sidebar {
+  flex: 0 0 100%;
+  max-width: 100%;
+  background: var(--surface-color-alt);
+  color: var(--global-text-color);
+  padding: 2rem 1.75rem;
 }
 
-.cv-profiles {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
+@media (min-width: 700px) {
+  .resume-sidebar {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
 }
 
-.cv-profile-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.cv-profile-item a {
-  color: #2a7ae2;
-  text-decoration: none;
-}
-
-.cv-profile-item a:hover {
-  text-decoration: underline;
-}
-
-/* Section Styles */
-.cv-section {
-  margin-bottom: 2rem;
-}
-
-.cv-section h2 {
-  border-bottom: 1px solid #f2f2f2;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #2a7ae2;
-}
-
-.cv-section h2 i {
-  color: #666;
-}
-
-/* Item Styles */
-.cv-item {
+.resume-photo {
+  text-align: center;
   margin-bottom: 1.5rem;
 }
 
-.cv-item-header {
+.resume-photo img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--surface-color);
+  box-shadow: var(--shadow-md);
+}
+
+.resume-sidebar-block {
+  margin-bottom: 1.75rem;
+}
+
+.resume-sidebar-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.resume-sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.resume-sidebar-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  word-break: break-word;
+}
+
+.resume-sidebar-list i {
+  flex: 0 0 1.1em;
+  margin-top: 0.15em;
+  color: var(--accent);
+}
+
+.resume-sidebar-list a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.resume-sidebar-list a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.resume-sidebar-list--plain li {
+  display: block;
+}
+
+.resume-skill-group {
+  margin-bottom: 0.7rem;
+  font-size: 0.85rem;
+}
+
+.resume-skill-category {
+  font-weight: 600;
+  color: var(--global-text-color);
+}
+
+.resume-skill-items {
+  color: var(--global-text-color-light);
+  line-height: 1.4;
+}
+
+/* ---------- Main column ---------- */
+
+.resume-main {
+  flex: 1;
+  min-width: 0;
+  padding: 2.25rem 2.5rem;
+}
+
+.resume-header {
+  margin-bottom: 1.5rem;
+}
+
+.resume-name {
+  margin: 0;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--accent-text);
+  line-height: 1.15;
+}
+
+.resume-tagline {
+  margin: 0.3rem 0 0;
+  font-size: 1rem;
+  color: var(--global-text-color-light);
+}
+
+.resume-section {
+  margin-bottom: 1.75rem;
+}
+
+.resume-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+  margin: 0 0 1rem;
+}
+
+.resume-section-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0.35;
+}
+
+.resume-summary {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--global-text-color);
+}
+
+.resume-entry {
+  margin-bottom: 1.1rem;
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
+.resume-entry-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
-}
-
-.cv-item-title {
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.cv-item-date {
-  color: #666;
-}
-
-.cv-item-subtitle {
-  color: #666;
-  margin-bottom: 0.5rem;
-}
-
-.cv-item-summary {
-  margin-bottom: 0.5rem;
-}
-
-.cv-item-highlights {
-  margin-top: 0.5rem;
-  padding-left: 1.5rem;
-}
-
-.cv-item-highlights li {
-  margin-bottom: 0.25rem;
-}
-
-.cv-item-courses ul {
-  margin-top: 0.25rem;
-  padding-left: 1.5rem;
-}
-
-.cv-item-courses li {
-  margin-bottom: 0.25rem;
-}
-
-/* Skills Styles */
-.cv-skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.cv-skill-category h3 {
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.cv-skill-keywords {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.cv-skill-keyword {
-  background-color: #f2f2f2;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-/* Project Styles */
-.cv-project-keywords {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.cv-project-keyword {
-  background-color: #e6f3ff;
-  color: #2a7ae2;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-/* Languages Styles */
-.cv-languages {
-  display: flex;
-  flex-wrap: wrap;
+  align-items: baseline;
   gap: 1rem;
-}
-
-.cv-language {
-  display: flex;
-  flex-direction: column;
-}
-
-.cv-language-name {
-  font-weight: bold;
-}
-
-.cv-language-fluency {
-  color: #666;
-  font-size: 0.9rem;
-}
-
-/* Interests Styles */
-.cv-interests {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.cv-interest h3 {
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.cv-interest-keywords {
-  display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
-.cv-interest-keyword {
-  background-color: #f9f9f9;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
+.resume-entry-title {
+  font-weight: 600;
+  font-size: 0.97rem;
+  color: var(--global-text-color);
 }
 
-/* References Styles */
-.cv-references {
-  font-style: italic;
-  color: #666;
+.resume-entry-title a {
+  color: inherit;
+  text-decoration: none;
 }
 
-/* Print Styles */
+.resume-entry-title a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.resume-entry-date {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-text);
+  white-space: nowrap;
+}
+
+.resume-entry-subtitle {
+  font-size: 0.88rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.15rem;
+}
+
+.resume-entry-subtitle a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.resume-entry-subtitle a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.resume-entry-detail {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  line-height: 1.45;
+  margin-top: 0.3rem;
+}
+
+/* ---------- Print / PDF export ----------
+   Collapses to a single column for printing: a Word-resume-style header
+   band (photo + contact + profiles + skills laid out horizontally) on
+   page 1, followed by the full-width sections flowing continuously
+   across as many pages as needed - this avoids the broken/empty-column
+   pagination that a two-column flex layout produces once content spans
+   more than one printed page. */
+
+@page {
+  size: letter;
+  margin: 0.6in 0.55in;
+}
+
 @media print {
-  .cv-container {
+  body {
+    background: #fff;
+  }
+
+  .archive {
+    max-width: 100% !important;
+    padding: 0 !important;
+    background: #fff;
+  }
+
+  .resume {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    border: none;
+  }
+
+  .resume-sidebar,
+  .resume-main {
     max-width: 100%;
+    flex: none;
   }
-  
-  .cv-header {
-    border-bottom-color: #ccc;
+
+  /* print in reading order: name/objective/education/experience/publications
+     (.resume-main) first, then the contact/profiles/skills block
+     (.resume-sidebar) - the source order is sidebar-then-main (for the
+     on-screen two-column layout), so this has to be reversed explicitly
+     for the single-column print flow. */
+  .resume-main {
+    order: 1;
   }
-  
-  .cv-section h2 {
-    border-bottom-color: #ccc;
+
+  .resume-sidebar {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1rem 0 0;
+    margin-top: 1.25rem;
+    background: #fff !important;
+    border-top: 2px solid var(--accent);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
-  
-  .cv-skill-keyword,
-  .cv-project-keyword,
-  .cv-interest-keyword {
-    border: 1px solid #ccc;
-    background-color: transparent;
+
+  .resume-photo {
+    margin-bottom: 0;
+  }
+
+  .resume-photo img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .resume-sidebar-block {
+    flex: 1 1 180px;
+    margin-bottom: 0;
+  }
+
+  .resume-main {
+    padding: 0;
+  }
+
+  .resume-name,
+  .resume-section-title,
+  .resume-entry-date,
+  .resume-sidebar-title {
+    color: var(--accent-text) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .resume-section {
+    page-break-inside: auto;
+  }
+
+  .resume-section-title {
+    page-break-after: avoid;
+  }
+
+  .resume-entry {
+    page-break-inside: avoid;
+  }
+
+  .cv-download-links {
+    display: none;
   }
 }

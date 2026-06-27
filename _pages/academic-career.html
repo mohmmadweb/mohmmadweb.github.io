@@ -130,6 +130,42 @@ author_profile: false
     </div>
   </div>
 
+  <div class="experience-filter-bar">
+    <div class="experience-filter-group" data-filter-field="academic-role">
+      <span class="experience-filter-label">Role</span>
+      <button type="button" class="experience-filter-btn is-active" data-filter-value="">All</button>
+      {% assign roles = "" | split: "," %}
+      {% for exp in academic_career %}
+        {% if exp.academic_role %}
+          {% unless roles contains exp.academic_role %}
+            {% assign roles = roles | push: exp.academic_role %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+      {% assign roles = roles | sort %}
+      {% for role in roles %}
+      <button type="button" class="experience-filter-btn" data-filter-value="{{ role }}">{{ role }}</button>
+      {% endfor %}
+    </div>
+
+    <div class="experience-filter-group" data-filter-field="employment-type">
+      <span class="experience-filter-label">Type</span>
+      <button type="button" class="experience-filter-btn is-active" data-filter-value="">All</button>
+      {% assign etypes = "" | split: "," %}
+      {% for exp in academic_career %}
+        {% if exp.employment_type %}
+          {% unless etypes contains exp.employment_type %}
+            {% assign etypes = etypes | push: exp.employment_type %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+      {% assign etypes = etypes | sort %}
+      {% for t in etypes %}
+      <button type="button" class="experience-filter-btn" data-filter-value="{{ t }}">{{ t }}</button>
+      {% endfor %}
+    </div>
+  </div>
+
   <div class="experiences-timeline">
     <!-- Present Positions -->
     <h3 class="experience-year present-section">Present Academic Positions</h3>

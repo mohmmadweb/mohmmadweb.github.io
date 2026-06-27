@@ -1,0 +1,46 @@
+# Structured technical-skills data — single source of truth for the
+# Education page (_pages/education.md) and the CV page (/cv-json/).
+- category: "Programming Languages"
+  items:
+    - "Python (Primary)"
+    - "C/C++"
+    - "Java"
+- category: "Machine & Deep Learning"
+  items:
+    - "Scikit-learn"
+    - "TensorFlow"
+    - "PyTorch"
+- category: "Natural Language Processing"
+  items:
+    - "Transformers"
+    - "LLM Fine-tuning"
+    - "Text Processing"
+- category: "Data Analysis & Visualization"
+  items:
+    - "Pandas"
+    - "NumPy"
+    - "Matplotlib"
+    - "Seaborn"
+    - "Statistical Analysis"
+- category: "Graph & Network Analysis"
+  items:
+    - "NetworkX"
+    - "Graph Algorithms"
+- category: "Databases"
+  items:
+    - "MySQL"
+    - "NoSQL"
+    - "Oracle"
+- category: "Web Technologies"
+  items:
+    - "JavaScript"
+    - "HTML"
+    - "CSS"
+    - "PHP"
+    - "Laravel"
+- category: "Software Engineering Methodologies"
+  items:
+    - "Object-Oriented Design (OOD)"
+    - "UML"
+    - "Agile"
+    - "Scrum"

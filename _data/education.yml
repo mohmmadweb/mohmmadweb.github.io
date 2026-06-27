@@ -1,0 +1,47 @@
+# Structured education data — single source of truth for both the
+# Education page (_pages/education.md) and the CV page (/cv-json/),
+# so editing an entry here updates both automatically.
+#
+# Leave optional fields (thesis_title, thesis_grade, highlight) out entirely
+# when not applicable — Liquid's {% if %} treats an empty string "" as truthy,
+# so omitting the key (rather than setting "") is required for the templates'
+# conditionals to correctly hide them.
+- area: "Master of Science in Artificial Intelligence"
+  institution: "Sharif University of Technology"
+  institution_url: "https://sharif.edu/"
+  location: "Tehran, Iran"
+  start_date: "Sep 2023"
+  end_date: "Present"
+  current: true
+  gpa: "3.3 / 4.0"
+  thesis_title: "Fairness-Aware Community Detection in Complex Networks"
+  supervisors:
+    - name: "Prof. Hamid R. Rabiee"
+      url: "https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en"
+    - name: "Dr. Mohammad T. Manzuri Shalmani"
+      url: "https://scholar.google.com/citations?user=NXYyxTMAAAAJ&hl=en"
+
+- area: "Bachelor of Science in Computer Software Engineering"
+  institution: "University of Isfahan"
+  institution_url: "https://www.ui.ac.ir/"
+  location: "Isfahan, Iran"
+  start_date: "Sep 2019"
+  end_date: "Aug 2023"
+  current: false
+  gpa: "3.3 / 4.0"
+  thesis_title: "Professors Home Page Creation"
+  thesis_grade: "20 / 20"
+  supervisors:
+    - name: "Dr. Mohammad Ali Nematbakhsh"
+      url: "https://scholar.google.com/citations?user=Z4QLt3IAAAAJ&hl=en"
+
+- area: "Diploma in Mathematics and Physics"
+  institution: "Alborz High School"
+  institution_url: "https://maps.app.goo.gl/F3k5gS8vN8Hv8skx6"
+  location: "Isfahan, Iran"
+  start_date: "Sep 2016"
+  end_date: "Aug 2019"
+  current: false
+  gpa: "4.0 / 4.0"
+  supervisors: []
+  highlight: "Graduated with High Honors"

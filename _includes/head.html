@@ -2,6 +2,22 @@
 
 <meta charset="utf-8">
 
+<script>
+  /* Set the theme synchronously, before first paint, so there is no
+     flash of the wrong theme while waiting for the jQuery handler in
+     assets/js/_main.js (which still owns the toggle button and the
+     live OS-preference listener) to run on DOMContentLoaded. */
+  (function () {
+    try {
+      var saved = localStorage.getItem("theme");
+      var theme = saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      if (theme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  })();
+</script>
+
 {% include seo.html %}
 
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">

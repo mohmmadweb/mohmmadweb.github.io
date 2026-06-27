@@ -79,6 +79,43 @@ author_profile: false
     </div>
   </div>
 
+  <div class="experience-filter-bar">
+    <div class="experience-filter-group" data-filter-field="employment-type">
+      <span class="experience-filter-label">Type</span>
+      <button type="button" class="experience-filter-btn is-active" data-filter-value="">All</button>
+      {% assign etypes = "" | split: "," %}
+      {% for exp in industrial_experiences %}
+        {% if exp.employment_type %}
+          {% unless etypes contains exp.employment_type %}
+            {% assign etypes = etypes | push: exp.employment_type %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+      {% assign etypes = etypes | sort %}
+      {% for t in etypes %}
+      <button type="button" class="experience-filter-btn" data-filter-value="{{ t }}">{{ t }}</button>
+      {% endfor %}
+    </div>
+
+    <div class="experience-filter-group" data-filter-field="location-type">
+      <span class="experience-filter-label">Location</span>
+      <button type="button" class="experience-filter-btn is-active" data-filter-value="">All</button>
+      {% assign ltypes = "" | split: "," %}
+      {% for exp in industrial_experiences %}
+        {% if exp.location_type %}
+          {% assign lt_norm = exp.location_type | downcase %}
+          {% unless ltypes contains lt_norm %}
+            {% assign ltypes = ltypes | push: lt_norm %}
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+      {% assign ltypes = ltypes | sort %}
+      {% for t in ltypes %}
+      <button type="button" class="experience-filter-btn" data-filter-value="{{ t }}">{{ t | capitalize }}</button>
+      {% endfor %}
+    </div>
+  </div>
+
   <div class="experiences-timeline">
     <!-- Present Positions -->
     <h3 class="experience-year present-section">Present Positions</h3>

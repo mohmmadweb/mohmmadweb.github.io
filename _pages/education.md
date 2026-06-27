@@ -10,72 +10,30 @@ redirect_from:
 ## Education
 
 <div class="experiences-timeline">
-
-  <div class="experience-card current-academic-experience">
+{% for edu in site.data.education %}
+  <div class="experience-card {% if edu.current %}current-academic-experience{% else %}past-academic-experience{% endif %}">
     <div class="experience-header">
       <div class="experience-content">
         <div class="experience-title-line">
-          <h3 class="experience-title">Master of Science in Artificial Intelligence</h3>
+          <h3 class="experience-title">{{ edu.area }}</h3>
         </div>
         <div class="experience-details-container">
           <div class="experience-details">
-            <span class="dates">Sep 2023 &ndash; Present</span>
+            <span class="dates">{{ edu.start_date }} &ndash; {{ edu.end_date }}</span>
             <span class="title-separator">&bull;</span>
-            <span class="institution"><a href="https://sharif.edu/" target="_blank" rel="noopener">Sharif University of Technology</a>, Tehran, Iran</span>
+            <span class="institution">{% if edu.institution_url %}<a href="{{ edu.institution_url }}" target="_blank" rel="noopener">{{ edu.institution }}</a>{% else %}{{ edu.institution }}{% endif %}, {{ edu.location }}</span>
           </div>
         </div>
         <div class="honor-description">
-          <em>Cumulative GPA: 3.3 / 4.0</em><br>
-          <strong>Thesis Title:</strong> "Fairness-Aware Community Detection in Complex Networks"<br>
-          <strong>Supervisors:</strong> <a href="https://scholar.google.com/citations?user=rKDtrNgAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Hamid R. Rabiee</a> &amp; <a href="https://scholar.google.com/citations?user=NXYyxTMAAAAJ&hl=en" target="_blank" rel="noopener">Dr. Mohammad T. Manzuri Shalmani</a>
+          {% if edu.gpa %}<em>Cumulative GPA: {{ edu.gpa }}</em><br>{% endif %}
+          {% if edu.thesis_title %}<strong>Thesis Title:</strong> "{{ edu.thesis_title }}"{% if edu.thesis_grade %} &mdash; <em>Thesis Grade: {{ edu.thesis_grade }}</em>{% endif %}<br>{% endif %}
+          {% if edu.supervisors.size > 0 %}<strong>{% if edu.supervisors.size > 1 %}Supervisors{% else %}Supervisor{% endif %}:</strong> {% for sup in edu.supervisors %}<a href="{{ sup.url }}" target="_blank" rel="noopener">{{ sup.name }}</a>{% unless forloop.last %} &amp; {% endunless %}{% endfor %}<br>{% endif %}
+          {% if edu.highlight %}<em>{{ edu.highlight }}</em>{% endif %}
         </div>
       </div>
     </div>
   </div>
-
-  <div class="experience-card past-academic-experience">
-    <div class="experience-header">
-      <div class="experience-content">
-        <div class="experience-title-line">
-          <h3 class="experience-title">Bachelor of Science in Computer Software Engineering</h3>
-        </div>
-        <div class="experience-details-container">
-          <div class="experience-details">
-            <span class="dates">Sep 2019 &ndash; Aug 2023</span>
-            <span class="title-separator">&bull;</span>
-            <span class="institution"><a href="https://www.ui.ac.ir/" target="_blank" rel="noopener">University of Isfahan</a>, Isfahan, Iran</span>
-          </div>
-        </div>
-        <div class="honor-description">
-          <em>Cumulative GPA: 3.3 / 4.0</em><br>
-          <strong>Thesis Title:</strong> "Professors Home Page Creation" &mdash; <em>Thesis Grade: 20 / 20</em><br>
-          <strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=Z4QLt3IAAAAJ&hl=en" target="_blank" rel="noopener">Dr. Mohammad Ali Nematbakhsh</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="experience-card past-academic-experience">
-    <div class="experience-header">
-      <div class="experience-content">
-        <div class="experience-title-line">
-          <h3 class="experience-title">Diploma in Mathematics and Physics</h3>
-        </div>
-        <div class="experience-details-container">
-          <div class="experience-details">
-            <span class="dates">Sep 2016 &ndash; Aug 2019</span>
-            <span class="title-separator">&bull;</span>
-            <span class="institution"><a href="https://maps.app.goo.gl/F3k5gS8vN8Hv8skx6" target="_blank" rel="noopener">Alborz High School</a>, Isfahan, Iran</span>
-          </div>
-        </div>
-        <div class="honor-description">
-          <em>Cumulative GPA: 4.0 / 4.0</em><br>
-          <em>Graduated with High Honors</em>
-        </div>
-      </div>
-    </div>
-  </div>
-
+{% endfor %}
 </div>
 
 ---
@@ -103,14 +61,8 @@ redirect_from:
 
 ## Technical Skills
 
-- **Programming Languages:** Python (Primary), C/C++, Java
-- **Machine & Deep Learning:** Scikit-learn, TensorFlow, PyTorch
-- **Natural Language Processing:** Transformers, LLM Fine-tuning, Text Processing
-- **Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Statistical Analysis
-- **Graph & Network Analysis:** NetworkX, Graph Algorithms
-- **Databases:** MySQL, NoSQL, Oracle
-- **Web Technologies:** JavaScript, HTML, CSS, PHP, Laravel
-- **Software Engineering Methodologies:** Object-Oriented Design (OOD), UML, Agile, Scrum
+{% for skill in site.data.skills %}- **{{ skill.category }}:** {{ skill.items | join: ", " }}
+{% endfor %}
 
 ---
 

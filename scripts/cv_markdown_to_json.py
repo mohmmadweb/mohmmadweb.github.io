@@ -104,72 +104,43 @@ def extract_section(markdown_text, heading, next_heading_level=2):
             break
     return '\n'.join(lines[start:end]).strip()
 
-def parse_education(education_md_path):
-    """Parse the '## Education' section of _pages/education.md into JSON Resume entries."""
-    if not os.path.exists(education_md_path):
+def parse_education(education_yml_path):
+    """Read the structured _data/education.yml (single source of truth shared
+    with _pages/education.md) into JSON Resume entries."""
+    if not os.path.exists(education_yml_path):
         return []
 
-    with open(education_md_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    section = extract_section(content, 'Education')
-    section = section.split('\n---\n')[0]  # stop at the first horizontal rule
+    with open(education_yml_path, 'r', encoding='utf-8') as f:
+        records = yaml.safe_load(f) or []
 
     entries = []
-    for block in re.split(r'\n\s*\n', section):
-        lines = [l.replace('**', '').strip(' *') for l in block.strip().split('\n') if l.strip()]
-        if len(lines) < 3:
-            continue
-
-        date_match = re.match(r'(.+?)\s*[–—-]\s*(.+)', lines[0])
-        start_date = date_match.group(1).strip() if date_match else lines[0]
-        end_date = date_match.group(2).strip() if date_match else ''
-
-        area = lines[1]
-
-        institution_line = lines[2]
-        institution_match = re.match(r'\[(.+?)\]\(.*?\)\s*,?\s*(.*)', institution_line)
-        if institution_match:
-            institution, location = institution_match.groups()
-        else:
-            institution, location = institution_line, ''
-
-        rest = '\n'.join(lines[3:])
-        gpa_match = re.search(r'GPA[:\s]*([\d./]+)', rest)
-        gpa = gpa_match.group(1) if gpa_match else None
-
+    for rec in records:
         entries.append({
-            "institution": institution.strip(),
-            "area": area.strip(),
+            "institution": rec.get('institution', ''),
+            "area": rec.get('area', ''),
             "studyType": "",
-            "startDate": start_date,
-            "endDate": end_date,
-            "location": location.strip(),
-            "gpa": gpa,
+            "startDate": rec.get('start_date', ''),
+            "endDate": rec.get('end_date', ''),
+            "location": rec.get('location', ''),
+            "gpa": rec.get('gpa') or None,
             "courses": []
         })
 
     return entries
 
-def parse_technical_skills(education_md_path):
-    """Parse the '## Technical Skills' bullet list of _pages/education.md."""
-    if not os.path.exists(education_md_path):
+def parse_technical_skills(skills_yml_path):
+    """Read the structured _data/skills.yml (single source of truth shared
+    with _pages/education.md) into JSON Resume entries."""
+    if not os.path.exists(skills_yml_path):
         return []
 
-    with open(education_md_path, 'r', encoding='utf-8') as f:
-        content = f.read()
+    with open(skills_yml_path, 'r', encoding='utf-8') as f:
+        records = yaml.safe_load(f) or []
 
-    section = extract_section(content, 'Technical Skills')
-
-    skills = []
-    for line in section.split('\n'):
-        match = re.match(r'-\s*\*\*(.+?):\*\*\s*(.+)', line.strip())
-        if match:
-            category, items = match.groups()
-            keywords = [k.strip() for k in items.split(',') if k.strip()]
-            skills.append({"name": category.strip(), "level": "", "keywords": keywords})
-
-    return skills
+    return [
+        {"name": rec.get('category', ''), "level": "", "keywords": rec.get('items', [])}
+        for rec in records
+    ]
 
 def _format_front_matter_date(value):
     if isinstance(value, (datetime, date)):
@@ -308,13 +279,14 @@ def parse_portfolio(portfolio_dir):
 
 def create_cv_json(config_file, repo_root, output_file):
     config = parse_config(config_file)
-    education_md = os.path.join(repo_root, '_pages', 'education.md')
+    education_yml = os.path.join(repo_root, '_data', 'education.yml')
+    skills_yml = os.path.join(repo_root, '_data', 'skills.yml')
 
     cv_json = {
         "basics": extract_author_info(config),
         "work": parse_work(repo_root),
-        "education": parse_education(education_md),
-        "skills": parse_technical_skills(education_md),
+        "education": parse_education(education_yml),
+        "skills": parse_technical_skills(skills_yml),
         "languages": config.get('languages', []),
         "interests": config.get('interests', []),
         "references": [],
