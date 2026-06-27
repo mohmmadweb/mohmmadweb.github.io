@@ -1,0 +1,95 @@
+{% include base_path %}
+
+{% comment %}
+  Shared meta header for academic-career & industrial-experience single
+  pages. include.back_url / include.back_label point the "back" link at
+  the right listing page for the calling collection.
+{% endcomment %}
+
+{% assign duration_text = "" %}
+{% if page.start_date and page.end_date %}
+  {% capture start_seconds %}{{ page.start_date | date: "%s" }}{% endcapture %}
+  {% if page.end_date == "Present" %}
+    {% capture end_seconds %}{{ site.time | date: "%s" }}{% endcapture %}
+  {% else %}
+    {% capture end_seconds %}{{ page.end_date | date: "%s" }}{% endcapture %}
+  {% endif %}
+  {% assign start_seconds_num = start_seconds | plus: 0 %}
+  {% assign end_seconds_num = end_seconds | plus: 0 %}
+  {% if start_seconds_num > 0 and end_seconds_num > 0 %}
+    {% assign duration_seconds = end_seconds_num | minus: start_seconds_num %}
+    {% assign duration_years = duration_seconds | divided_by: 31536000 %}
+    {% assign remaining_seconds = duration_seconds | modulo: 31536000 %}
+    {% assign duration_months = remaining_seconds | divided_by: 2592000 %}
+    {% if duration_years > 0 %}{% assign duration_text = duration_years | append: " yrs" %}{% endif %}
+    {% if duration_months > 0 %}
+      {% if duration_years > 0 %}{% assign duration_text = duration_text | append: " " %}{% endif %}
+      {% assign duration_text = duration_text | append: duration_months | append: " mos" %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+<a href="{{ include.back_url | prepend: base_path }}" class="detail-back-link">
+  <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to {{ include.back_label }}
+</a>
+
+<div class="detail-hero">
+  {% if page.logo %}
+  <div class="detail-logo">
+    <img src="{{ page.logo | prepend: '/images/' | prepend: base_path }}" alt="{{ page.company }} logo">
+  </div>
+  {% endif %}
+
+  <div class="detail-hero-content">
+    {% if page.company %}
+    <p class="detail-company">
+      {% if page.company_url %}
+        <a href="{{ page.company_url }}" target="_blank" rel="noopener noreferrer">{{ page.company }}</a>
+      {% else %}
+        {{ page.company }}
+      {% endif %}
+    </p>
+    {% endif %}
+
+    <div class="detail-badge-row">
+      {% if page.start_date %}
+      <span class="detail-badge detail-badge--dates">
+        <i class="fas fa-calendar-days" aria-hidden="true"></i>
+        {{ page.start_date | date: "%b %Y" }} &ndash;
+        {% if page.end_date == "Present" %}Present{% else %}{{ page.end_date | date: "%b %Y" }}{% endif %}
+        {% if duration_text != "" %}<span class="detail-badge-duration">({{ duration_text }})</span>{% endif %}
+      </span>
+      {% endif %}
+
+      {% if page.employment_type %}
+      <span class="detail-badge detail-badge--accent"><i class="fas fa-briefcase" aria-hidden="true"></i> {{ page.employment_type }}</span>
+      {% endif %}
+
+      {% if page.academic_role %}
+      <span class="detail-badge detail-badge--accent"><i class="fas fa-chalkboard-user" aria-hidden="true"></i> {{ page.academic_role }}</span>
+      {% endif %}
+
+      {% if page.location %}
+      <span class="detail-badge"><i class="fas fa-location-dot" aria-hidden="true"></i> {{ page.location }}</span>
+      {% endif %}
+
+      {% if page.location_type %}
+      <span class="detail-badge"><i class="fas fa-building" aria-hidden="true"></i> {{ page.location_type }}</span>
+      {% endif %}
+    </div>
+
+    {% if page.supervisors and page.supervisors.size > 0 %}
+    <div class="detail-supervisors">
+      <span class="detail-supervisors-label">{% if page.supervisors.size > 1 %}Supervisors{% else %}Supervisor{% endif %}:</span>
+      {% for supervisor in page.supervisors %}
+        {% if supervisor.url %}
+          <a href="{{ supervisor.url }}" target="_blank" rel="noopener noreferrer" class="detail-supervisor">{{ supervisor.name }}</a>
+        {% else %}
+          <span class="detail-supervisor">{{ supervisor.name }}</span>
+        {% endif %}
+        {% unless forloop.last %}<span class="separator">&middot;</span>{% endunless %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

@@ -279,7 +279,7 @@ defaults:
       path: ""
       type: honors-and-awards
     values:
-      layout: single
+      layout: single-honor-award
       author_profile: false
       share: false
       comments: true

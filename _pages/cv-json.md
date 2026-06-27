@@ -31,6 +31,23 @@ redirect_from:
 {% include cv-template.html %}
 
 <div class="cv-download-links">
-  <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
+  <button type="button" id="cv-download-pdf-btn" class="btn btn--primary">
+    <i class="fas fa-file-pdf" aria-hidden="true"></i> Download CV as PDF
+  </button>
   <a href="{{ base_path }}/cv/" class="btn btn--inverse">View Markdown CV</a>
 </div>
+
+<script>
+  (function () {
+    var btn = document.getElementById("cv-download-pdf-btn");
+    if (!btn) return;
+    var originalTitle = document.title;
+    btn.addEventListener("click", function () {
+      document.title = "{{ site.author.name | default: 'CV' }} - CV";
+      window.print();
+      setTimeout(function () {
+        document.title = originalTitle;
+      }, 1000);
+    });
+  })();
+</script>
