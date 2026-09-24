@@ -1,13 +1,13 @@
 ---
 title: "Graduate Research Assistant"
 collection: academic-career
-permalink: /academic-career/present/graduate-research-assistant/
+permalink: /academic-career/2026/graduate-research-assistant/
 academic_role: "RA"
 employment_type: "Full-time"
 company: "Data Science & Machine Learning Lab"
 company_url: "https://dml.ir/"
 start_date: 2023-08-21
-end_date: "Present"
+end_date: "2026-07-28"
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
 logo: "academic-career/dml.png"

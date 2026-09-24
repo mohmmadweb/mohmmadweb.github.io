@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-<p class="lead-currently"><strong>Currently:</strong> MLOps Technical Team member at Sharif University's Advanced ICT Research Institute (AICT) &middot; M.Sc. thesis on <em>Fairness-Aware Community Detection in Complex Networks</em>, supervised by Prof. Hamid R. Rabiee</p>
+<p class="lead-currently"><strong>Currently:</strong> Ph.D. student in Artificial Intelligence at Sharif University of Technology, supervised by Prof. Jafar Habibi &middot; MLOps Technical Team member at Sharif University's Advanced ICT Research Institute (AICT)</p>
 
-Mohammad Aghaei holds a BS in Computer Software Engineering from the University of Isfahan, where he received full marks on his BS project under the supervision of Dr. Nematbakhsh, and is currently pursuing an MS in Artificial Intelligence at Sharif University of Technology as a member of the DML Lab under Prof. Rabiee. He started out as a web developer, building websites for businesses, and has since earned several professional certifications across different areas of computer science. He has worked with many well-known companies, applying his technical expertise to help them grow their business and increase sales — and the range of titles and positions he has held along the way reflects his ability to lead and manage multiple projects at once.
+Mohammad Aghaei holds a BS in Computer Software Engineering from the University of Isfahan, where he received full marks on his BS project under the supervision of Dr. Nematbakhsh, and an MS in Artificial Intelligence from Sharif University of Technology, where he was a member of the DML Lab under Prof. Rabiee and completed his thesis on <em>Fairness-Aware Community Detection in Complex Networks</em> with a perfect grade of 20/20. He is currently pursuing his Ph.D. in Artificial Intelligence at Sharif University of Technology under Prof. Jafar Habibi. He started out as a web developer, building websites for businesses, and has since earned several professional certifications across different areas of computer science. He has worked with many well-known companies, applying his technical expertise to help them grow their business and increase sales — and the range of titles and positions he has held along the way reflects his ability to lead and manage multiple projects at once.
 
 <style>
 .lead-currently {
