@@ -1,7 +1,7 @@
 ---
 title: "TA - Deep Learning, Spring 2026"
 collection: academic-career
-permalink: /academic-career/2025/ta-deep-learning-spring2026/
+permalink: /academic-career/2026/ta-deep-learning-spring2026/
 academic_role: "TA"
 employment_type: "Part-time"
 company: "Course website"
