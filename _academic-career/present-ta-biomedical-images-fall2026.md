@@ -6,7 +6,7 @@ academic_role: "TA"
 employment_type: "Part-time"
 company: "Course website"
 company_url: "https://sharif.ir/~rohban/IABI/"
-start_date: 2025-08-24
+start_date: 2026-08-24
 end_date: "Present"
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
