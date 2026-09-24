@@ -10,7 +10,7 @@ start_date: 2026-05-31
 end_date: "Present"
 location: "Sharif University of Technology, Tehran, Iran"
 location_type: "On-site"
-logo: "academic-career/dml.png"
+logo: "academic-career/Sharif_University_Logo.png"
 description: "Conducting cutting-edge research in graph mining and machine learning at Iran's premier AI research laboratory under Distinguished Professor Jafar Habibi"
 supervisors:
   - name: "Prof. Jafar Habibi"
