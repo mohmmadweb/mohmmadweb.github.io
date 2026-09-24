@@ -26,7 +26,7 @@ author:
   avatar           : "profile-photo.jpg"
   name             : "Mohammad Aghaei"
   pronouns         :  
-  bio              : "M.Sc Student in Computer Engineering"
+  bio              : "Ph.D Student in Computer Engineering"
   location         : "Tehran, IRAN"
   employer         : "Sharif University of Technology"
   uri              : 
@@ -139,7 +139,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : "profile-photo.jpg"
-og_description           : "Mohammad Aghaei — M.Sc. student in Artificial Intelligence at Sharif University of Technology, working on fairness-aware community detection, graph mining, and machine learning research."
+og_description           : "Mohammad Aghaei — Ph.D student in Artificial Intelligence at Sharif University of Technology, working on fairness-aware community detection, graph mining, and machine learning research."
 social:
   type                   : "Person"
   name                   : "Mohammad Aghaei"
