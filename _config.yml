@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "About"
 title_separator          : "-"
 name                     : &name "Your Name"
-description              : &description "M.Sc. student in Artificial Intelligence at Sharif University of Technology, researching fairness-aware community detection, graph mining, and machine learning."
+description              : &description "Ph.D student in Artificial Intelligence at Sharif University of Technology, researching fairness-aware community detection, graph mining, and machine learning."
 url                      : https://mohmmadweb.github.io
 baseurl                  : ""
 repository               : "mohmmadweb/mohmmadweb.github.io"
